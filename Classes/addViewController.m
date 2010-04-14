@@ -14,6 +14,7 @@
 @synthesize montant;
 @synthesize personnes;
 @synthesize cause;
+@synthesize valider;
 
 
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -68,5 +69,17 @@
 	[sender resignFirstResponder];
 }
 
+-(IBAction) ValidateDept:(id)sender {
+	UIAlertView *alert = [[UIAlertView alloc]
+						  initWithTitle:@"Dette ajoutée" 
+						  message:[NSString stringWithFormat:@"Dette de %@€ ajoutée à %@ avec succès",montant.text,personnes.text] 
+						  delegate:nil 
+						  cancelButtonTitle:@"Fermer" 
+						  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
+	[self.navigationController popViewControllerAnimated:YES];
+}
+	
 
 @end

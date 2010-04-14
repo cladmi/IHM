@@ -13,12 +13,15 @@
 	IBOutlet UITextField *montant;
 	IBOutlet UITextField *personnes;
 	IBOutlet UITextField *cause;
+	IBOutlet UIButton *valider;
 }
 
 @property(nonatomic, retain) UITextField *montant;
 @property(nonatomic, retain) UITextField *personnes;
 @property(nonatomic, retain) UITextField *cause;
+@property(nonatomic, retain) UIButton *valider;
 
 - (IBAction) TextFieldDownEditing:(id)sender;
+- (IBAction) ValidateDept:(id)sender;
 
 @end
