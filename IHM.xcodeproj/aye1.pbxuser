@@ -122,6 +122,13 @@
 			9E58A1041175E421005814CD /* PBXTextBookmark */ = 9E58A1041175E421005814CD /* PBXTextBookmark */;
 			9E58A1071175E4A8005814CD /* PBXTextBookmark */ = 9E58A1071175E4A8005814CD /* PBXTextBookmark */;
 			9E58A1081175E4CF005814CD /* PBXTextBookmark */ = 9E58A1081175E4CF005814CD /* PBXTextBookmark */;
+			9E58A1091175F202005814CD /* PBXTextBookmark */ = 9E58A1091175F202005814CD /* PBXTextBookmark */;
+			9E58A10A1175F202005814CD /* PBXTextBookmark */ = 9E58A10A1175F202005814CD /* PBXTextBookmark */;
+			9E58A10B1175F202005814CD /* PBXTextBookmark */ = 9E58A10B1175F202005814CD /* PBXTextBookmark */;
+			9E58A1101175F3B8005814CD /* PBXTextBookmark */ = 9E58A1101175F3B8005814CD /* PBXTextBookmark */;
+			9E58A1191175F449005814CD /* PBXTextBookmark */ = 9E58A1191175F449005814CD /* PBXTextBookmark */;
+			9E58A1201175F6DF005814CD /* PBXTextBookmark */ = 9E58A1201175F6DF005814CD /* PBXTextBookmark */;
+			9E58A1231175F6FC005814CD /* PBXTextBookmark */ = 9E58A1231175F6FC005814CD /* PBXTextBookmark */;
 			9ED0829C117222E400107C13 = 9ED0829C117222E400107C13 /* PBXBookmark */;
 			9ED082B01173AFB600107C13 = 9ED082B01173AFB600107C13 /* PBXTextBookmark */;
 			9ED082B11173AFB600107C13 = 9ED082B11173AFB600107C13 /* PBXTextBookmark */;
@@ -180,7 +187,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 22";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 507;
 		vrLoc = 0;
@@ -240,7 +247,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -250,7 +257,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -260,7 +267,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -280,7 +287,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 72";
 		rLen = 0;
-		rLoc = 2468;
+		rLoc = 2978;
 		rType = 0;
 		vrLen = 1707;
 		vrLoc = 0;
@@ -290,7 +297,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 72";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1732;
 		vrLoc = 0;
@@ -300,7 +307,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -320,7 +327,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -330,7 +337,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -350,7 +357,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 73";
 		rLen = 0;
-		rLoc = 2083;
+		rLoc = 2339;
 		rType = 0;
 		vrLen = 1760;
 		vrLoc = 0;
@@ -360,7 +367,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -370,7 +377,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 73";
 		rLen = 0;
-		rLoc = 2083;
+		rLoc = 2339;
 		rType = 0;
 		vrLen = 1764;
 		vrLoc = 0;
@@ -380,7 +387,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -390,7 +397,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -420,7 +427,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 73";
 		rLen = 0;
-		rLoc = 2083;
+		rLoc = 2339;
 		rType = 0;
 		vrLen = 1780;
 		vrLoc = 0;
@@ -430,7 +437,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 73";
 		rLen = 0;
-		rLoc = 2083;
+		rLoc = 2339;
 		rType = 0;
 		vrLen = 1790;
 		vrLoc = 0;
@@ -440,7 +447,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -450,7 +457,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -480,7 +487,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 74";
 		rLen = 0;
-		rLoc = 2468;
+		rLoc = 2978;
 		rType = 0;
 		vrLen = 1802;
 		vrLoc = 0;
@@ -490,7 +497,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 74";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1816;
 		vrLoc = 0;
@@ -500,7 +507,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 25";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 622;
 		vrLoc = 0;
@@ -534,7 +541,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 74";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1816;
 		vrLoc = 0;
@@ -544,7 +551,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 2005;
 		vrLoc = 0;
@@ -554,7 +561,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1969;
 		vrLoc = 73;
@@ -564,7 +571,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 2007;
 		vrLoc = 0;
@@ -574,7 +581,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1973;
 		vrLoc = 73;
@@ -584,7 +591,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 2005;
 		vrLoc = 0;
@@ -594,7 +601,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1969;
 		vrLoc = 73;
@@ -604,7 +611,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 2000;
 		vrLoc = 0;
@@ -614,7 +621,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 79";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1964;
 		vrLoc = 73;
@@ -624,7 +631,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 73";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1790;
 		vrLoc = 0;
@@ -634,7 +641,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 73";
 		rLen = 0;
-		rLoc = 2083;
+		rLoc = 2339;
 		rType = 0;
 		vrLen = 1790;
 		vrLoc = 0;
@@ -644,7 +651,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1981;
 		vrLoc = 0;
@@ -654,7 +661,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2406;
+		rLoc = 2662;
 		rType = 0;
 		vrLen = 1944;
 		vrLoc = 125;
@@ -664,7 +671,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 1968;
 		vrLoc = 0;
@@ -674,7 +681,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 77";
 		rLen = 0;
-		rLoc = 2337;
+		rLoc = 2593;
 		rType = 0;
 		vrLen = 1931;
 		vrLoc = 125;
@@ -684,7 +691,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 81";
 		rLen = 0;
-		rLoc = 2464;
+		rLoc = 2720;
 		rType = 0;
 		vrLen = 2023;
 		vrLoc = 0;
@@ -694,7 +701,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 75";
 		rLen = 0;
-		rLoc = 2279;
+		rLoc = 2535;
 		rType = 0;
 		vrLen = 1986;
 		vrLoc = 125;
@@ -734,7 +741,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 73";
 		rLen = 0;
-		rLoc = 2039;
+		rLoc = 2294;
 		rType = 0;
 		vrLen = 2175;
 		vrLoc = 125;
@@ -744,7 +751,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 72";
 		rLen = 0;
-		rLoc = 1860;
+		rLoc = 2115;
 		rType = 0;
 		vrLen = 2199;
 		vrLoc = 157;
@@ -754,7 +761,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 74";
 		rLen = 0;
-		rLoc = 1954;
+		rLoc = 2209;
 		rType = 0;
 		vrLen = 2271;
 		vrLoc = 157;
@@ -764,7 +771,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 74";
 		rLen = 0;
-		rLoc = 2006;
+		rLoc = 2261;
 		rType = 0;
 		vrLen = 2304;
 		vrLoc = 157;
@@ -774,7 +781,7 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 74";
 		rLen = 0;
-		rLoc = 2006;
+		rLoc = 2261;
 		rType = 0;
 		vrLen = 2311;
 		vrLoc = 157;
@@ -784,10 +791,80 @@
 		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
 		name = "addViewController.m: 74";
 		rLen = 0;
-		rLoc = 1995;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 2318;
 		vrLoc = 157;
+	};
+	9E58A1091175F202005814CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
+		name = "addViewController.h: 26";
+		rLen = 0;
+		rLoc = 618;
+		rType = 0;
+		vrLen = 654;
+		vrLoc = 0;
+	};
+	9E58A10A1175F202005814CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
+		name = "addViewController.m: 78";
+		rLen = 0;
+		rLoc = 2303;
+		rType = 0;
+		vrLen = 2444;
+		vrLoc = 214;
+	};
+	9E58A10B1175F202005814CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
+		name = "addViewController.m: 78";
+		rLen = 0;
+		rLoc = 2303;
+		rType = 0;
+		vrLen = 2444;
+		vrLoc = 214;
+	};
+	9E58A1101175F3B8005814CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
+		name = "addViewController.m: 97";
+		rLen = 0;
+		rLoc = 2974;
+		rType = 0;
+		vrLen = 2421;
+		vrLoc = 525;
+	};
+	9E58A1191175F449005814CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
+		name = "addViewController.m: 72";
+		rLen = 0;
+		rLoc = 1801;
+		rType = 0;
+		vrLen = 2561;
+		vrLoc = 278;
+	};
+	9E58A1201175F6DF005814CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
+		name = "addViewController.m: 96";
+		rLen = 0;
+		rLoc = 2948;
+		rType = 0;
+		vrLen = 2627;
+		vrLoc = 278;
+	};
+	9E58A1231175F6FC005814CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
+		name = "addViewController.m: 75";
+		rLen = 0;
+		rLoc = 2025;
+		rType = 0;
+		vrLen = 2696;
+		vrLoc = 279;
 	};
 	9EA582C51160FAE500567A75 /* IHM */ = {
 		isa = PBXExecutable;
@@ -849,17 +926,17 @@
 	};
 	9EA583281161046E00567A75 /* addViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1136, 981}}";
-			sepNavSelRange = "{615, 0}";
-			sepNavVisRange = "{0, 622}";
+			sepNavIntBoundsRect = "{{0, 0}, {1556, 1045}}";
+			sepNavSelRange = "{618, 0}";
+			sepNavVisRange = "{0, 654}";
 			sepNavWindowFrame = "{{528, 49}, {1195, 1109}}";
 		};
 	};
 	9EA583291161046E00567A75 /* addViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1556, 1196}}";
-			sepNavSelRange = "{1995, 0}";
-			sepNavVisRange = "{157, 2318}";
+			sepNavIntBoundsRect = "{{0, 0}, {1556, 1339}}";
+			sepNavSelRange = "{2025, 0}";
+			sepNavVisRange = "{279, 2696}";
 			sepNavWindowFrame = "{{1001, 16}, {947, 1152}}";
 		};
 	};
@@ -1008,7 +1085,7 @@
 		fRef = 9EA583281161046E00567A75 /* addViewController.h */;
 		name = "addViewController.h: 22";
 		rLen = 0;
-		rLoc = 615;
+		rLoc = 647;
 		rType = 0;
 		vrLen = 507;
 		vrLoc = 0;

@@ -23,5 +23,6 @@
 
 - (IBAction) TextFieldDownEditing:(id)sender;
 - (IBAction) ValidateDept:(id)sender;
+- (IBAction) UpView:(id)sender;
 
 @end

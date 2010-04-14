@@ -69,13 +69,18 @@
 
 - (IBAction) TextFieldDownEditing:(id)sender {
 	[sender resignFirstResponder];
+	if ([sender isEqual:cause]) {
+		[UIView beginAnimations:@"1" context:nil];
+		self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 100, self.view.frame.size.width, self.view.frame.size.height);
+		[UIView commitAnimations];
+	}
 	if (![montant.text isEqualToString:@""] && ![personnes.text isEqualToString:@""] && ![cause.text isEqualToString:@""]) {
 		valider.enabled = YES;
 		[valider setTitleColor:[UIColor colorWithRed:0.2f green:0.31f blue:0.52f alpha:1.0f] forState:UIControlStateNormal];
 	}
 }
 
--(IBAction) ValidateDept:(id)sender {
+- (IBAction) ValidateDept:(id)sender {
 	UIAlertView *alert = [[UIAlertView alloc]
 						  initWithTitle:@"Dette ajoutée" 
 						  message:[NSString stringWithFormat:@"Dette de %@€ ajoutée à %@ avec succès",montant.text,personnes.text] 
@@ -85,6 +90,12 @@
 	[alert show];
 	[alert release];
 	[self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction) UpView:(id)sender {
+	[UIView beginAnimations:@"1" context:nil];
+	self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y - 100, self.view.frame.size.width, self.view.frame.size.height);
+	[UIView commitAnimations];
 }
 	
 
