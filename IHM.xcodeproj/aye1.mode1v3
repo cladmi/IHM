@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>9E58A0C91175D14C005814CD</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>addViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>9E58A0CA1175D14C005814CD</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>addViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>9E58A0EB1175D506005814CD</string>
-						<key>history</key>
-						<array>
-							<string>9E58A0C21175D0E2005814CD</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {947, 1055}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>1001 72 947 1096 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -270,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -352,6 +309,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -369,7 +328,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9E58A0EA1175D506005814CD</string>
+										<string>9E58A1081175E4CF005814CD</string>
 										<key>history</key>
 										<array>
 											<string>9ED082B51173AFB600107C13</string>
@@ -584,7 +543,6 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>9EA5835A116107CF00567A75</string>
 		<string>/Users/aye1/Dev/IHM-copie/IHM.xcodeproj</string>
-		<string>9E58A0C91175D14C005814CD</string>
 	</array>
 	<key>WindowString</key>
 	<string>60 55 1860 1123 0 0 1920 1178 </string>

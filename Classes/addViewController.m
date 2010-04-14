@@ -33,12 +33,14 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	valider.enabled = NO;
+	[valider setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -67,6 +69,10 @@
 
 - (IBAction) TextFieldDownEditing:(id)sender {
 	[sender resignFirstResponder];
+	if (![montant.text isEqualToString:@""] && ![personnes.text isEqualToString:@""] && ![cause.text isEqualToString:@""]) {
+		valider.enabled = YES;
+		[valider setTitleColor:[UIColor colorWithRed:0.2f green:0.31f blue:0.52f alpha:1.0f] forState:UIControlStateNormal];
+	}
 }
 
 -(IBAction) ValidateDept:(id)sender {
