@@ -1,7 +1,7 @@
 TIHM
 v7
 r0
-t293988694.143021
+t293992676.992487
 cCheck dependencies
 cProcessInfoPlistFile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/Info.plist IHM-Info.plist
 cCompileXIB /Users/aye1/Dev/IHM-copie/MainWindow.xib
@@ -52,6 +52,16 @@ N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1
 c000000004B2B62B500000000016721E0
 t1261134517
 s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/sqlite3.h
+c000000004B2B49B3000000000003D86F
+t1261128115
+s252015
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/lib/libsqlite3.0.dylib
+c000000004B2B49D500000000000C4CF0
+t1261128149
+s806128
 
 N/Users/aye1/Dev/IHM-copie/Classes/../homeViewController.h
 c000000004BB0D3BC00000000000001D1
@@ -113,16 +123,17 @@ s3103
 i"addViewController.h"
 
 N/Users/aye1/Dev/IHM-copie/Classes/repayViewController.h
-c000000004BC5D9170000000000000219
-t1271257367
-s537
+c000000004BD5C1590000000000000234
+t1272299865
+s564
 i<UIKit/UIKit.h>
 
 N/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m
-c000000004BCC81AE0000000000000FAD
-t1271693742
-s4013
+c000000004BD5C16300000000000016C8
+t1272299875
+s5832
 i"repayViewController.h"
+i"sqlite3.h"
 
 N/Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.h
 c000000004BC5D701000000000000011A
@@ -154,11 +165,11 @@ t1271691406
 s31279
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-t1271693742
+t1272299876
 s442
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM
-t1271693742
+t1272299876
 s102
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/DoneDown.png
@@ -178,8 +189,8 @@ t1271692844
 s9923
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-t1271693742
-s34696
+t1272299876
+s35204
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/Info.plist
 t1269877268
@@ -219,16 +230,16 @@ t1271691119
 s45024
 
 N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o
-t1271691119
-s34748
+t1272299865
+s34768
 
 N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o
 t1271238443
 s5932
 
 N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o
-t1271693742
-s46052
+t1272299876
+s52372
 
 N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/tabRepayViewController.o
 t1271689987
@@ -460,7 +471,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies293988694#293988694#0(0"0(0#1#0"7947009927035180032#0"0#
+lSLF07#2@18"Check dependencies293992676#293992676#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o /Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s292931242.900636
@@ -515,8 +526,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@55"Compile /Users/aye1/Dev/IHM/Classes/addViewController.m292693381#292693381#0(0"0(0#0#47"/Users/aye1/Dev/IHM/Classes/addViewController.m4300885448#1604"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch -c /Users/aye1/Dev/IHM/Classes/addViewController.m -o /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o0#
 
 CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s293383919.022467
-e293383919.084525
+s293992665.852217
+e293992666.000203
 r1
 xCompileC
 xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o
@@ -525,7 +536,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m293383919#293383919#0(0"0(0#0#57"/Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m4300885448#1737"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o0#
+lSLF07#2@65"Compile /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m293992665#293992666#0(0"0(0#0#57"/Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m4300885448#1737"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o0#
 
 CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o /Users/aye1/Dev/IHM/Classes/../homeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s292693381.264720
@@ -570,8 +581,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@34"Compile /Users/aye1/Dev/IHM/main.m291570069#291570069#0(0"0(0#0#26"/Users/aye1/Dev/IHM/main.m4300885448#1570"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch -c /Users/aye1/Dev/IHM/main.m -o /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o0#
 
 CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s293386542.646969
-e293386542.749852
+s293992676.862419
+e293992676.942729
 r1
 xCompileC
 xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o
@@ -580,7 +591,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@63"Compile /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m293386542#293386542#0(0"0(0#0#55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m4300885448#1736"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o0#
+lSLF07#2@63"Compile /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m293992676#293992676#0(0"0(0#0#55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m4300885448#1736"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o0#
 
 CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o /Users/aye1/Dev/IHM/Classes/repayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s291573066.329343
@@ -713,13 +724,13 @@ xClasses/DoneUp3.png
 lSLF07#2@24"Copy Classes/DoneUp3.png293385644#293385644#0(0"0(0#0#45"/Users/aye1/Dev/IHM-copie/Classes/DoneUp3.png4300885448#482"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/aye1/Dev/IHM-copie/Classes/DoneUp3.png /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
 
 CGenerateDSYMFile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-s293386542.808320
-e293386542.862571
+s293992676.961396
+e293992676.988759
 r1
 xGenerateDSYMFile
 x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM
 x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/IHM.app.dSYM build/Debug-iphonesimulator/IHM.app/IHM293386542#293386542#0(0"0(0#0#65"/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM4300885448#394"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM0#
+lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/IHM.app.dSYM build/Debug-iphonesimulator/IHM.app/IHM293992676#293992676#0(0"0(0#0#65"/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM4300885448#394"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM0#
 
 CGenerateDSYMFile /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app.dSYM /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM
 s292693381.408472
@@ -731,14 +742,14 @@ x/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM
 lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/IHM.app.dSYM build/Debug-iphonesimulator/IHM.app/IHM292693381#292693381#0(0"0(0#0#59"/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM4300885448#314"    cd /Users/aye1/Dev/IHM    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM -o /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app.dSYM0#
 
 CLd /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM normal i386
-s293386542.749925
-e293386542.808224
+s293992676.942815
+e293992676.961308
 r1
 xLd
 x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
 xnormal
 xi386
-lSLF07#2@70"Link /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM293386542#293386542#0(0"0(0#0#0"4300885448#841"    cd /Users/aye1/Dev/IHM-copie    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -filelist /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHM.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM0#
+lSLF07#2@70"Link /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM293992676#293992676#0(0"0(0#0#0"4300885448#853"    cd /Users/aye1/Dev/IHM-copie    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -filelist /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHM.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM0#
 
 CLd /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM normal i386
 s292693381.387282
@@ -789,12 +800,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@25"Precompile IHM_Prefix.pch291570068#291570069#0(0"0(0#0#34"/Users/aye1/Dev/IHM/IHM_Prefix.pch4300885448#1485"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -c /Users/aye1/Dev/IHM/IHM_Prefix.pch -o /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch.gch0#
 
 CTouch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-s293386542.862667
-e293386542.865318
+s293992676.988834
+e293992676.992454
 r1
 xTouch
 x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-lSLF07#2@67"Touch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app293386542#293386542#0(0"0(0#0#0"4300885448#310"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
+lSLF07#2@67"Touch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app293992676#293992676#0(0"0(0#0#0"4300885448#310"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
 
 CTouch /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app
 s292693531.334334

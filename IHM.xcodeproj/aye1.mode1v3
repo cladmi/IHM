@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>9EF3E2A7117CB5EA007B4002</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>addViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>9EF3E2A8117CB5EA007B4002</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>addViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>9E6BD02E1185E9560045ECC0</string>
-						<key>history</key>
-						<array>
-							<string>9E556ED21185E50400A84BD2</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {947, 1055}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>973 72 947 1096 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -270,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -308,14 +269,16 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FABC05509CD000000102</string>
 								<string>1CC0EA4004350EF90041110B</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>38</integer>
-									<integer>34</integer>
+									<integer>5</integer>
+									<integer>1</integer>
+									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -349,8 +312,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -368,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9E6BD02B1185E9560045ECC0</string>
+										<string>9E6BD04E1185F8D10045ECC0</string>
 										<key>history</key>
 										<array>
 											<string>9ED082B51173AFB600107C13</string>
@@ -380,8 +341,9 @@
 											<string>9E58A1261175FCD4005814CD</string>
 											<string>9EF3E2A2117CB5EA007B4002</string>
 											<string>9EF3E2A3117CB5EA007B4002</string>
-											<string>9EF3E2A4117CB5EA007B4002</string>
-											<string>9E556ECF1185E50400A84BD2</string>
+											<string>9E6BD04A1185F8D10045ECC0</string>
+											<string>9E6BD04C1185F8D10045ECC0</string>
+											<string>9E6BD04D1185F8D10045ECC0</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -582,7 +544,6 @@
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>9EA5835A116107CF00567A75</string>
-		<string>9EF3E2A7117CB5EA007B4002</string>
 		<string>/Users/aye1/Dev/IHM-copie/IHM.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
