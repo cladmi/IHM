@@ -14,6 +14,7 @@
 	IBOutlet UITextField *personnes;
 	IBOutlet UITextField *cause;
 	IBOutlet UIButton *valider;
+	bool causeEditActive;
 }
 
 @property(nonatomic, retain) UITextField *montant;

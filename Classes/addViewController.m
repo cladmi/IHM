@@ -37,6 +37,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	causeEditActive = NO;
 	valider.enabled = NO;
 	[valider setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
 }
@@ -73,12 +74,15 @@
 		[UIView beginAnimations:@"1" context:nil];
 		self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y + 100, self.view.frame.size.width, self.view.frame.size.height);
 		[UIView commitAnimations];
+		causeEditActive = NO;
 	}
 	if (![montant.text isEqualToString:@""] && ![personnes.text isEqualToString:@""] && ![cause.text isEqualToString:@""]) {
 		valider.enabled = YES;
 		[valider setTitleColor:[UIColor colorWithRed:0.2f green:0.31f blue:0.52f alpha:1.0f] forState:UIControlStateNormal];
 	}
 }
+
+	
 
 - (IBAction) ValidateDept:(id)sender {
 	UIAlertView *alert = [[UIAlertView alloc]
@@ -93,9 +97,14 @@
 }
 
 - (IBAction) UpView:(id)sender {
-	[UIView beginAnimations:@"1" context:nil];
-	self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y - 100, self.view.frame.size.width, self.view.frame.size.height);
-	[UIView commitAnimations];
+	if (! causeEditActive) {
+		causeEditActive = YES;
+		[UIView beginAnimations:@"1" context:nil];
+		self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y - 100, self.view.frame.size.width, self.view.frame.size.height);
+		[UIView commitAnimations];
+	}	
+
+	 
 }
 	
 

@@ -13,12 +13,17 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		9E58A14411760A68005814CD /* tabRepayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E58A14311760A68005814CD /* tabRepayViewController.m */; };
 		9EA5830C1160FE4400567A75 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5830B1160FE4400567A75 /* homeViewController.m */; };
 		9EA5830F1160FE8100567A75 /* addView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5830E1160FE8100567A75 /* addView.xib */; };
 		9EA583141160FF0400567A75 /* homeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA583131160FF0400567A75 /* homeView.xib */; };
 		9EA5832A1161046E00567A75 /* addViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA583291161046E00567A75 /* addViewController.m */; };
 		9EA583681161091C00567A75 /* repayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA583671161091C00567A75 /* repayView.xib */; };
 		9EA5838511610D2900567A75 /* repayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5838411610D2900567A75 /* repayViewController.m */; };
+		9EF3E29A117CB5A6007B4002 /* DoneDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E296117CB5A6007B4002 /* DoneDown.png */; };
+		9EF3E29B117CB5A6007B4002 /* DoneDown3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E297117CB5A6007B4002 /* DoneDown3.png */; };
+		9EF3E29C117CB5A6007B4002 /* DoneUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E298117CB5A6007B4002 /* DoneUp.png */; };
+		9EF3E29D117CB5A6007B4002 /* DoneUp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E299117CB5A6007B4002 /* DoneUp3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,8 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* IHM_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHM_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* IHM-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IHM-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		9E58A14211760A68005814CD /* tabRepayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tabRepayViewController.h; sourceTree = "<group>"; };
+		9E58A14311760A68005814CD /* tabRepayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = tabRepayViewController.m; sourceTree = "<group>"; };
 		9EA5830A1160FE4400567A75 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = homeViewController.h; path = ../homeViewController.h; sourceTree = "<group>"; };
 		9EA5830B1160FE4400567A75 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = homeViewController.m; path = ../homeViewController.m; sourceTree = "<group>"; };
 		9EA5830E1160FE8100567A75 /* addView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = addView.xib; sourceTree = "<group>"; };
@@ -41,6 +48,10 @@
 		9EA583671161091C00567A75 /* repayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = repayView.xib; sourceTree = "<group>"; };
 		9EA5838311610D2900567A75 /* repayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = repayViewController.h; sourceTree = "<group>"; };
 		9EA5838411610D2900567A75 /* repayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = repayViewController.m; sourceTree = "<group>"; };
+		9EF3E296117CB5A6007B4002 /* DoneDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneDown.png; sourceTree = "<group>"; };
+		9EF3E297117CB5A6007B4002 /* DoneDown3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneDown3.png; sourceTree = "<group>"; };
+		9EF3E298117CB5A6007B4002 /* DoneUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneUp.png; sourceTree = "<group>"; };
+		9EF3E299117CB5A6007B4002 /* DoneUp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoneUp3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +71,14 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				9E58A14211760A68005814CD /* tabRepayViewController.h */,
+				9E58A14311760A68005814CD /* tabRepayViewController.m */,
 				9EA5838311610D2900567A75 /* repayViewController.h */,
 				9EA5838411610D2900567A75 /* repayViewController.m */,
+				9EF3E296117CB5A6007B4002 /* DoneDown.png */,
+				9EF3E297117CB5A6007B4002 /* DoneDown3.png */,
+				9EF3E298117CB5A6007B4002 /* DoneUp.png */,
+				9EF3E299117CB5A6007B4002 /* DoneUp3.png */,
 				9EA583281161046E00567A75 /* addViewController.h */,
 				9EA583291161046E00567A75 /* addViewController.m */,
 				9EA5830A1160FE4400567A75 /* homeViewController.h */,
@@ -169,6 +186,10 @@
 				9EA5830F1160FE8100567A75 /* addView.xib in Resources */,
 				9EA583141160FF0400567A75 /* homeView.xib in Resources */,
 				9EA583681161091C00567A75 /* repayView.xib in Resources */,
+				9EF3E29A117CB5A6007B4002 /* DoneDown.png in Resources */,
+				9EF3E29B117CB5A6007B4002 /* DoneDown3.png in Resources */,
+				9EF3E29C117CB5A6007B4002 /* DoneUp.png in Resources */,
+				9EF3E29D117CB5A6007B4002 /* DoneUp3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +205,7 @@
 				9EA5830C1160FE4400567A75 /* homeViewController.m in Sources */,
 				9EA5832A1161046E00567A75 /* addViewController.m in Sources */,
 				9EA5838511610D2900567A75 /* repayViewController.m in Sources */,
+				9E58A14411760A68005814CD /* tabRepayViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
