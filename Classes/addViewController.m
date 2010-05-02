@@ -7,6 +7,7 @@
 //
 
 #import "addViewController.h"
+#import "PersonViewController.h"
 
 
 @implementation addViewController
@@ -40,6 +41,7 @@
 	causeEditActive = NO;
 	valider.enabled = NO;
 	[valider setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+	personsArray = [[NSMutableArray alloc] init];
 }
 
 
@@ -103,9 +105,6 @@
 		self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y - 100, self.view.frame.size.width, self.view.frame.size.height);
 		[UIView commitAnimations];
 	}	
-
-	 
 }
-	
 
 @end

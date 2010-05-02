@@ -15,6 +15,7 @@
 	IBOutlet UITextField *cause;
 	IBOutlet UIButton *valider;
 	bool causeEditActive;
+	NSMutableArray *personsArray;
 }
 
 @property(nonatomic, retain) UITextField *montant;

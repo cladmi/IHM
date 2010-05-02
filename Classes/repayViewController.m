@@ -65,7 +65,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	}
 	
 	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
-		if (sqlite3_exec(database, [query UTF8String], MyCallback, debtList, NULL) != SQLITE_OK) {
+		if (sqlite3_exec(database, [query UTF8String], MyCallback, nameArray, NULL) != SQLITE_OK) {
 			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
 			[alert show];
 			[alert release];
@@ -100,6 +100,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 */
 
 
+// Adds the Done button
 - (void)keyboardWillShow:(NSNotification *)note {  
     // create custom button
     UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -125,8 +126,9 @@ static int MyCallback(void *context, int count, char **values, char **colums)
     }
 }
 
+// Closes the keybord when the Done button is pressed
 - (void)doneButton:(id)sender {
-    NSLog(@"Input: %@", value.text);
+    //NSLog(@"Input: %@", value.text);
     [value resignFirstResponder];
 }
 
@@ -136,6 +138,53 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 											 selector:@selector(keyboardWillShow:) 
 												 name:UIKeyboardWillShowNotification 
 											   object:nil];
+	
+	nameArray = [[NSMutableArray alloc] init];
+	[nameArray addObject:@"Adrien"];
+	[nameArray addObject:@"Gaëtan"];
+	[nameArray addObject:@"Paul"];
+	[nameArray addObject:@"Pierre"];
+	[nameArray addObject:@"Nicolas"];
+	[nameArray addObject:@"Thibault"];
+	[nameArray addObject:@"Matthieu"];
+	[nameArray addObject:@"Romain"];
+	
+	eventArray = [[NSMutableArray alloc] init];
+	[eventArray addObject:@"Beer"];
+	[eventArray addObject:@"Beer"];
+	[eventArray addObject:@"S*N*"];
+	[eventArray addObject:@"Kfet"];
+	[eventArray addObject:@"Old debt"];
+	[eventArray addObject:@"Something strange"];
+	[eventArray addObject:@"Even stranger"];
+	[eventArray addObject:@"Sandwich"];
+	
+	dateArray = [[NSMutableArray alloc] init];
+	[dateArray addObject:@"12/01/04"];
+	[dateArray addObject:@"22/12/01"];
+	[dateArray addObject:@"15/05/99"];
+	[dateArray addObject:@"01/01/01"];
+	[dateArray addObject:@"14/02/95"];
+	[dateArray addObject:@"04/11/98"];
+	[dateArray addObject:@"22/01/02"];
+	[dateArray addObject:@"27/08/03"];
+	
+	amountArray = [[NSMutableArray alloc] init];
+	[amountArray addObject:@"12.55"];
+	[amountArray addObject:@"21.50"];
+	[amountArray addObject:@"120.00"];
+	[amountArray addObject:@"0.24"];
+	[amountArray addObject:@"12.90"];
+	[amountArray addObject:@"25.00"];
+	[amountArray addObject:@"100.50"];
+	[amountArray addObject:@"4.80"];
+	
+	NSMutableArray *items; 
+	items = [[NSMutableArray alloc] init];
+	[items addObject: [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed:1]];
+	
+	[self.tabBarItem items] = items;
+	
     [super viewDidLoad];
 }
 
@@ -163,6 +212,9 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 
 - (void)dealloc {
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
+	[nameArray release];
+	[eventArray release];
+	[dateArray release];
     [super dealloc];
 }
 
@@ -172,8 +224,36 @@ static int MyCallback(void *context, int count, char **values, char **colums)
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+		//cell.accessoryType = nil;
     }
+	
+	NSString *nameValue = [nameArray objectAtIndex:indexPath.row];
+	NSString *eventValue = [eventArray objectAtIndex:indexPath.row];
+	NSString *dateValue = [dateArray objectAtIndex:indexPath.row];
+	NSString *amountValue = [amountArray objectAtIndex:indexPath.row];
+	
+	NSString *cellValue;
+	NSString *detailValue;
+	
+	cellValue = nameValue;
+	cellValue = [cellValue stringByAppendingString:@" "];
+	cellValue = [cellValue stringByAppendingString:amountValue];
+	cellValue = [cellValue stringByAppendingString:@" €"];
+	cell.textLabel.text = cellValue;
+	detailValue = dateValue;
+	detailValue = [detailValue stringByAppendingString:@" "];
+	detailValue = [detailValue stringByAppendingString:eventValue];
+	cell.detailTextLabel.text = detailValue;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+}
+
+/* Marche pas --> deselect tous quand select */
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+	[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
 }
 
 - (IBAction) TextFieldDownEditing:(id)sender {
@@ -184,5 +264,8 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	}*/
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return [nameArray count];
+}
 
 @end

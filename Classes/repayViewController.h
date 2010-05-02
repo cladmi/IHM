@@ -15,7 +15,10 @@
 	IBOutlet UIButton *validate;
 	IBOutlet UITextField *value;
 	IBOutlet UITableView *deptList;
-	NSMutableArray *debtList;
+	NSMutableArray *nameArray;
+	NSMutableArray *eventArray;
+	NSMutableArray *dateArray;
+	NSMutableArray *amountArray;
 	
 }
 

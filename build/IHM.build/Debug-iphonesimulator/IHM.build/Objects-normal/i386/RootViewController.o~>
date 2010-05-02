@@ -1,0 +1,6 @@
+/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.m:9:31: error: RootViewController.h: No such file or directory
+/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.m:52: warning: cannot find interface declaration for 'PersonViewController'
+/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.m: In function '-[PersonViewController didReceiveMemoryWarning]':
+/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.m:54: error: no super class declared in @interface for 'PersonViewController'
+/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.m: In function '-[PersonViewController dealloc]':
+/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.m:148: error: no super class declared in @interface for 'PersonViewController'
