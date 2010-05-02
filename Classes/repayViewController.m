@@ -39,6 +39,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 
 
 
+
 - (void) loadDebts:(int)sort
 {
 	NSString *query = @"SELECT P.name, D.amount, D.currency, E.name, E.date FROM event E, debt D, person P WHERE D.id_event = E.id AND D.id_person = P.id SORT BY ";
@@ -179,13 +180,18 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	[amountArray addObject:@"100.50"];
 	[amountArray addObject:@"4.80"];
 	
-	NSMutableArray *items; 
-	items = [[NSMutableArray alloc] init];
-	[items addObject: [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed:1]];
+	selectArray = [[NSMutableArray alloc] init];
+	[selectArray addObject:[NSNumber numberWithBool:NO]];
+	[selectArray addObject:[NSNumber numberWithBool:NO]];
+	[selectArray addObject:[NSNumber numberWithBool:NO]];
+	[selectArray addObject:[NSNumber numberWithBool:NO]];
+	[selectArray addObject:[NSNumber numberWithBool:NO]];
+	[selectArray addObject:[NSNumber numberWithBool:NO]];
+	[selectArray addObject:[NSNumber numberWithBool:NO]];
+	[selectArray addObject:[NSNumber numberWithBool:NO]];
+
 	
-	[self.tabBarItem items] = items;
-	
-    [super viewDidLoad];
+	[super viewDidLoad];
 }
 
 
@@ -215,17 +221,28 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	[nameArray release];
 	[eventArray release];
 	[dateArray release];
+	[selectArray release];
     [super dealloc];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
+	
+	
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"] autorelease];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		//cell.accessoryType = nil;
     }
+	
+	if ([[selectArray objectAtIndex:indexPath.row] boolValue]) {
+		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+		
+	} else {
+		cell.accessoryType = UITableViewCellAccessoryNone;
+	}
+		
 	
 	NSString *nameValue = [nameArray objectAtIndex:indexPath.row];
 	NSString *eventValue = [eventArray objectAtIndex:indexPath.row];
@@ -248,12 +265,18 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+	if ([[selectArray objectAtIndex:indexPath.row] boolValue]) {
+		[selectArray insertObject:[NSNumber numberWithBool:NO] atIndex:indexPath.row];
+		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+	} else {
+		[selectArray insertObject:[NSNumber numberWithBool:YES] atIndex:indexPath.row];
+		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+	}
 }
 
 /* Marche pas --> deselect tous quand select */
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-	[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+	//[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
 }
 
 - (IBAction) TextFieldDownEditing:(id)sender {

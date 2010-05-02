@@ -1,1132 +1,0 @@
-TIHM
-v7
-r0
-t294499081.937879
-cCheck dependencies
-cProcessInfoPlistFile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/Info.plist IHM-Info.plist
-cCompileXIB /Users/aye1/Dev/IHM-copie/MainWindow.xib
-cCompileXIB /Users/aye1/Dev/IHM-copie/addView.xib
-cCompileXIB /Users/aye1/Dev/IHM-copie/homeView.xib
-cCompileXIB /Users/aye1/Dev/IHM-copie/repayView.xib
-cCpResource build/Debug-iphonesimulator/IHM.app/DoneDown.png Classes/DoneDown.png
-cCpResource build/Debug-iphonesimulator/IHM.app/DoneDown3.png Classes/DoneDown3.png
-cCpResource build/Debug-iphonesimulator/IHM.app/DoneUp.png Classes/DoneUp.png
-cCpResource build/Debug-iphonesimulator/IHM.app/DoneUp3.png Classes/DoneUp3.png
-cCompileXIB /Users/aye1/Dev/IHM-copie/Classes/PersonViewController.xib
-cProcessPCH /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch.gch IHM_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o /Users/aye1/Dev/IHM-copie/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o /Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o /Users/aye1/Dev/IHM-copie/Classes/addViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/PersonViewController.o /Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
-c000000004B70458E00000000000000EE
-t1265649038
-s238
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004B2B4CC3000000000026EE30
-t1261128899
-s2551344
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004B2B4DC8000000000027E880
-t1261129160
-s2615424
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004B2B4DAE0000000000001355
-t1261129134
-s4949
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004B2B61620000000000000788
-t1261134178
-s1928
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004B2B62B500000000016721E0
-t1261134517
-s23536096
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/sqlite3.h
-c000000004B2B49B3000000000003D86F
-t1261128115
-s252015
-
-N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/lib/libsqlite3.0.dylib
-c000000004B2B49D500000000000C4CF0
-t1261128149
-s806128
-
-N/Users/aye1/Dev/IHM-copie/Classes/../homeViewController.h
-c000000004BB0D3BC00000000000001D1
-t1269879740
-s465
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m
-c000000004BB0D49D0000000000000869
-t1269879965
-s2153
-i"homeViewController.h"
-i"addViewController.h"
-i"repayViewController.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.h
-c000000004BDD6FE300000000000000C6
-t1272803299
-s198
-
-N/Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m
-c000000004BDD701B0000000000000FF5
-t1272803355
-s4085
-i"RootViewController.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.h
-c000000004BDBE9EE00000000000000C4
-t1272703470
-s196
-
-N/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.m
-c000000004BDD6F080000000000000FF3
-t1272803080
-s4083
-i"RootViewController.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/Classes/todeleteAppDelegate.h
-c000000004BDBE9EE00000000000001AE
-t1272703470
-s430
-
-N/Users/aye1/Dev/IHM-copie/Classes/Classes/todeleteAppDelegate.m
-c000000004BDBE9EE000000000000032B
-t1272703470
-s811
-i"todeleteAppDelegate.h"
-i"RootViewController.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/CustomRepayView.h
-c000000004BDBE96100000000000000D1
-t1272703329
-s209
-i<Foundation/Foundation.h>
-
-N/Users/aye1/Dev/IHM-copie/Classes/CustomRepayView.m
-c000000004BDBE96100000000000000C0
-t1272703329
-s192
-i"CustomRepayView.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/DoneDown.png
-c0000000049BE1DC40000000000001F4D
-t1237196228
-s8013
-
-N/Users/aye1/Dev/IHM-copie/Classes/DoneDown3.png
-c000000004A5255D700000000000026D1
-t1246909911
-s9937
-
-N/Users/aye1/Dev/IHM-copie/Classes/DoneUp.png
-c0000000049BE25500000000000001FC0
-t1237198160
-s8128
-
-N/Users/aye1/Dev/IHM-copie/Classes/DoneUp3.png
-c000000004A5255D000000000000026C3
-t1246909904
-s9923
-
-N/Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.h
-c000000004BB0CA5E0000000000000156
-t1269877342
-s342
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.m
-c000000004BB0CC2F0000000000000315
-t1269877807
-s789
-i"IHMAppDelegate.h"
-i"homeViewController.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/PersonViewController.xib
-c000000004BDBE9EE0000000000004322
-t1272703470
-s17186
-
-N/Users/aye1/Dev/IHM-copie/Classes/RootViewController.xib
-c000000004BDBE9EE0000000000004322
-t1272703470
-s17186
-
-N/Users/aye1/Dev/IHM-copie/Classes/addViewController.h
-c000000004BDD764B00000000000002C4
-t1272804939
-s708
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM-copie/Classes/addViewController.m
-c000000004BDD763F0000000000000C69
-t1272804927
-s3177
-i"addViewController.h"
-i"PersonViewController.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/repayViewController.h
-c000000004BDCA743000000000000028C
-t1272751939
-s652
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m
-c000000004BDD7B89000000000000227E
-t1272806281
-s8830
-i"repayViewController.h"
-i"sqlite3.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.h
-c000000004BDBEA4D00000000000000C8
-t1272703565
-s200
-
-N/Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.m
-c000000004BDC049D0000000000001001
-t1272710301
-s4097
-i"tabRepayViewController.h"
-
-N/Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.xib
-c000000004BDBF1080000000000004331
-t1272705288
-s17201
-
-N/Users/aye1/Dev/IHM-copie/Classes/untitled.h
-c000000004BDBE94100000000000000C3
-t1272703297
-s195
-i<Foundation/Foundation.h>
-
-N/Users/aye1/Dev/IHM-copie/Classes/untitled.m
-c000000004BDBE94100000000000000AB
-t1272703297
-s171
-i"untitled.h"
-
-N/Users/aye1/Dev/IHM-copie/IHM_Prefix.pch
-c000000004BB0C36500000000000000AF
-t1269875557
-s175
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM-copie/MainWindow.xib
-c000000004BB0C3650000000000001F3F
-t1269875557
-s7999
-
-N/Users/aye1/Dev/IHM-copie/addView.xib
-c000000004BDD77180000000000007A50
-t1272805144
-s31312
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-t1272805195
-s510
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM
-t1272804940
-s102
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/DoneDown.png
-t1271692844
-s8013
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/DoneDown3.png
-t1271692844
-s9937
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/DoneUp.png
-t1271692844
-s8128
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/DoneUp3.png
-t1271692844
-s9923
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-t1272804940
-s41072
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/Info.plist
-t1269877268
-s548
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/MainWindow.nib
-t1269877268
-s1339
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/PersonViewController.nib
-t1272803300
-s1388
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/PkgInfo
-t1269877268
-s8
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/RootViewController.nib
-t2
-s0
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/addView.nib
-t1272805195
-s4725
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/homeView.nib
-t1269878368
-s3206
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/repayView.nib
-t1272805195
-s4540
-
-N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/tabRepayViewController.nib
-t1272705700
-s1388
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/CustomRepayView.o
-t2
-s0
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHM.LinkFileList
-c000000004BDD6FE300000000000002A2
-t1272803299
-s674
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o
-t1271238443
-s39580
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/PersonViewController.o
-t1272803356
-s32348
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/RootViewController.o
-t2
-s0
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o
-t1272804940
-s45320
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o
-t1272804940
-s34860
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o
-t1271238443
-s5932
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o
-t2
-s0
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/tabRepayViewController.o
-t1272710305
-s32568
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/todeleteAppDelegate.o
-t2
-s0
-
-N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/untitled.o
-t2
-s0
-
-N/Users/aye1/Dev/IHM-copie/homeView.xib
-c000000004BB0CCD20000000000005A27
-t1269877970
-s23079
-
-N/Users/aye1/Dev/IHM-copie/homeViewController.h
-c000000004BB0D3BC00000000000001D1
-t1269879740
-s465
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM-copie/main.m
-c000000004BB0C3650000000000000156
-t1269875557
-s342
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM-copie/repayView.xib
-c000000004BDD7749000000000000757B
-t1272805193
-s30075
-
-N/Users/aye1/Dev/IHM/2.xib
-c000000004BA8F4480000000000007509
-t1269363784
-s29961
-
-N/Users/aye1/Dev/IHM/Classes/../homeViewController.h
-c000000004BB0D3BC00000000000001D1
-t1269879740
-s465
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM/Classes/../homeViewController.m
-c000000004BB0D49D0000000000000869
-t1269879965
-s2153
-i"homeViewController.h"
-i"addViewController.h"
-i"repayViewController.h"
-
-N/Users/aye1/Dev/IHM/Classes/IHMAppDelegate.h
-c000000004BB0CA5E0000000000000156
-t1269877342
-s342
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM/Classes/IHMAppDelegate.m
-c000000004BB0CC2F0000000000000315
-t1269877807
-s789
-i"IHMAppDelegate.h"
-i"homeViewController.h"
-
-N/Users/aye1/Dev/IHM/Classes/addViewController.h
-c000000004BC1EE0500000000000001FB
-t1271000581
-s507
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM/Classes/addViewController.m
-c000000004BC1EDF30000000000000683
-t1271000563
-s1667
-i"addViewController.h"
-
-N/Users/aye1/Dev/IHM/Classes/repayView.xib
-c000000004BB0D03B0000000000001C84
-t1269878843
-s7300
-
-N/Users/aye1/Dev/IHM/Classes/repayViewController.h
-c000000004BB0D5C20000000000000219
-t1269880258
-s537
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM/Classes/repayViewController.m
-c000000004BB0D5B30000000000000630
-t1269880243
-s1584
-i"repayViewController.h"
-
-N/Users/aye1/Dev/IHM/Classes/repayViewController.xib
-c000000004BB0D03B0000000000001C84
-t1269878843
-s7300
-
-N/Users/aye1/Dev/IHM/IHM_Prefix.pch
-c000000004BB0C36500000000000000AF
-t1269875557
-s175
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM/MainView.xib
-c000000004BA782540000000000006A2E
-t1269269076
-s27182
-
-N/Users/aye1/Dev/IHM/MainWindow.xib
-c000000004BB0C3650000000000001F3F
-t1269875557
-s7999
-
-N/Users/aye1/Dev/IHM/addView.xib
-c000000004BC1EE9200000000000072B9
-t1271000722
-s29369
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app
-t1271000731
-s306
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app.dSYM
-t1271000581
-s102
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/2.nib
-t2
-s0
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM
-t1271000581
-s23440
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/Info.plist
-t1269877268
-s548
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/MainView.nib
-t2
-s0
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/MainWindow.nib
-t1269877268
-s1339
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/PkgInfo
-t1269877268
-s8
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/addView.nib
-t1271000731
-s4433
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/homeView.nib
-t1269878368
-s3206
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/repayView.nib
-t1269880342
-s3907
-
-N/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/repayViewController.nib
-t2
-s0
-
-N/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHM.LinkFileList
-c000000004BB0D3BC000000000000020F
-t1269879740
-s527
-
-N/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o
-t1269879740
-s39560
-
-N/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o
-t1271000581
-s33708
-
-N/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o
-t1271000581
-s34676
-
-N/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o
-t1269877269
-s5920
-
-N/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o
-t1269880266
-s33220
-
-N/Users/aye1/Dev/IHM/homeView.xib
-c000000004BB0CCD20000000000005A27
-t1269877970
-s23079
-
-N/Users/aye1/Dev/IHM/homeViewController.h
-c000000004BB0D3BC00000000000001D1
-t1269879740
-s465
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM/homeViewController.m
-c000000004BB0C6C400000000000005D7
-t1269876420
-s1495
-i"homeViewController.h"
-
-N/Users/aye1/Dev/IHM/main.m
-c000000004BB0C3650000000000000156
-t1269875557
-s342
-i<UIKit/UIKit.h>
-
-N/Users/aye1/Dev/IHM/repayView.xib
-c000000004BB0D6130000000000006511
-t1269880339
-s25873
-
-N/var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch.gch
-t1271238442
-s13034960
-
-N/var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch.gch
-t1269877269
-s13034960
-
-NIHM-Info.plist
-c000000004BB0C365000000000000038D
-t1269875557
-s909
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies294499081#294499081#0(0"0(0#1#0"4300885448#0"0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/CustomRepayView.o /Users/aye1/Dev/IHM-copie/Classes/CustomRepayView.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o /Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s292931242.900636
-e292931243.072056
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o
-x/Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@58"Compile /Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.m292931242#292931243#0(0"0(0#0#50"/Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.m4300885448#1726"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/IHMAppDelegate.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o /Users/aye1/Dev/IHM/Classes/IHMAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s291572540.854937
-e291572540.927725
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o
-x/Users/aye1/Dev/IHM/Classes/IHMAppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@52"Compile /Users/aye1/Dev/IHM/Classes/IHMAppDelegate.m291572540#291572540#0(0"0(0#0#44"/Users/aye1/Dev/IHM/Classes/IHMAppDelegate.m4300885448#1598"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch -c /Users/aye1/Dev/IHM/Classes/IHMAppDelegate.m -o /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHMAppDelegate.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/PersonViewController.o /Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s294496156.041324
-e294496156.142469
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/PersonViewController.o
-x/Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@72"Compile /Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m294496156#294496156#0(0"0(0#0#64"/Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m4300885448#1746"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/PersonViewController.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/RootViewController.o /Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o /Users/aye1/Dev/IHM-copie/Classes/addViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s294497740.137505
-e294497740.233477
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o
-x/Users/aye1/Dev/IHM-copie/Classes/addViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@61"Compile /Users/aye1/Dev/IHM-copie/Classes/addViewController.m294497740#294497740#0(0"0(0#0#53"/Users/aye1/Dev/IHM-copie/Classes/addViewController.m4300885448#1732"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/addViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o /Users/aye1/Dev/IHM/Classes/addViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s292693381.265885
-e292693381.374408
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o
-x/Users/aye1/Dev/IHM/Classes/addViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/aye1/Dev/IHM/Classes/addViewController.m292693381#292693381#0(0"0(0#0#47"/Users/aye1/Dev/IHM/Classes/addViewController.m4300885448#1604"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch -c /Users/aye1/Dev/IHM/Classes/addViewController.m -o /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s294497740.136498
-e294497740.219787
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o
-x/Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m294497740#294497740#0(0"0(0#0#57"/Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m4300885448#1737"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/../homeViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o /Users/aye1/Dev/IHM/Classes/../homeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s292693381.264720
-e292693381.387206
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o
-x/Users/aye1/Dev/IHM/Classes/../homeViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@59"Compile /Users/aye1/Dev/IHM/Classes/../homeViewController.m292693381#292693381#0(0"0(0#0#51"/Users/aye1/Dev/IHM/Classes/../homeViewController.m4300885448#1609"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch -c /Users/aye1/Dev/IHM/Classes/../homeViewController.m -o /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/homeViewController.o /Users/aye1/Dev/IHM/homeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o /Users/aye1/Dev/IHM-copie/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s292931242.899393
-e292931243.070489
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o
-x/Users/aye1/Dev/IHM-copie/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@40"Compile /Users/aye1/Dev/IHM-copie/main.m292931242#292931243#0(0"0(0#0#32"/Users/aye1/Dev/IHM-copie/main.m4300885448#1698"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/main.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o /Users/aye1/Dev/IHM/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s291570069.867919
-e291570069.952997
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o
-x/Users/aye1/Dev/IHM/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@34"Compile /Users/aye1/Dev/IHM/main.m291570069#291570069#0(0"0(0#0#26"/Users/aye1/Dev/IHM/main.m4300885448#1570"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch -c /Users/aye1/Dev/IHM/main.m -o /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s294499081.803648
-e294499081.937811
-r0
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o
-x/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m: In function '-[repayViewController viewDidLoad]':
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: no '-initWithTabBarSystemItem::' method found
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: (Messages without a matching method signature
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: will be assumed to return 'id' and accept
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: '...' as arguments.)
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:186: warning: 'UITabBarItem' may not respond to '-items'
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:186: error: lvalue required as left operand of assignment
-o{standard input}:881:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_27" minus "L00000000004$pb"
-o{standard input}:881:symbol: "L_OBJC_SELECTOR_REFERENCES_27" can't be undefined in a subtraction expression
-o{standard input}:812:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_23" minus "L00000000003$pb"
-o{standard input}:812:symbol: "L_OBJC_SELECTOR_REFERENCES_23" can't be undefined in a subtraction expression
-o{standard input}:806:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000003$pb"
-o{standard input}:806:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression
-o{standard input}:794:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_25" minus "L00000000003$pb"
-o{standard input}:794:symbol: "L_OBJC_SELECTOR_REFERENCES_25" can't be undefined in a subtraction expression
-o{standard input}:783:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000003$pb"
-o{standard input}:783:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression
-o{standard input}:776:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_24" minus "L00000000003$pb"
-o{standard input}:776:symbol: "L_OBJC_SELECTOR_REFERENCES_24" can't be undefined in a subtraction expression
-o{standard input}:767:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000003$pb"
-o{standard input}:767:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression
-o{standard input}:760:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000003$pb"
-o{standard input}:760:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression
-o{standard input}:746:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000003$pb"
-o{standard input}:746:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression
-o{standard input}:740:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000003$pb"
-o{standard input}:740:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression
-o{standard input}:734:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_20" minus "L00000000003$pb"
-o{standard input}:734:symbol: "L_OBJC_SELECTOR_REFERENCES_20" can't be undefined in a subtraction expression
-o{standard input}:731:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_6" minus "L00000000003$pb"
-o{standard input}:731:symbol: "L_OBJC_CLASS_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:722:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_19" minus "L00000000003$pb"
-o{standard input}:722:symbol: "L_OBJC_SELECTOR_REFERENCES_19" can't be undefined in a subtraction expression
-o{standard input}:719:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000003$pb"
-o{standard input}:719:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression
-o{standard input}:709:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"
-o{standard input}:709:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
-o{standard input}:702:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"
-o{standard input}:702:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
-o{standard input}:698:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"
-o{standard input}:698:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:689:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"
-o{standard input}:689:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
-o{standard input}:682:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"
-o{standard input}:682:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
-o{standard input}:678:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"
-o{standard input}:678:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:667:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"
-o{standard input}:667:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
-o{standard input}:660:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"
-o{standard input}:660:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
-o{standard input}:656:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"
-o{standard input}:656:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:647:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"
-o{standard input}:647:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
-o{standard input}:640:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"
-o{standard input}:640:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
-o{standard input}:636:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"
-o{standard input}:636:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:626:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000003$pb"
-o{standard input}:626:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression
-o{standard input}:619:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_14" minus "L00000000003$pb"
-o{standard input}:619:symbol: "L_OBJC_SELECTOR_REFERENCES_14" can't be undefined in a subtraction expression
-o{standard input}:613:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000003$pb"
-o{standard input}:613:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression
-o{standard input}:610:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_4" minus "L00000000003$pb"
-o{standard input}:610:symbol: "L_OBJC_CLASS_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:603:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"
-o{standard input}:603:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression
-o{standard input}:588:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"
-o{standard input}:588:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression
-o{standard input}:581:non-relocatable subtraction expression, "LC27" minus "L00000000003$pb"
-o{standard input}:581:symbol: "LC27" can't be undefined in a subtraction expression
-o{standard input}:578:non-relocatable subtraction expression, "LC26" minus "L00000000003$pb"
-o{standard input}:578:symbol: "LC26" can't be undefined in a subtraction expression
-o{standard input}:575:non-relocatable subtraction expression, "LC25" minus "L00000000003$pb"
-o{standard input}:575:symbol: "LC25" can't be undefined in a subtraction expression
-o{standard input}:572:non-relocatable subtraction expression, "LC24" minus "L00000000003$pb"
-o{standard input}:572:symbol: "LC24" can't be undefined in a subtraction expression
-o{standard input}:563:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"
-o{standard input}:563:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression
-o{standard input}:560:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_3" minus "L00000000003$pb"
-o{standard input}:560:symbol: "L_OBJC_CLASS_REFERENCES_3" can't be undefined in a subtraction expression
-o{standard input}:462:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"
-o{standard input}:462:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
-o{standard input}:455:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"
-o{standard input}:455:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
-o{standard input}:441:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"
-o{standard input}:441:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
-o{standard input}:431:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"
-o{standard input}:431:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:428:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000002$pb"
-o{standard input}:428:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:418:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"
-o{standard input}:418:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
-o{standard input}:411:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"
-o{standard input}:411:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
-o{standard input}:397:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"
-o{standard input}:397:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
-o{standard input}:387:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"
-o{standard input}:387:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:384:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000002$pb"
-o{standard input}:384:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:366:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"
-o{standard input}:366:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:350:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"
-o{standard input}:350:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:340:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:340:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:327:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:327:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:314:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:314:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:301:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:301:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:288:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:288:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:258:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
-o{standard input}:258:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
-o{standard input}:250:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"
-o{standard input}:250:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:247:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_1" minus "L00000000002$pb"
-o{standard input}:247:symbol: "L_OBJC_CLASS_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:79:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
-o{standard input}:79:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:71:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
-o{standard input}:71:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
-o{standard input}:68:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000001$pb"
-o{standard input}:68:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_0
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_1
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_2
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_3
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10
-o{standard input}:unknown:Undefined local symbol LC24
-o{standard input}:unknown:Undefined local symbol LC25
-o{standard input}:unknown:Undefined local symbol LC26
-o{standard input}:unknown:Undefined local symbol LC27
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_11
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_12
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_4
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_13
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_14
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_15
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_5
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_16
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_17
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_18
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_19
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_6
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_20
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_21
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_22
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_26
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_24
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_25
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_23
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_27
-lSLF07#2@63"Compile /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#294499081#0(17066"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m: In function '-[repayViewController viewDidLoad]':/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: no '-initWithTabBarSystemItem::' method found/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: (Messages without a matching method signature/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: will be assumed to return 'id' and accept/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: '...' as arguments.)/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:186: warning: 'UITabBarItem' may not respond to '-items'/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:186: error: lvalue required as left operand of assignment{standard input}:881:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_27" minus "L00000000004$pb"{standard input}:881:symbol: "L_OBJC_SELECTOR_REFERENCES_27" can't be undefined in a subtraction expression{standard input}:812:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_23" minus "L00000000003$pb"{standard input}:812:symbol: "L_OBJC_SELECTOR_REFERENCES_23" can't be undefined in a subtraction expression{standard input}:806:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000003$pb"{standard input}:806:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression{standard input}:794:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_25" minus "L00000000003$pb"{standard input}:794:symbol: "L_OBJC_SELECTOR_REFERENCES_25" can't be undefined in a subtraction expression{standard input}:783:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000003$pb"{standard input}:783:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression{standard input}:776:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_24" minus "L00000000003$pb"{standard input}:776:symbol: "L_OBJC_SELECTOR_REFERENCES_24" can't be undefined in a subtraction expression{standard input}:767:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000003$pb"{standard input}:767:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression{standard input}:760:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000003$pb"{standard input}:760:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression{standard input}:746:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000003$pb"{standard input}:746:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression{standard input}:740:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000003$pb"{standard input}:740:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression{standard input}:734:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_20" minus "L00000000003$pb"{standard input}:734:symbol: "L_OBJC_SELECTOR_REFERENCES_20" can't be undefined in a subtraction expression{standard input}:731:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_6" minus "L00000000003$pb"{standard input}:731:symbol: "L_OBJC_CLASS_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:722:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_19" minus "L00000000003$pb"{standard input}:722:symbol: "L_OBJC_SELECTOR_REFERENCES_19" can't be undefined in a subtraction expression{standard input}:719:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000003$pb"{standard input}:719:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression{standard input}:709:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"{standard input}:709:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:702:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"{standard input}:702:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:698:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"{standard input}:698:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:689:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"{standard input}:689:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:682:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"{standard input}:682:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:678:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"{standard input}:678:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:667:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"{standard input}:667:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:660:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"{standard input}:660:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:656:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"{standard input}:656:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:647:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"{standard input}:647:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:640:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"{standard input}:640:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:636:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"{standard input}:636:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:626:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000003$pb"{standard input}:626:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression{standard input}:619:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_14" minus "L00000000003$pb"{standard input}:619:symbol: "L_OBJC_SELECTOR_REFERENCES_14" can't be undefined in a subtraction expression{standard input}:613:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000003$pb"{standard input}:613:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression{standard input}:610:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_4" minus "L00000000003$pb"{standard input}:610:symbol: "L_OBJC_CLASS_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:603:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"{standard input}:603:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression{standard input}:588:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"{standard input}:588:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression{standard input}:581:non-relocatable subtraction expression, "LC27" minus "L00000000003$pb"{standard input}:581:symbol: "LC27" can't be undefined in a subtraction expression{standard input}:578:non-relocatable subtraction expression, "LC26" minus "L00000000003$pb"{standard input}:578:symbol: "LC26" can't be undefined in a subtraction expression{standard input}:575:non-relocatable subtraction expression, "LC25" minus "L00000000003$pb"{standard input}:575:symbol: "LC25" can't be undefined in a subtraction expression{standard input}:572:non-relocatable subtraction expression, "LC24" minus "L00000000003$pb"{standard input}:572:symbol: "LC24" can't be undefined in a subtraction expression{standard input}:563:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"{standard input}:563:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression{standard input}:560:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_3" minus "L00000000003$pb"{standard input}:560:symbol: "L_OBJC_CLASS_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:462:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"{standard input}:462:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:455:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"{standard input}:455:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:441:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"{standard input}:441:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:431:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"{standard input}:431:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:428:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000002$pb"{standard input}:428:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:418:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"{standard input}:418:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:411:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"{standard input}:411:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:397:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"{standard input}:397:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:387:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"{standard input}:387:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:384:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000002$pb"{standard input}:384:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:366:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"{standard input}:366:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:350:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"{standard input}:350:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:340:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:340:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:327:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:327:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:314:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:314:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:301:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:301:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:288:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:288:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:258:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"{standard input}:258:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:250:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"{standard input}:250:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:247:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_1" minus "L00000000002$pb"{standard input}:247:symbol: "L_OBJC_CLASS_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:79:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:79:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:71:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"{standard input}:71:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:68:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000001$pb"{standard input}:68:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10{standard input}:unknown:Undefined local symbol LC24{standard input}:unknown:Undefined local symbol LC25{standard input}:unknown:Undefined local symbol LC26{standard input}:unknown:Undefined local symbol LC27{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_11{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_12{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_4{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_13{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_14{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_15{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_16{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_17{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_18{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_19{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_20{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_21{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_22{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_26{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_24{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_25{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_23{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_274(22@45"No '-initWithTabBarSystemItem::' method found294499081#107#116#0(6@55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#184#0#184#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)294499081#223#116#0(6@55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#184#0#184#0#0"0(22@42"'UITabBarItem' may not respond to '-items'294499081#542#113#0(6@55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#186#0#186#0#26"'*' may not respond to '*'0(4@45"Lvalue required as left operand of assignment294499081#655#114#0(6@55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#186#0#186#0#0"0(0#0#55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m4300885448#1736"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o1#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o /Users/aye1/Dev/IHM/Classes/repayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s291573066.329343
-e291573066.404822
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o
-x/Users/aye1/Dev/IHM/Classes/repayViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@57"Compile /Users/aye1/Dev/IHM/Classes/repayViewController.m291573066#291573066#0(0"0(0#0#49"/Users/aye1/Dev/IHM/Classes/repayViewController.m4300885448#1608"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch -c /Users/aye1/Dev/IHM/Classes/repayViewController.m -o /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/tabRepayViewController.o /Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s294403105.696709
-e294403105.804151
-r1
-xCompileC
-xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/tabRepayViewController.o
-x/Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.m294403105#294403105#0(0"0(0#0#58"/Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.m4300885448#1742"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/tabRepayViewController.o0#
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/todeleteAppDelegate.o /Users/aye1/Dev/IHM-copie/Classes/Classes/todeleteAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/untitled.o /Users/aye1/Dev/IHM-copie/Classes/untitled.m normal i386 objective-c com.apple.compilers.gcc.4_2
-r0
-
-CCompileXIB /Users/aye1/Dev/IHM-copie/Classes/PersonViewController.xib
-s294496099.990266
-e294496100.256352
-r1
-xCompileXIB
-x/Users/aye1/Dev/IHM-copie/Classes/PersonViewController.xib
-lSLF07#2@43"CompileXIB Classes/PersonViewController.xib294496099#294496100#0(0"0(0#0#58"/Users/aye1/Dev/IHM-copie/Classes/PersonViewController.xib4300885448#529"    cd /Users/aye1/Dev/IHM-copie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/PersonViewController.nib /Users/aye1/Dev/IHM-copie/Classes/PersonViewController.xib0#
-
-CCompileXIB /Users/aye1/Dev/IHM-copie/Classes/RootViewController.xib
-r0
-
-CCompileXIB /Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.xib
-s294398498.795885
-e294398500.751474
-r1
-xCompileXIB
-x/Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.xib
-lSLF07#2@45"CompileXIB Classes/tabRepayViewController.xib294398498#294398500#0(0"0(0#0#60"/Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.xib4300885448#533"    cd /Users/aye1/Dev/IHM-copie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/tabRepayViewController.nib /Users/aye1/Dev/IHM-copie/Classes/tabRepayViewController.xib0#
-
-CCompileXIB /Users/aye1/Dev/IHM-copie/MainWindow.xib
-r0
-
-CCompileXIB /Users/aye1/Dev/IHM-copie/addView.xib
-s294497995.450684
-e294497995.936860
-r1
-xCompileXIB
-x/Users/aye1/Dev/IHM-copie/addView.xib
-lSLF07#2@22"CompileXIB addView.xib294497995#294497995#0(0"0(0#0#37"/Users/aye1/Dev/IHM-copie/addView.xib4300885448#495"    cd /Users/aye1/Dev/IHM-copie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/addView.nib /Users/aye1/Dev/IHM-copie/addView.xib0#
-
-CCompileXIB /Users/aye1/Dev/IHM-copie/homeView.xib
-r0
-
-CCompileXIB /Users/aye1/Dev/IHM-copie/repayView.xib
-s294497995.451551
-e294497995.930312
-r1
-xCompileXIB
-x/Users/aye1/Dev/IHM-copie/repayView.xib
-lSLF07#2@24"CompileXIB repayView.xib294497995#294497995#0(0"0(0#0#39"/Users/aye1/Dev/IHM-copie/repayView.xib4300885448#499"    cd /Users/aye1/Dev/IHM-copie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/repayView.nib /Users/aye1/Dev/IHM-copie/repayView.xib0#
-
-CCompileXIB /Users/aye1/Dev/IHM/2.xib
-r0
-
-CCompileXIB /Users/aye1/Dev/IHM/Classes/repayView.xib
-r0
-
-CCompileXIB /Users/aye1/Dev/IHM/Classes/repayViewController.xib
-r0
-
-CCompileXIB /Users/aye1/Dev/IHM/MainView.xib
-r0
-
-CCompileXIB /Users/aye1/Dev/IHM/MainWindow.xib
-s291570068.221245
-e291570068.536149
-r1
-xCompileXIB
-x/Users/aye1/Dev/IHM/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib291570068#291570068#0(0"0(0#0#34"/Users/aye1/Dev/IHM/MainWindow.xib4300885448#421"    cd /Users/aye1/Dev/IHM    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/MainWindow.nib /Users/aye1/Dev/IHM/MainWindow.xib0#
-
-CCompileXIB /Users/aye1/Dev/IHM/addView.xib
-s292693530.951437
-e292693531.333722
-r1
-xCompileXIB
-x/Users/aye1/Dev/IHM/addView.xib
-lSLF07#2@22"CompileXIB addView.xib292693530#292693531#0(0"0(0#0#31"/Users/aye1/Dev/IHM/addView.xib4300885448#415"    cd /Users/aye1/Dev/IHM    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/addView.nib /Users/aye1/Dev/IHM/addView.xib0#
-
-CCompileXIB /Users/aye1/Dev/IHM/homeView.xib
-s291571167.157474
-e291571168.599427
-r1
-xCompileXIB
-x/Users/aye1/Dev/IHM/homeView.xib
-o/* com.apple.ibtool.document.warnings */
-o/Users/aye1/Dev/IHM/homeView.xib:36: warning: The 'Touch Up Inside' event of 'Light Info Button' is connected to the 'showInfo' selector of 'File's Owner', but 'showInfo' is no longer defined on 'homeViewController'.
-lSLF07#2@23"CompileXIB homeView.xib291571167#291571168#0(258"/* com.apple.ibtool.document.warnings *//Users/aye1/Dev/IHM/homeView.xib:36: warning: The 'Touch Up Inside' event of 'Light Info Button' is connected to the 'showInfo' selector of 'File's Owner', but 'showInfo' is no longer defined on 'homeViewController'.1(22@170"The 'Touch Up Inside' event of 'Light Info Button' is connected to the 'showInfo' selector of 'File's Owner', but 'showInfo' is no longer defined on 'homeViewController'.291571168#18446744073709551615#0#0(6@32"/Users/aye1/Dev/IHM/homeView.xib291570770#36#0#36#0#0"0(0#0#32"/Users/aye1/Dev/IHM/homeView.xib4300885448#417"    cd /Users/aye1/Dev/IHM    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/homeView.nib /Users/aye1/Dev/IHM/homeView.xib0#
-
-CCompileXIB /Users/aye1/Dev/IHM/repayView.xib
-s291573142.326039
-e291573142.679113
-r1
-xCompileXIB
-x/Users/aye1/Dev/IHM/repayView.xib
-lSLF07#2@24"CompileXIB repayView.xib291573142#291573142#0(0"0(0#0#33"/Users/aye1/Dev/IHM/repayView.xib4300885448#419"    cd /Users/aye1/Dev/IHM    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/repayView.nib /Users/aye1/Dev/IHM/repayView.xib0#
-
-CCpResource build/Debug-iphonesimulator/IHM.app/DoneDown.png Classes/DoneDown.png
-s293385644.431209
-e293385644.447097
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/IHM.app/DoneDown.png
-xClasses/DoneDown.png
-lSLF07#2@25"Copy Classes/DoneDown.png293385644#293385644#0(0"0(0#0#46"/Users/aye1/Dev/IHM-copie/Classes/DoneDown.png12948179645890632#483"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/aye1/Dev/IHM-copie/Classes/DoneDown.png /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
-
-CCpResource build/Debug-iphonesimulator/IHM.app/DoneDown3.png Classes/DoneDown3.png
-s293385644.431838
-e293385644.440159
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/IHM.app/DoneDown3.png
-xClasses/DoneDown3.png
-lSLF07#2@26"Copy Classes/DoneDown3.png293385644#293385644#0(0"0(0#0#47"/Users/aye1/Dev/IHM-copie/Classes/DoneDown3.png4300885448#484"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/aye1/Dev/IHM-copie/Classes/DoneDown3.png /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
-
-CCpResource build/Debug-iphonesimulator/IHM.app/DoneUp.png Classes/DoneUp.png
-s293385644.432369
-e293385644.450286
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/IHM.app/DoneUp.png
-xClasses/DoneUp.png
-lSLF07#2@23"Copy Classes/DoneUp.png293385644#293385644#0(0"0(0#0#44"/Users/aye1/Dev/IHM-copie/Classes/DoneUp.png4300885448#481"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/aye1/Dev/IHM-copie/Classes/DoneUp.png /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
-
-CCpResource build/Debug-iphonesimulator/IHM.app/DoneUp3.png Classes/DoneUp3.png
-s293385644.434499
-e293385644.450965
-r1
-xCpResource
-xbuild/Debug-iphonesimulator/IHM.app/DoneUp3.png
-xClasses/DoneUp3.png
-lSLF07#2@24"Copy Classes/DoneUp3.png293385644#293385644#0(0"0(0#0#45"/Users/aye1/Dev/IHM-copie/Classes/DoneUp3.png4300885448#482"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/aye1/Dev/IHM-copie/Classes/DoneUp3.png /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
-
-CGenerateDSYMFile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-s294497740.253254
-e294497740.270789
-r1
-xGenerateDSYMFile
-x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM
-x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/IHM.app.dSYM build/Debug-iphonesimulator/IHM.app/IHM294497740#294497740#0(0"0(0#0#65"/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM4300885448#394"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM0#
-
-CGenerateDSYMFile /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app.dSYM /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM
-s292693381.408472
-e292693381.451210
-r1
-xGenerateDSYMFile
-x/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app.dSYM
-x/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM
-lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/IHM.app.dSYM build/Debug-iphonesimulator/IHM.app/IHM292693381#292693381#0(0"0(0#0#59"/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM4300885448#314"    cd /Users/aye1/Dev/IHM    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM -o /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app.dSYM0#
-
-CLd /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM normal i386
-s294497740.233559
-e294497740.253165
-r1
-xLd
-x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-xnormal
-xi386
-lSLF07#2@70"Link /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM294497740#294497740#0(0"0(0#0#0"4300885448#853"    cd /Users/aye1/Dev/IHM-copie    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -filelist /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHM.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM0#
-
-CLd /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM normal i386
-s292693381.387282
-e292693381.408389
-r1
-xLd
-x/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM
-xnormal
-xi386
-lSLF07#2@64"Link /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM292693381#292693381#0(0"0(0#0#0"4300885448#749"    cd /Users/aye1/Dev/IHM    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -filelist /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHM.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM0#
-
-CProcessInfoPlistFile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/Info.plist IHM-Info.plist
-r0
-
-CProcessInfoPlistFile /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/Info.plist IHM-Info.plist
-s291570068.129060
-e291570068.221164
-r1
-xProcessInfoPlistFile
-x/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/Info.plist
-xIHM-Info.plist
-lSLF07#2@22"Process IHM-Info.plist291570068#291570068#0(0"0(0#0#34"/Users/aye1/Dev/IHM/IHM-Info.plist21673882449150000#410"    cd /Users/aye1/Dev/IHM    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility IHM-Info.plist -genpkginfo /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/Info.plist0#
-
-CProcessPCH /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch.gch IHM_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s292931241.826483
-e292931242.899172
-r1
-xProcessPCH
-x/var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch.gch
-xIHM_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@25"Precompile IHM_Prefix.pch292931241#292931242#0(0"0(0#0#40"/Users/aye1/Dev/IHM-copie/IHM_Prefix.pch4300885448#1607"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -c /Users/aye1/Dev/IHM-copie/IHM_Prefix.pch -o /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch.gch IHM_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
-s291570068.865384
-e291570069.867759
-r1
-xProcessPCH
-x/var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch.gch
-xIHM_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@25"Precompile IHM_Prefix.pch291570068#291570069#0(0"0(0#0#34"/Users/aye1/Dev/IHM/IHM_Prefix.pch4300885448#1485"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -c /Users/aye1/Dev/IHM/IHM_Prefix.pch -o /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch.gch0#
-
-CTouch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-s294497995.937541
-e294497995.967239
-r1
-xTouch
-x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-lSLF07#2@67"Touch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app294497995#294497995#0(0"0(0#0#0"4300885448#310"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
-
-CTouch /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app
-s292693531.334334
-e292693531.336753
-r1
-xTouch
-x/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app
-lSLF07#2@61"Touch /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app292693531#292693531#0(0"0(0#0#0"4300885448#236"    cd /Users/aye1/Dev/IHM    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app0#
-

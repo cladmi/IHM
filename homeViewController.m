@@ -9,6 +9,7 @@
 #import "homeViewController.h"
 #import "addViewController.h"
 #import "repayViewController.h"
+#import "IHMAppDelegate.h"
 
 
 @implementation homeViewController
@@ -31,9 +32,15 @@
 
 - (IBAction) rembourser:(id)sender {
 	
+	UINavigationController *tabController = [[UINavigationController alloc] init];
+	
 	addViewController *tviewcontroller = [[repayViewController alloc] initWithNibName:@"repayView" bundle:nil];
 	[self.navigationController pushViewController:tviewcontroller animated:YES];
 	[tviewcontroller release];
+	
+//	[((IHMAppDelegate *) [[UIApplication sharedApplication] delegate]).window addSubview:tabController.view];
+	[tabController release];
+
 	
 }
 

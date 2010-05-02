@@ -18,9 +18,12 @@
 	
 	navController = [[UINavigationController alloc] init];
 	
+	
 	homeViewController *hviewcontroller = [[homeViewController alloc] initWithNibName:@"homeView" bundle:nil];
 	[navController pushViewController:hviewcontroller animated:NO];
 	[hviewcontroller release];
+	
+	
 	
 	[window addSubview:navController.view];
 	

@@ -19,6 +19,7 @@
 	NSMutableArray *eventArray;
 	NSMutableArray *dateArray;
 	NSMutableArray *amountArray;
+	NSMutableArray *selectArray;
 	
 }
 
@@ -26,6 +27,7 @@
 @property(nonatomic, retain) UIButton *validate;
 @property(nonatomic, retain) UITextField *value;
 @property(nonatomic, retain) UITableView *deptList;
+
 
 
 @end
