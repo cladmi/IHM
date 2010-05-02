@@ -179,12 +179,6 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	[amountArray addObject:@"100.50"];
 	[amountArray addObject:@"4.80"];
 	
-	NSMutableArray *items; 
-	items = [[NSMutableArray alloc] init];
-	[items addObject: [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemMostViewed:1]];
-	
-	[self.tabBarItem items] = items;
-	
     [super viewDidLoad];
 }
 

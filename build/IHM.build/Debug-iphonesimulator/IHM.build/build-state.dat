@@ -1,7 +1,7 @@
 TIHM
 v7
 r0
-t294499081.937879
+t294509418.713954
 cCheck dependencies
 cProcessInfoPlistFile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/Info.plist IHM-Info.plist
 cCompileXIB /Users/aye1/Dev/IHM-copie/MainWindow.xib
@@ -20,6 +20,9 @@ cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/ho
 cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/addViewController.o /Users/aye1/Dev/IHM-copie/Classes/addViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/PersonViewController.o /Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM normal i386
+cGenerateDSYMFile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
+cTouch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
 c000000004B70458E00000000000000EE
@@ -84,7 +87,7 @@ N/Users/aye1/Dev/IHM-copie/Classes/Classes/PersonViewController.m
 c000000004BDD701B0000000000000FF5
 t1272803355
 s4085
-i"RootViewController.h"
+i"PersonViewController.h"
 
 N/Users/aye1/Dev/IHM-copie/Classes/Classes/RootViewController.h
 c000000004BDBE9EE00000000000000C4
@@ -184,9 +187,9 @@ s652
 i<UIKit/UIKit.h>
 
 N/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m
-c000000004BDD7B89000000000000227E
-t1272806281
-s8830
+c000000004BDDA3E600000000000021B3
+t1272816614
+s8627
 i"repayViewController.h"
 i"sqlite3.h"
 
@@ -231,16 +234,16 @@ t1269875557
 s7999
 
 N/Users/aye1/Dev/IHM-copie/addView.xib
-c000000004BDD77180000000000007A50
-t1272805144
-s31312
+c000000004BDD89FF00000000000079DC
+t1272809983
+s31196
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-t1272805195
+t1272816615
 s510
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM
-t1272804940
+t1272816615
 s102
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/DoneDown.png
@@ -260,7 +263,7 @@ t1271692844
 s9923
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-t1272804940
+t1272816615
 s41072
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/Info.plist
@@ -284,8 +287,8 @@ t2
 s0
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/addView.nib
-t1272805195
-s4725
+t1272816594
+s4671
 
 N/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/homeView.nib
 t1269878368
@@ -333,8 +336,8 @@ t1271238443
 s5932
 
 N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o
-t2
-s0
+t1272816615
+s60224
 
 N/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/tabRepayViewController.o
 t1272710305
@@ -574,7 +577,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies294499081#294499081#0(0"0(0#1#0"4300885448#0"0#
+lSLF07#2@18"Check dependencies294509418#294509418#0(0"0(0#1#0"4300885448#0"0#
 
 CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/CustomRepayView.o /Users/aye1/Dev/IHM-copie/Classes/CustomRepayView.m normal i386 objective-c com.apple.compilers.gcc.4_2
 r0
@@ -703,9 +706,9 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@34"Compile /Users/aye1/Dev/IHM/main.m291570069#291570069#0(0"0(0#0#26"/Users/aye1/Dev/IHM/main.m4300885448#1570"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch -c /Users/aye1/Dev/IHM/main.m -o /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/main.o0#
 
 CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s294499081.803648
-e294499081.937811
-r0
+s294509415.242475
+e294509415.410704
+r1
 xCompileC
 xbuild/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o
 x/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m
@@ -713,175 +716,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m: In function '-[repayViewController viewDidLoad]':
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: no '-initWithTabBarSystemItem::' method found
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: (Messages without a matching method signature
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: will be assumed to return 'id' and accept
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: '...' as arguments.)
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:186: warning: 'UITabBarItem' may not respond to '-items'
-o/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:186: error: lvalue required as left operand of assignment
-o{standard input}:881:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_27" minus "L00000000004$pb"
-o{standard input}:881:symbol: "L_OBJC_SELECTOR_REFERENCES_27" can't be undefined in a subtraction expression
-o{standard input}:812:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_23" minus "L00000000003$pb"
-o{standard input}:812:symbol: "L_OBJC_SELECTOR_REFERENCES_23" can't be undefined in a subtraction expression
-o{standard input}:806:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000003$pb"
-o{standard input}:806:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression
-o{standard input}:794:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_25" minus "L00000000003$pb"
-o{standard input}:794:symbol: "L_OBJC_SELECTOR_REFERENCES_25" can't be undefined in a subtraction expression
-o{standard input}:783:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000003$pb"
-o{standard input}:783:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression
-o{standard input}:776:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_24" minus "L00000000003$pb"
-o{standard input}:776:symbol: "L_OBJC_SELECTOR_REFERENCES_24" can't be undefined in a subtraction expression
-o{standard input}:767:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000003$pb"
-o{standard input}:767:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression
-o{standard input}:760:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000003$pb"
-o{standard input}:760:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression
-o{standard input}:746:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000003$pb"
-o{standard input}:746:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression
-o{standard input}:740:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000003$pb"
-o{standard input}:740:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression
-o{standard input}:734:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_20" minus "L00000000003$pb"
-o{standard input}:734:symbol: "L_OBJC_SELECTOR_REFERENCES_20" can't be undefined in a subtraction expression
-o{standard input}:731:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_6" minus "L00000000003$pb"
-o{standard input}:731:symbol: "L_OBJC_CLASS_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:722:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_19" minus "L00000000003$pb"
-o{standard input}:722:symbol: "L_OBJC_SELECTOR_REFERENCES_19" can't be undefined in a subtraction expression
-o{standard input}:719:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000003$pb"
-o{standard input}:719:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression
-o{standard input}:709:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"
-o{standard input}:709:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
-o{standard input}:702:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"
-o{standard input}:702:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
-o{standard input}:698:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"
-o{standard input}:698:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:689:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"
-o{standard input}:689:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
-o{standard input}:682:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"
-o{standard input}:682:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
-o{standard input}:678:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"
-o{standard input}:678:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:667:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"
-o{standard input}:667:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
-o{standard input}:660:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"
-o{standard input}:660:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
-o{standard input}:656:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"
-o{standard input}:656:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:647:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"
-o{standard input}:647:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression
-o{standard input}:640:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"
-o{standard input}:640:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression
-o{standard input}:636:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"
-o{standard input}:636:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:626:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000003$pb"
-o{standard input}:626:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression
-o{standard input}:619:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_14" minus "L00000000003$pb"
-o{standard input}:619:symbol: "L_OBJC_SELECTOR_REFERENCES_14" can't be undefined in a subtraction expression
-o{standard input}:613:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000003$pb"
-o{standard input}:613:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression
-o{standard input}:610:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_4" minus "L00000000003$pb"
-o{standard input}:610:symbol: "L_OBJC_CLASS_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:603:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"
-o{standard input}:603:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression
-o{standard input}:588:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"
-o{standard input}:588:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression
-o{standard input}:581:non-relocatable subtraction expression, "LC27" minus "L00000000003$pb"
-o{standard input}:581:symbol: "LC27" can't be undefined in a subtraction expression
-o{standard input}:578:non-relocatable subtraction expression, "LC26" minus "L00000000003$pb"
-o{standard input}:578:symbol: "LC26" can't be undefined in a subtraction expression
-o{standard input}:575:non-relocatable subtraction expression, "LC25" minus "L00000000003$pb"
-o{standard input}:575:symbol: "LC25" can't be undefined in a subtraction expression
-o{standard input}:572:non-relocatable subtraction expression, "LC24" minus "L00000000003$pb"
-o{standard input}:572:symbol: "LC24" can't be undefined in a subtraction expression
-o{standard input}:563:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"
-o{standard input}:563:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression
-o{standard input}:560:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_3" minus "L00000000003$pb"
-o{standard input}:560:symbol: "L_OBJC_CLASS_REFERENCES_3" can't be undefined in a subtraction expression
-o{standard input}:462:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"
-o{standard input}:462:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
-o{standard input}:455:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"
-o{standard input}:455:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
-o{standard input}:441:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"
-o{standard input}:441:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
-o{standard input}:431:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"
-o{standard input}:431:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:428:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000002$pb"
-o{standard input}:428:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:418:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"
-o{standard input}:418:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression
-o{standard input}:411:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"
-o{standard input}:411:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression
-o{standard input}:397:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"
-o{standard input}:397:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression
-o{standard input}:387:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"
-o{standard input}:387:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression
-o{standard input}:384:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000002$pb"
-o{standard input}:384:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:366:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"
-o{standard input}:366:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:350:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"
-o{standard input}:350:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression
-o{standard input}:340:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:340:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:327:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:327:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:314:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:314:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:301:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:301:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:288:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"
-o{standard input}:288:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression
-o{standard input}:258:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"
-o{standard input}:258:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression
-o{standard input}:250:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"
-o{standard input}:250:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
-o{standard input}:247:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_1" minus "L00000000002$pb"
-o{standard input}:247:symbol: "L_OBJC_CLASS_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:79:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"
-o{standard input}:79:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
-o{standard input}:71:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
-o{standard input}:71:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
-o{standard input}:68:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000001$pb"
-o{standard input}:68:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_0
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_1
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_2
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_3
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10
-o{standard input}:unknown:Undefined local symbol LC24
-o{standard input}:unknown:Undefined local symbol LC25
-o{standard input}:unknown:Undefined local symbol LC26
-o{standard input}:unknown:Undefined local symbol LC27
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_11
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_12
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_4
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_13
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_14
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_15
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_5
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_16
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_17
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_18
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_19
-o{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_6
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_20
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_21
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_22
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_26
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_24
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_25
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_23
-o{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_27
-lSLF07#2@63"Compile /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#294499081#0(17066"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m: In function '-[repayViewController viewDidLoad]':/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: no '-initWithTabBarSystemItem::' method found/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: (Messages without a matching method signature/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: will be assumed to return 'id' and accept/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:184: warning: '...' as arguments.)/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:186: warning: 'UITabBarItem' may not respond to '-items'/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m:186: error: lvalue required as left operand of assignment{standard input}:881:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_27" minus "L00000000004$pb"{standard input}:881:symbol: "L_OBJC_SELECTOR_REFERENCES_27" can't be undefined in a subtraction expression{standard input}:812:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_23" minus "L00000000003$pb"{standard input}:812:symbol: "L_OBJC_SELECTOR_REFERENCES_23" can't be undefined in a subtraction expression{standard input}:806:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000003$pb"{standard input}:806:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression{standard input}:794:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_25" minus "L00000000003$pb"{standard input}:794:symbol: "L_OBJC_SELECTOR_REFERENCES_25" can't be undefined in a subtraction expression{standard input}:783:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000003$pb"{standard input}:783:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression{standard input}:776:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_24" minus "L00000000003$pb"{standard input}:776:symbol: "L_OBJC_SELECTOR_REFERENCES_24" can't be undefined in a subtraction expression{standard input}:767:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000003$pb"{standard input}:767:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression{standard input}:760:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_26" minus "L00000000003$pb"{standard input}:760:symbol: "L_OBJC_SELECTOR_REFERENCES_26" can't be undefined in a subtraction expression{standard input}:746:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_22" minus "L00000000003$pb"{standard input}:746:symbol: "L_OBJC_SELECTOR_REFERENCES_22" can't be undefined in a subtraction expression{standard input}:740:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_21" minus "L00000000003$pb"{standard input}:740:symbol: "L_OBJC_SELECTOR_REFERENCES_21" can't be undefined in a subtraction expression{standard input}:734:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_20" minus "L00000000003$pb"{standard input}:734:symbol: "L_OBJC_SELECTOR_REFERENCES_20" can't be undefined in a subtraction expression{standard input}:731:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_6" minus "L00000000003$pb"{standard input}:731:symbol: "L_OBJC_CLASS_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:722:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_19" minus "L00000000003$pb"{standard input}:722:symbol: "L_OBJC_SELECTOR_REFERENCES_19" can't be undefined in a subtraction expression{standard input}:719:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_18" minus "L00000000003$pb"{standard input}:719:symbol: "L_OBJC_SELECTOR_REFERENCES_18" can't be undefined in a subtraction expression{standard input}:709:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"{standard input}:709:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:702:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"{standard input}:702:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:698:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"{standard input}:698:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:689:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"{standard input}:689:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:682:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"{standard input}:682:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:678:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"{standard input}:678:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:667:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"{standard input}:667:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:660:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"{standard input}:660:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:656:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"{standard input}:656:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:647:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_17" minus "L00000000003$pb"{standard input}:647:symbol: "L_OBJC_SELECTOR_REFERENCES_17" can't be undefined in a subtraction expression{standard input}:640:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_16" minus "L00000000003$pb"{standard input}:640:symbol: "L_OBJC_SELECTOR_REFERENCES_16" can't be undefined in a subtraction expression{standard input}:636:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_5" minus "L00000000003$pb"{standard input}:636:symbol: "L_OBJC_CLASS_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:626:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_15" minus "L00000000003$pb"{standard input}:626:symbol: "L_OBJC_SELECTOR_REFERENCES_15" can't be undefined in a subtraction expression{standard input}:619:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_14" minus "L00000000003$pb"{standard input}:619:symbol: "L_OBJC_SELECTOR_REFERENCES_14" can't be undefined in a subtraction expression{standard input}:613:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_13" minus "L00000000003$pb"{standard input}:613:symbol: "L_OBJC_SELECTOR_REFERENCES_13" can't be undefined in a subtraction expression{standard input}:610:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_4" minus "L00000000003$pb"{standard input}:610:symbol: "L_OBJC_CLASS_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:603:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_12" minus "L00000000003$pb"{standard input}:603:symbol: "L_OBJC_SELECTOR_REFERENCES_12" can't be undefined in a subtraction expression{standard input}:588:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_11" minus "L00000000003$pb"{standard input}:588:symbol: "L_OBJC_SELECTOR_REFERENCES_11" can't be undefined in a subtraction expression{standard input}:581:non-relocatable subtraction expression, "LC27" minus "L00000000003$pb"{standard input}:581:symbol: "LC27" can't be undefined in a subtraction expression{standard input}:578:non-relocatable subtraction expression, "LC26" minus "L00000000003$pb"{standard input}:578:symbol: "LC26" can't be undefined in a subtraction expression{standard input}:575:non-relocatable subtraction expression, "LC25" minus "L00000000003$pb"{standard input}:575:symbol: "LC25" can't be undefined in a subtraction expression{standard input}:572:non-relocatable subtraction expression, "LC24" minus "L00000000003$pb"{standard input}:572:symbol: "LC24" can't be undefined in a subtraction expression{standard input}:563:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_10" minus "L00000000003$pb"{standard input}:563:symbol: "L_OBJC_SELECTOR_REFERENCES_10" can't be undefined in a subtraction expression{standard input}:560:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_3" minus "L00000000003$pb"{standard input}:560:symbol: "L_OBJC_CLASS_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:462:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"{standard input}:462:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:455:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"{standard input}:455:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:441:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"{standard input}:441:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:431:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"{standard input}:431:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:428:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000002$pb"{standard input}:428:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:418:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_9" minus "L00000000002$pb"{standard input}:418:symbol: "L_OBJC_SELECTOR_REFERENCES_9" can't be undefined in a subtraction expression{standard input}:411:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_8" minus "L00000000002$pb"{standard input}:411:symbol: "L_OBJC_SELECTOR_REFERENCES_8" can't be undefined in a subtraction expression{standard input}:397:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_7" minus "L00000000002$pb"{standard input}:397:symbol: "L_OBJC_SELECTOR_REFERENCES_7" can't be undefined in a subtraction expression{standard input}:387:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_6" minus "L00000000002$pb"{standard input}:387:symbol: "L_OBJC_SELECTOR_REFERENCES_6" can't be undefined in a subtraction expression{standard input}:384:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_2" minus "L00000000002$pb"{standard input}:384:symbol: "L_OBJC_CLASS_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:366:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"{standard input}:366:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:350:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_5" minus "L00000000002$pb"{standard input}:350:symbol: "L_OBJC_SELECTOR_REFERENCES_5" can't be undefined in a subtraction expression{standard input}:340:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:340:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:327:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:327:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:314:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:314:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:301:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:301:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:288:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_4" minus "L00000000002$pb"{standard input}:288:symbol: "L_OBJC_SELECTOR_REFERENCES_4" can't be undefined in a subtraction expression{standard input}:258:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_3" minus "L00000000002$pb"{standard input}:258:symbol: "L_OBJC_SELECTOR_REFERENCES_3" can't be undefined in a subtraction expression{standard input}:250:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000002$pb"{standard input}:250:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression{standard input}:247:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_1" minus "L00000000002$pb"{standard input}:247:symbol: "L_OBJC_CLASS_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:79:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000001$pb"{standard input}:79:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression{standard input}:71:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"{standard input}:71:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:68:non-relocatable subtraction expression, "L_OBJC_CLASS_REFERENCES_0" minus "L00000000001$pb"{standard input}:68:symbol: "L_OBJC_CLASS_REFERENCES_0" can't be undefined in a subtraction expression{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_1{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_4{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_2{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_7{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_8{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_9{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_3{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_10{standard input}:unknown:Undefined local symbol LC24{standard input}:unknown:Undefined local symbol LC25{standard input}:unknown:Undefined local symbol LC26{standard input}:unknown:Undefined local symbol LC27{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_11{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_12{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_4{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_13{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_14{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_15{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_5{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_16{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_17{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_18{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_19{standard input}:unknown:Undefined local symbol L_OBJC_CLASS_REFERENCES_6{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_20{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_21{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_22{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_26{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_24{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_25{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_23{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_274(22@45"No '-initWithTabBarSystemItem::' method found294499081#107#116#0(6@55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#184#0#184#0#19"no '*' method found0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)294499081#223#116#0(6@55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#184#0#184#0#0"0(22@42"'UITabBarItem' may not respond to '-items'294499081#542#113#0(6@55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#186#0#186#0#26"'*' may not respond to '*'0(4@45"Lvalue required as left operand of assignment294499081#655#114#0(6@55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294499081#186#0#186#0#0"0(0#0#55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m4300885448#1736"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o1#
+lSLF07#2@63"Compile /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m294509415#294509415#0(0"0(0#0#55"/Users/aye1/Dev/IHM-copie/Classes/repayViewController.m4300885448#1736"    cd /Users/aye1/Dev/IHM-copie    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -include /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-baljrosongoehhegmmqvlclmtcqg/IHM_Prefix.pch -c /Users/aye1/Dev/IHM-copie/Classes/repayViewController.m -o /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o0#
 
 CCompileC build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/repayViewController.o /Users/aye1/Dev/IHM/Classes/repayViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s291573066.329343
@@ -938,12 +773,12 @@ CCompileXIB /Users/aye1/Dev/IHM-copie/MainWindow.xib
 r0
 
 CCompileXIB /Users/aye1/Dev/IHM-copie/addView.xib
-s294497995.450684
-e294497995.936860
+s294509391.325248
+e294509394.315556
 r1
 xCompileXIB
 x/Users/aye1/Dev/IHM-copie/addView.xib
-lSLF07#2@22"CompileXIB addView.xib294497995#294497995#0(0"0(0#0#37"/Users/aye1/Dev/IHM-copie/addView.xib4300885448#495"    cd /Users/aye1/Dev/IHM-copie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/addView.nib /Users/aye1/Dev/IHM-copie/addView.xib0#
+lSLF07#2@22"CompileXIB addView.xib294509391#294509394#0(0"0(0#0#37"/Users/aye1/Dev/IHM-copie/addView.xib4300885448#495"    cd /Users/aye1/Dev/IHM-copie    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/addView.nib /Users/aye1/Dev/IHM-copie/addView.xib0#
 
 CCompileXIB /Users/aye1/Dev/IHM-copie/homeView.xib
 r0
@@ -1039,13 +874,13 @@ xClasses/DoneUp3.png
 lSLF07#2@24"Copy Classes/DoneUp3.png293385644#293385644#0(0"0(0#0#45"/Users/aye1/Dev/IHM-copie/Classes/DoneUp3.png4300885448#482"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/aye1/Dev/IHM-copie/Classes/DoneUp3.png /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
 
 CGenerateDSYMFile /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-s294497740.253254
-e294497740.270789
+s294509415.521497
+e294509415.554473
 r1
 xGenerateDSYMFile
 x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM
 x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
-lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/IHM.app.dSYM build/Debug-iphonesimulator/IHM.app/IHM294497740#294497740#0(0"0(0#0#65"/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM4300885448#394"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM0#
+lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/IHM.app.dSYM build/Debug-iphonesimulator/IHM.app/IHM294509415#294509415#0(0"0(0#0#65"/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM4300885448#394"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app.dSYM0#
 
 CGenerateDSYMFile /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app.dSYM /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM
 s292693381.408472
@@ -1057,14 +892,14 @@ x/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM
 lSLF07#2@97"GenerateDSYMFile build/Debug-iphonesimulator/IHM.app.dSYM build/Debug-iphonesimulator/IHM.app/IHM292693381#292693381#0(0"0(0#0#59"/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM4300885448#314"    cd /Users/aye1/Dev/IHM    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM -o /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app.dSYM0#
 
 CLd /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM normal i386
-s294497740.233559
-e294497740.253165
+s294509415.410816
+e294509415.521361
 r1
 xLd
 x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM
 xnormal
 xi386
-lSLF07#2@70"Link /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM294497740#294497740#0(0"0(0#0#0"4300885448#853"    cd /Users/aye1/Dev/IHM-copie    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -filelist /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHM.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM0#
+lSLF07#2@70"Link /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM294509415#294509415#0(0"0(0#0#0"4300885448#853"    cd /Users/aye1/Dev/IHM-copie    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -F/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator -filelist /Users/aye1/Dev/IHM-copie/build/IHM.build/Debug-iphonesimulator/IHM.build/Objects-normal/i386/IHM.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -lsqlite3.0 -o /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app/IHM0#
 
 CLd /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app/IHM normal i386
 s292693381.387282
@@ -1115,12 +950,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@25"Precompile IHM_Prefix.pch291570068#291570069#0(0"0(0#0#34"/Users/aye1/Dev/IHM/IHM_Prefix.pch4300885448#1485"    cd /Users/aye1/Dev/IHM    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-generated-files.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-own-target-headers.hmap -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-all-target-headers.hmap -iquote /Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/IHM-project-headers.hmap -F/Users/aye1/Dev/IHM/build/Debug-iphonesimulator -I/Users/aye1/Dev/IHM/build/Debug-iphonesimulator/include -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources/i386 -I/Users/aye1/Dev/IHM/build/IHM.build/Debug-iphonesimulator/IHM.build/DerivedSources -c /Users/aye1/Dev/IHM/IHM_Prefix.pch -o /var/folders/Ec/EcgY9ReYGq4qs2mf3tNYlU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/IHM_Prefix-hhxttvodfodgmigkmasmwijdjbwh/IHM_Prefix.pch.gch0#
 
 CTouch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-s294497995.937541
-e294497995.967239
+s294509415.554552
+e294509415.568246
 r1
 xTouch
 x/Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app
-lSLF07#2@67"Touch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app294497995#294497995#0(0"0(0#0#0"4300885448#310"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
+lSLF07#2@67"Touch /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app294509415#294509415#0(0"0(0#0#0"4300885448#310"    cd /Users/aye1/Dev/IHM-copie    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/aye1/Dev/IHM-copie/build/Debug-iphonesimulator/IHM.app0#
 
 CTouch /Users/aye1/Dev/IHM/build/Debug-iphonesimulator/IHM.app
 s292693531.334334
