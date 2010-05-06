@@ -27,4 +27,6 @@
 - (IBAction) ValidateDept:(id)sender;
 - (IBAction) UpView:(id)sender;
 
+- (IBAction) openList:(id)sender;
+
 @end

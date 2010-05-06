@@ -84,7 +84,19 @@
 	}
 }
 
+
+- (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+	NSLog(@"prout");
+	return NO;
+}
+ 
 	
+- (IBAction) openList:(id)sender {
+	NSLog(@"coucou");
+	personnes.text = @"hello"; // sets the text
+	[personnes resignFirstResponder];
+}
+
 
 - (IBAction) ValidateDept:(id)sender {
 	UIAlertView *alert = [[UIAlertView alloc]
