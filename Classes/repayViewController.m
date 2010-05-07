@@ -315,8 +315,18 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 /* Marche pas --> deselect tous quand select */
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {	
 	//[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+}
 
-	
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return 1;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    return @"Dettes";
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+	return @" ";
 }
 
 - (IBAction) TextFieldDownEditing:(id)sender {
