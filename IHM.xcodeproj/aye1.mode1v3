@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9E32FB251194074E00E522EC</string>
+										<string>9E32FB7F11941CCA00E522EC</string>
 										<key>history</key>
 										<array>
 											<string>9ED082B51173AFB600107C13</string>
@@ -337,20 +337,20 @@
 											<string>9ED082B91173AFB600107C13</string>
 											<string>9E6BD04A1185F8D10045ECC0</string>
 											<string>9EFDC5C7118C6A18005BE526</string>
-											<string>9EFDC5C8118C6A18005BE526</string>
 											<string>9EFDC5CE118C6A18005BE526</string>
-											<string>9EFDC5CF118C6A18005BE526</string>
-											<string>9EFDC5D0118C6A18005BE526</string>
-											<string>9E911247118DA6EE009AF4F6</string>
-											<string>9E911249118DA6EE009AF4F6</string>
-											<string>9E91124A118DA6EE009AF4F6</string>
-											<string>9E91124B118DA6EE009AF4F6</string>
-											<string>9E911259118DA7A0009AF4F6</string>
-											<string>9E91126E118DADD2009AF4F6</string>
-											<string>9E911273118DB222009AF4F6</string>
 											<string>9EEBC8B2118F17CF00763C52</string>
-											<string>9EEBC910118F2C0900763C52</string>
-											<string>9E32FB191194071B00E522EC</string>
+											<string>9E32FB6B11941C7D00E522EC</string>
+											<string>9E32FB6C11941C7D00E522EC</string>
+											<string>9E32FB6D11941C7D00E522EC</string>
+											<string>9E32FB6E11941C7D00E522EC</string>
+											<string>9E32FB6F11941C7D00E522EC</string>
+											<string>9E32FB7011941C7D00E522EC</string>
+											<string>9E32FB7111941C7D00E522EC</string>
+											<string>9E32FB7211941C7D00E522EC</string>
+											<string>9E32FB7311941C7D00E522EC</string>
+											<string>9E32FB7411941C7D00E522EC</string>
+											<string>9E32FB7D11941CCA00E522EC</string>
+											<string>9E32FB7E11941CCA00E522EC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -548,9 +548,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>9EA5835A116107CF00567A75</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/aye1/Dev/IHM-copie/IHM.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -886,6 +886,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -931,7 +933,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

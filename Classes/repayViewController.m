@@ -232,6 +232,9 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 - (IBAction) reset:(id)sender {
 	int i;
 	for (i = 0; i < [selectArray count]; i++) {
+		if ([selectArray objectAtIndex:i] == [NSNumber numberWithBool:YES]) {
+			value.text = [NSString stringWithFormat:@"%f",[value.text floatValue] + [[amountArray objectAtIndex:i] floatValue]];
+		}
 		[selectArray replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:FALSE]];
 	}	
 	[deptList reloadData];
