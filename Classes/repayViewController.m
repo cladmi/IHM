@@ -233,7 +233,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	int i;
 	for (i = 0; i < [selectArray count]; i++) {
 		if ([selectArray objectAtIndex:i] == [NSNumber numberWithBool:YES]) {
-			value.text = [NSString stringWithFormat:@"%f",[value.text floatValue] + [[amountArray objectAtIndex:i] floatValue]];
+			value.text = [NSString stringWithFormat:@"%10.2f",[value.text floatValue] + [[amountArray objectAtIndex:i] floatValue]];
 		}
 		[selectArray replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:FALSE]];
 	}	
@@ -297,11 +297,11 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	if ([[selectArray objectAtIndex:indexPath.row] boolValue]) {
 		[selectArray replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:NO]];
 		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-		value.text = [NSString stringWithFormat:@"%f",[value.text floatValue] + [[amountArray objectAtIndex:indexPath.row] floatValue]];
+		value.text = [NSString stringWithFormat:@"%8.2f",[value.text floatValue] + [[amountArray objectAtIndex:indexPath.row] floatValue]];
 	} else {
 		[selectArray replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:YES]];
 		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
-		value.text = [NSString stringWithFormat:@"%f",[value.text floatValue] - [[amountArray objectAtIndex:indexPath.row] floatValue]];
+		value.text = [NSString stringWithFormat:@"%8.2f",[value.text floatValue] - [[amountArray objectAtIndex:indexPath.row] floatValue]];
 	}
 	[tableView cellForRowAtIndexPath:indexPath].selected = NO;
 }
