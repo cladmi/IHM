@@ -25,6 +25,7 @@
 	
 	
 	addViewController *aviewcontroller = [[addViewController alloc] initWithNibName:@"addView" bundle:nil];
+	aviewcontroller.title = @"On me prête";
 	[self.navigationController pushViewController:aviewcontroller animated:YES];
 	[aviewcontroller release];
 	
@@ -32,6 +33,7 @@
 
 - (IBAction) ajouterP:(id)sender {
 	addViewController *apviewcontroller = [[addViewController alloc] initWithNibName:@"addView" bundle:nil];
+	apviewcontroller.title = @"Je prête";
 	[self.navigationController pushViewController:apviewcontroller animated:YES];
 	[apviewcontroller release];
 }

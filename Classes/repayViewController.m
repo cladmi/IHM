@@ -172,12 +172,12 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	
 	amountArray = [[NSMutableArray alloc] init];
 	[amountArray addObject:@"12.55"];
-	[amountArray addObject:@"21.50"];
+	[amountArray addObject:@"-21.50"];
 	[amountArray addObject:@"120.00"];
 	[amountArray addObject:@"0.24"];
-	[amountArray addObject:@"12.90"];
+	[amountArray addObject:@"-12.90"];
 	[amountArray addObject:@"25.00"];
-	[amountArray addObject:@"100.50"];
+	[amountArray addObject:@"-100.50"];
 	[amountArray addObject:@"4.80"];
 	
 	selectArray = [[NSMutableArray alloc] init];
@@ -233,7 +233,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	int i;
 	for (i = 0; i < [selectArray count]; i++) {
 		if ([selectArray objectAtIndex:i] == [NSNumber numberWithBool:YES]) {
-			value.text = [NSString stringWithFormat:@"%10.2f",[value.text floatValue] + [[amountArray objectAtIndex:i] floatValue]];
+			value.text = [NSString stringWithFormat:@"%8.2f",[value.text floatValue] + [[amountArray objectAtIndex:i] floatValue]];
 		}
 		[selectArray replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:FALSE]];
 	}	
@@ -281,6 +281,11 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	NSString *detailValue;
 	
 	cellValue = nameValue;
+	if ([amountValue floatValue] > 0) {
+		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.005 saturation:0.87 brightness:0.78 alpha:1.0];
+	} else if ([amountValue floatValue] < 0) {
+		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.34 saturation:0.83 brightness:0.44 alpha:1.0];
+	}
 	cellValue = [cellValue stringByAppendingString:@" "];
 	cellValue = [cellValue stringByAppendingString:amountValue];
 	cellValue = [cellValue stringByAppendingString:@" €"];
