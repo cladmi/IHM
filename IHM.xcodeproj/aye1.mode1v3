@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -310,8 +312,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -329,7 +329,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9E32FC4D1194472B00E522EC</string>
+										<string>9E32FC61119448DA00E522EC</string>
 										<key>history</key>
 										<array>
 											<string>9ED082B51173AFB600107C13</string>
@@ -350,8 +350,8 @@
 											<string>9E32FBD611943AD800E522EC</string>
 											<string>9E32FBF2119440FF00E522EC</string>
 											<string>9E32FC05119441E000E522EC</string>
-											<string>9E32FC3D1194466B00E522EC</string>
-											<string>9E32FC371194448900E522EC</string>
+											<string>9E32FC5F119448DA00E522EC</string>
+											<string>9E32FC60119448DA00E522EC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -549,9 +549,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>9EA5835A116107CF00567A75</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/aye1/Dev/IHM-copie/IHM.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -936,7 +936,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

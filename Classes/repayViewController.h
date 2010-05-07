@@ -13,7 +13,7 @@
 
 	IBOutlet UIButton *reinit;
 	IBOutlet UIButton *validate;
-	IBOutlet UITextField *value;
+	IBOutlet UILabel *value;
 	IBOutlet UITableView *deptList;
 	NSMutableArray *nameArray;
 	NSMutableArray *eventArray;
@@ -25,7 +25,7 @@
 
 @property(nonatomic, retain) UIButton *reinit;
 @property(nonatomic, retain) UIButton *validate;
-@property(nonatomic, retain) UITextField *value;
+@property(nonatomic, retain) UILabel *value;
 @property(nonatomic, retain) UITableView *deptList;
 
 - (IBAction) reset:(id)sender;
