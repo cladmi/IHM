@@ -8,6 +8,7 @@
 
 #import "addViewController.h"
 #import "PersonViewController.h"
+#import "sqlite3.h"
 
 
 @implementation addViewController
@@ -121,9 +122,33 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
 	NSLog(@"Button %d pushed",buttonIndex);
-	if(buttonIndex == 1g) {
+	if(buttonIndex == 1) {
+		//addDebt();
 		[self.navigationController popViewControllerAnimated:YES];
 	}
 }
+
+- (void) addDebt
+{
+	NSString *query = @"INSERT INTO event E, debt D, person P (E.name,D.amount,P.name) VALUES (";
+	
+	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts" ofType:@"db"];
+	sqlite3 *database = NULL;
+
+	
+	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
+		if (sqlite3_exec(database, [query UTF8String], nil, nil, NULL) != SQLITE_OK) {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+			[alert show];
+			[alert release];
+		}
+	} else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+	}
+	
+	sqlite3_close(database);
+}	
 
 @end

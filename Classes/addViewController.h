@@ -29,5 +29,6 @@
 
 - (IBAction) openList:(id)sender;
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+- (void) addDebt;
 
 @end
