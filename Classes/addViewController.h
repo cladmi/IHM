@@ -28,5 +28,6 @@
 - (IBAction) UpView:(id)sender;
 
 - (IBAction) openList:(id)sender;
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end

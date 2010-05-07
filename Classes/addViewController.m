@@ -86,13 +86,13 @@
 
 
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
-	NSLog(@"prout");
+	//NSLog(@"auie");
 	return NO;
 }
  
 	
 - (IBAction) openList:(id)sender {
-	NSLog(@"coucou");
+	//NSLog(@"coucou");
 	personnes.text = @"hello"; // sets the text
 	[personnes resignFirstResponder];
 }
@@ -102,21 +102,28 @@
 	UIAlertView *alert = [[UIAlertView alloc]
 						  initWithTitle:@"Dette ajoutée" 
 						  message:[NSString stringWithFormat:@"Dette de %@€ ajoutée à %@ avec succès",montant.text,personnes.text] 
-						  delegate:nil 
-						  cancelButtonTitle:@"Fermer" 
-						  otherButtonTitles:nil];
+						  delegate:self 
+						  cancelButtonTitle:@"Annuler" 
+						  otherButtonTitles:@"OK",nil];
 	[alert show];
 	[alert release];
-	[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction) UpView:(id)sender {
-	if (! causeEditActive) {
+	if (!causeEditActive) {
 		causeEditActive = YES;
 		[UIView beginAnimations:@"1" context:nil];
 		self.view.frame = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y - 100, self.view.frame.size.width, self.view.frame.size.height);
 		[UIView commitAnimations];
 	}	
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	NSLog(@"Button %d pushed",buttonIndex);
+	if(buttonIndex == 1g) {
+		[self.navigationController popViewControllerAnimated:YES];
+	}
 }
 
 @end

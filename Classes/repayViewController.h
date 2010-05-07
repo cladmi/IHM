@@ -28,6 +28,8 @@
 @property(nonatomic, retain) UITextField *value;
 @property(nonatomic, retain) UITableView *deptList;
 
+- (IBAction) reset:(id)sender;
+- (IBAction) validate:(id)sender; 
 
 
 @end

@@ -225,8 +225,33 @@ static int MyCallback(void *context, int count, char **values, char **colums)
     [super dealloc];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+
+
+
+- (IBAction) reset:(id)sender {
+	int i;
+	for (i = 0; i < [selectArray count]; i++) {
+		[selectArray replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:FALSE]];
+	}	
+	[deptList reloadData];
+}
+
+- (IBAction) validate:(id)sender {
 	
+}
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * IMPLEMENTATION DU TABLE VIEW DELEGATE * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	
 	
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
@@ -264,19 +289,26 @@ static int MyCallback(void *context, int count, char **values, char **colums)
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
 	if ([[selectArray objectAtIndex:indexPath.row] boolValue]) {
-		[selectArray insertObject:[NSNumber numberWithBool:NO] atIndex:indexPath.row];
+		[selectArray replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:NO]];
 		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+		value.text = [NSString stringWithFormat:@"%f",[value.text floatValue] + [[amountArray objectAtIndex:indexPath.row] floatValue]];
 	} else {
-		[selectArray insertObject:[NSNumber numberWithBool:YES] atIndex:indexPath.row];
+		[selectArray replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:YES]];
 		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+		value.text = [NSString stringWithFormat:@"%f",[value.text floatValue] - [[amountArray objectAtIndex:indexPath.row] floatValue]];
 	}
+	[tableView cellForRowAtIndexPath:indexPath].selected = NO;
 }
 
+
 /* Marche pas --> deselect tous quand select */
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {	
 	//[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+
+	
 }
 
 - (IBAction) TextFieldDownEditing:(id)sender {
