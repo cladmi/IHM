@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>12</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -317,7 +317,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>repayViewController.m</string>
+								<string>homeViewController.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,11 +325,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>repayViewController.m</string>
+										<string>homeViewController.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>9E32FB8611941DF600E522EC</string>
+										<string>9E32FBA41194348C00E522EC</string>
 										<key>history</key>
 										<array>
 											<string>9ED082B51173AFB600107C13</string>
@@ -339,18 +339,19 @@
 											<string>9EFDC5C7118C6A18005BE526</string>
 											<string>9EFDC5CE118C6A18005BE526</string>
 											<string>9EEBC8B2118F17CF00763C52</string>
-											<string>9E32FB6B11941C7D00E522EC</string>
 											<string>9E32FB6C11941C7D00E522EC</string>
-											<string>9E32FB6D11941C7D00E522EC</string>
 											<string>9E32FB6E11941C7D00E522EC</string>
 											<string>9E32FB6F11941C7D00E522EC</string>
 											<string>9E32FB7011941C7D00E522EC</string>
 											<string>9E32FB7111941C7D00E522EC</string>
-											<string>9E32FB7211941C7D00E522EC</string>
 											<string>9E32FB7311941C7D00E522EC</string>
 											<string>9E32FB7411941C7D00E522EC</string>
 											<string>9E32FB7D11941CCA00E522EC</string>
-											<string>9E32FB7E11941CCA00E522EC</string>
+											<string>9E32FB8A1194309D00E522EC</string>
+											<string>9E32FBA11194348C00E522EC</string>
+											<string>9E32FBA21194348C00E522EC</string>
+											<string>9E32FBA31194348C00E522EC</string>
+											<string>9E32FB8B1194309D00E522EC</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -575,7 +576,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>homeViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -592,6 +593,8 @@
 							<string>196pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>

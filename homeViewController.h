@@ -12,15 +12,18 @@
 @interface homeViewController : UIViewController {
 	IBOutlet UIButton *ajouterDette;
 	IBOutlet UIButton *rembourserDette;
+	IBOutlet UIButton *ajouterPret;
 
 }
 
 @property(nonatomic, retain) UIButton *ajouterDette;
+@property(nonatomic, retain) UIButton *ajouterPret;
 @property(nonatomic, retain) UIButton *rembourserDette;
 
 
 
 - (IBAction) ajouter:(id)sender;
+- (IBAction) ajouterP:(id)sender;
 - (IBAction) rembourser:(id)sender;
 
 @end

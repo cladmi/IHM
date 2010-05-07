@@ -11,12 +11,12 @@
 #import "repayViewController.h"
 #import "IHMAppDelegate.h"
 
-
 @implementation homeViewController
 
 
 
 @synthesize ajouterDette;
+@synthesize ajouterPret;
 @synthesize rembourserDette;
 
 
@@ -28,6 +28,12 @@
 	[self.navigationController pushViewController:aviewcontroller animated:YES];
 	[aviewcontroller release];
 	
+}
+
+- (IBAction) ajouterP:(id)sender {
+	addViewController *apviewcontroller = [[addViewController alloc] initWithNibName:@"addView" bundle:nil];
+	[self.navigationController pushViewController:apviewcontroller animated:YES];
+	[apviewcontroller release];
 }
 
 - (IBAction) rembourser:(id)sender {
