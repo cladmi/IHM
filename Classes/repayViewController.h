@@ -15,6 +15,8 @@
 	IBOutlet UIButton *validate;
 	IBOutlet UILabel *value;
 	IBOutlet UITableView *deptList;
+	IBOutlet UITabBar *tab;
+	UITabBarController *tabControl;
 	NSMutableArray *nameArray;
 	NSMutableArray *eventArray;
 	NSMutableArray *dateArray;

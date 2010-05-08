@@ -135,6 +135,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	
 	[[NSNotificationCenter defaultCenter] addObserver:self 
 											 selector:@selector(keyboardWillShow:) 
 												 name:UIKeyboardWillShowNotification 
@@ -225,10 +226,6 @@ static int MyCallback(void *context, int count, char **values, char **colums)
     [super dealloc];
 }
 
-
-
-
-
 - (IBAction) reset:(id)sender {
 	int i;
 	for (i = 0; i < [selectArray count]; i++) {
@@ -241,6 +238,11 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 }
 
 - (IBAction) validate:(id)sender {
+	
+}
+
+- (IBAction) TextFieldDownEditing:(id)sender {
+	[sender resignFirstResponder];
 	
 }
 
@@ -264,6 +266,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 		//cell.accessoryType = nil;
     }
 	
+	// Checked ?
 	if ([[selectArray objectAtIndex:indexPath.row] boolValue]) {
 		cell.accessoryType = UITableViewCellAccessoryCheckmark;
 		
@@ -272,6 +275,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	}
 		
 	
+	// Content of the cell
 	NSString *nameValue = [nameArray objectAtIndex:indexPath.row];
 	NSString *eventValue = [eventArray objectAtIndex:indexPath.row];
 	NSString *dateValue = [dateArray objectAtIndex:indexPath.row];
@@ -281,9 +285,12 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	NSString *detailValue;
 	
 	cellValue = nameValue;
+	// Green/Red colors
 	if ([amountValue floatValue] > 0) {
+		//Red
 		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.005 saturation:0.87 brightness:0.78 alpha:1.0];
 	} else if ([amountValue floatValue] < 0) {
+		//Green
 		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.34 saturation:0.83 brightness:0.44 alpha:1.0];
 	}
 	cellValue = [cellValue stringByAppendingString:@" "];
@@ -297,6 +304,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
     return cell;
 }
 
+// Select/unselect cells with checkmarks and updates amount
 - (void)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
 	if ([[selectArray objectAtIndex:indexPath.row] boolValue]) {
@@ -312,10 +320,10 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 }
 
 
-/* Marche pas --> deselect tous quand select */
+/* 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {	
 	//[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-}
+}*/
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	return 1;
@@ -327,14 +335,6 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
 	return @" ";
-}
-
-- (IBAction) TextFieldDownEditing:(id)sender {
-	[sender resignFirstResponder];
-	/*if (![montant.text isEqualToString:@""] && ![personnes.text isEqualToString:@""] && ![cause.text isEqualToString:@""]) {
-		valider.enabled = YES;
-		[valider setTitleColor:[UIColor colorWithRed:0.2f green:0.31f blue:0.52f alpha:1.0f] forState:UIControlStateNormal];
-	}*/
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
