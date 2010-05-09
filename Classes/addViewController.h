@@ -40,4 +40,6 @@
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 - (void) addDebt;
 
+- (void) dimsissWithType:(BOOL)isTypePerson Name:(NSString *)text Id:(int)identifier;
+
 @end
