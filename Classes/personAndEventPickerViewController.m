@@ -64,7 +64,7 @@
 				[row release];
 			}
 		} else {
-			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Annuler"  otherButtonTitles: nil];
 			[alert show];
 			[alert release];
 			[selectionList release];
@@ -127,13 +127,13 @@
 						
 						[row release];
 					} else {
-						UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while searching for data" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+						UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while searching for data" delegate:self cancelButtonTitle:@"Annuler"  otherButtonTitles: nil];
 						[alert show];
 						[alert release];
 					}
 					
 				} else {
-					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Annuler"  otherButtonTitles: nil];
 					[alert show];
 					[alert release];
 				}
@@ -200,7 +200,7 @@
 		self.title = @"Choisir un évènement";
 	}
 	
-	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(dismiss:)];
+	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Annuler" style:UIBarButtonItemStyleBordered target:self action:@selector(dismiss:)];
 	self.navigationItem.leftBarButtonItem = backButton;
 	[backButton release];
 	

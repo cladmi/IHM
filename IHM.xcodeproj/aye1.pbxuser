@@ -184,6 +184,12 @@
 			9EA31FF51197156000C9EEF2 /* PBXTextBookmark */ = 9EA31FF51197156000C9EEF2 /* PBXTextBookmark */;
 			9EA31FF61197156000C9EEF2 /* PBXTextBookmark */ = 9EA31FF61197156000C9EEF2 /* PBXTextBookmark */;
 			9EA31FF71197156000C9EEF2 /* PBXTextBookmark */ = 9EA31FF71197156000C9EEF2 /* PBXTextBookmark */;
+			9EA31FFA1197159B00C9EEF2 /* PBXTextBookmark */ = 9EA31FFA1197159B00C9EEF2 /* PBXTextBookmark */;
+			9EA32029119718BD00C9EEF2 /* PBXTextBookmark */ = 9EA32029119718BD00C9EEF2 /* PBXTextBookmark */;
+			9EA3202A119718BD00C9EEF2 /* PBXTextBookmark */ = 9EA3202A119718BD00C9EEF2 /* PBXTextBookmark */;
+			9EA3202B119718BD00C9EEF2 /* PBXTextBookmark */ = 9EA3202B119718BD00C9EEF2 /* PBXTextBookmark */;
+			9EA3202C119718BD00C9EEF2 /* PBXTextBookmark */ = 9EA3202C119718BD00C9EEF2 /* PBXTextBookmark */;
+			9EA3202F1197190C00C9EEF2 /* PBXTextBookmark */ = 9EA3202F1197190C00C9EEF2 /* PBXTextBookmark */;
 			9ED082B51173AFB600107C13 = 9ED082B51173AFB600107C13 /* PBXTextBookmark */;
 			9ED082B61173AFB600107C13 = 9ED082B61173AFB600107C13 /* PBXTextBookmark */;
 			9ED082B91173AFB600107C13 = 9ED082B91173AFB600107C13 /* PlistBookmark */;
@@ -770,7 +776,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 276";
 		rLen = 0;
-		rLoc = 7571;
+		rLoc = 7575;
 		rType = 0;
 		vrLen = 1974;
 		vrLoc = 5897;
@@ -780,7 +786,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 343";
 		rLen = 0;
-		rLoc = 10168;
+		rLoc = 10172;
 		rType = 0;
 		vrLen = 2373;
 		vrLoc = 6951;
@@ -800,7 +806,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 215";
 		rLen = 0;
-		rLoc = 6068;
+		rLoc = 6072;
 		rType = 0;
 		vrLen = 1510;
 		vrLoc = 5004;
@@ -870,7 +876,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 206";
 		rLen = 0;
-		rLoc = 6071;
+		rLoc = 6075;
 		rType = 0;
 		vrLen = 1624;
 		vrLoc = 5090;
@@ -900,7 +906,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 206";
 		rLen = 0;
-		rLoc = 6071;
+		rLoc = 6075;
 		rType = 0;
 		vrLen = 1732;
 		vrLoc = 5090;
@@ -910,7 +916,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 206";
 		rLen = 0;
-		rLoc = 6072;
+		rLoc = 6076;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 5096;
@@ -920,7 +926,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 206";
 		rLen = 0;
-		rLoc = 6072;
+		rLoc = 6076;
 		rType = 0;
 		vrLen = 1730;
 		vrLoc = 5096;
@@ -930,7 +936,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 206";
 		rLen = 0;
-		rLoc = 6072;
+		rLoc = 6076;
 		rType = 0;
 		vrLen = 1782;
 		vrLoc = 5096;
@@ -990,7 +996,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 303";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 3114;
 		vrLoc = 7125;
@@ -1000,7 +1006,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 304";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 3092;
 		vrLoc = 7179;
@@ -1030,7 +1036,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 304";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 3128;
 		vrLoc = 7179;
@@ -1040,7 +1046,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 304";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 3136;
 		vrLoc = 7179;
@@ -1050,7 +1056,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 303";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 3029;
 		vrLoc = 7216;
@@ -1060,7 +1066,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 303";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 3033;
 		vrLoc = 6963;
@@ -1100,7 +1106,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 309";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 2994;
 		vrLoc = 7007;
@@ -1110,7 +1116,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 309";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 2638;
 		vrLoc = 7819;
@@ -1120,7 +1126,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 309";
 		rLen = 0;
-		rLoc = 9415;
+		rLoc = 9419;
 		rType = 0;
 		vrLen = 2773;
 		vrLoc = 7684;
@@ -1254,7 +1260,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 339";
 		rLen = 0;
-		rLoc = 10168;
+		rLoc = 10172;
 		rType = 0;
 		vrLen = 2799;
 		vrLoc = 2234;
@@ -1384,7 +1390,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 339";
 		rLen = 0;
-		rLoc = 10168;
+		rLoc = 10172;
 		rType = 0;
 		vrLen = 2764;
 		vrLoc = 2269;
@@ -1394,7 +1400,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 313";
 		rLen = 0;
-		rLoc = 8550;
+		rLoc = 8554;
 		rType = 0;
 		vrLen = 3145;
 		vrLoc = 7110;
@@ -1404,7 +1410,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 311";
 		rLen = 0;
-		rLoc = 8429;
+		rLoc = 8433;
 		rType = 0;
 		vrLen = 3086;
 		vrLoc = 7162;
@@ -1414,7 +1420,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 320";
 		rLen = 0;
-		rLoc = 9097;
+		rLoc = 9101;
 		rType = 0;
 		vrLen = 3263;
 		vrLoc = 7211;
@@ -1424,7 +1430,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 318";
 		rLen = 0;
-		rLoc = 8913;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 3404;
 		vrLoc = 7218;
@@ -1444,7 +1450,7 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 318";
 		rLen = 0;
-		rLoc = 8913;
+		rLoc = 8917;
 		rType = 0;
 		vrLen = 3470;
 		vrLoc = 7218;
@@ -1454,10 +1460,70 @@
 		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
 		name = "personAndEventPickerViewController.m: 304";
 		rLen = 0;
-		rLoc = 8008;
+		rLoc = 8012;
 		rType = 0;
 		vrLen = 3439;
 		vrLoc = 7250;
+	};
+	9EA31FFA1197159B00C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
+		name = "personAndEventPickerViewController.m: 391";
+		rLen = 0;
+		rLoc = 11543;
+		rType = 0;
+		vrLen = 3007;
+		vrLoc = 8524;
+	};
+	9EA32029119718BD00C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
+		name = "addViewController.m: 119";
+		rLen = 0;
+		rLoc = 3527;
+		rType = 0;
+		vrLen = 2557;
+		vrLoc = 1799;
+	};
+	9EA3202A119718BD00C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9739EBF1196D6720056EC16 /* personAndEventPickerViewController.h */;
+		name = "personAndEventPickerViewController.h: 31";
+		rLen = 0;
+		rLoc = 847;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 0;
+	};
+	9EA3202B119718BD00C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
+		name = "personAndEventPickerViewController.m: 391";
+		rLen = 0;
+		rLoc = 11543;
+		rType = 0;
+		vrLen = 2906;
+		vrLoc = 8633;
+	};
+	9EA3202C119718BD00C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
+		name = "personAndEventPickerViewController.m: 377";
+		rLen = 0;
+		rLoc = 11543;
+		rType = 0;
+		vrLen = 3560;
+		vrLoc = 8287;
+	};
+	9EA3202F1197190C00C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
+		name = "personAndEventPickerViewController.m: 67";
+		rLen = 6;
+		rLoc = 1746;
+		rType = 0;
+		vrLen = 2543;
+		vrLoc = 451;
 	};
 	9EA582C51160FAE500567A75 /* IHM */ = {
 		isa = PBXExecutable;
@@ -1528,9 +1594,9 @@
 	};
 	9EA583291161046E00567A75 /* addViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1539, 2795}}";
-			sepNavSelRange = "{4157, 0}";
-			sepNavVisRange = "{3326, 2233}";
+			sepNavIntBoundsRect = "{{0, 0}, {1539, 2730}}";
+			sepNavSelRange = "{3527, 0}";
+			sepNavVisRange = "{1799, 2557}";
 			sepNavWindowFrame = "{{973, 16}, {947, 1152}}";
 		};
 	};
@@ -1604,7 +1670,7 @@
 	};
 	C9739EBF1196D6720056EC16 /* personAndEventPickerViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1539, 997}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1539, 1020}}";
 			sepNavSelRange = "{847, 0}";
 			sepNavVisRange = "{0, 975}";
 			sepNavWindowFrame = "{{71, 21}, {997, 1152}}";
@@ -1612,9 +1678,9 @@
 	};
 	C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1539, 5226}}";
-			sepNavSelRange = "{8008, 0}";
-			sepNavVisRange = "{7250, 3439}";
+			sepNavIntBoundsRect = "{{0, 0}, {1539, 5239}}";
+			sepNavSelRange = "{1746, 6}";
+			sepNavVisRange = "{451, 2543}";
 			sepNavWindowFrame = "{{94, 0}, {997, 1152}}";
 		};
 	};
