@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.10">
 	<data>
 		<int key="IBDocument.SystemTarget">784</int>
-		<string key="IBDocument.SystemVersion">10D573</string>
+		<string key="IBDocument.SystemVersion">10C540</string>
 		<string key="IBDocument.InterfaceBuilderVersion">740</string>
-		<string key="IBDocument.AppKitVersion">1038.29</string>
-		<string key="IBDocument.HIToolboxVersion">460.00</string>
+		<string key="IBDocument.AppKitVersion">1038.25</string>
+		<string key="IBDocument.HIToolboxVersion">458.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			<string key="NS.object.0">62</string>
@@ -43,7 +43,7 @@
 					<object class="IBUILabel" id="826760271">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{15, 297}, {136, 21}}</string>
+						<string key="NSFrame">{{20, 297}, {136, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -147,7 +147,7 @@
 							<string key="NSColorName">disabledControlTextColor</string>
 							<object class="NSColor" key="NSColor">
 								<int key="NSColorSpace">3</int>
-								<bytes key="NSWhite">MC4zMzMzMzMzMzMzAA</bytes>
+								<bytes key="NSWhite">MC4zMzMzMzMzNDMzAA</bytes>
 							</object>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="95334866"/>
@@ -155,7 +155,7 @@
 					<object class="IBUILabel" id="705777721">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{159, 299}, {42, 21}}</string>
+						<string key="NSFrame">{{159, 296}, {67, 22}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -163,7 +163,7 @@
 						<string key="IBUIText">0.00</string>
 						<object class="NSFont" key="IBUIFont">
 							<string key="NSName">Helvetica</string>
-							<double key="NSSize">13</double>
+							<double key="NSSize">17</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<reference key="IBUITextColor" ref="426818027"/>
@@ -242,14 +242,6 @@
 						<reference key="destination" ref="753584527"/>
 					</object>
 					<int key="connectionID">16</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">deptList</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="798190175"/>
-					</object>
-					<int key="connectionID">37</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
@@ -333,6 +325,14 @@
 					</object>
 					<int key="connectionID">81</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">debtList</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="798190175"/>
+					</object>
+					<int key="connectionID">82</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -351,10 +351,10 @@
 							<reference ref="798190175"/>
 							<reference ref="753584527"/>
 							<reference ref="1026128840"/>
-							<reference ref="480373924"/>
+							<reference ref="52852456"/>
 							<reference ref="826760271"/>
 							<reference ref="705777721"/>
-							<reference ref="52852456"/>
+							<reference ref="480373924"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -499,7 +499,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">81</int>
+			<int key="maxID">82</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -526,7 +526,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>deptList</string>
+							<string>debtList</string>
 							<string>reinit</string>
 							<string>validate</string>
 							<string>value</string>

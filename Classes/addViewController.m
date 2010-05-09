@@ -121,11 +121,34 @@
 }
 
 
+- (void) addDebt {
+
+	NSString *query;
+	query = [NSString stringWithFormat:@"INSERT INTO debt (amount, currency, id_person, id_event) VALUES (%f, 0, %d,%d)", [montant.text floatValue], personID, eventID];		
+		
+		sqlite3 *database = NULL;
+		NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
+		
+		if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
+			if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) != SQLITE_OK) {
+									
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while adding debt" delegate:self cancelButtonTitle:@"Annuler"  otherButtonTitles: nil];
+				[alert show];
+				[alert release];
+				
+			}
+		} else {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+			[alert show];
+			[alert release];
+		}
+		sqlite3_close(database);
+}
 
 
 - (IBAction) ValidateDept:(id)sender {
 	UIAlertView *alert = [[UIAlertView alloc]
-						  initWithTitle:@"Dette ajoutée" 
+						  initWithTitle:@"Ajouter Dette" 
 						  message:@""
 						  delegate:self 
 						  cancelButtonTitle:@"Annuler" 
@@ -177,32 +200,10 @@
 {
 	NSLog(@"Button %d pushed",buttonIndex);
 	if(buttonIndex == 1) {
-		//addDebt();
+		[self addDebt];
 		[self.navigationController popViewControllerAnimated:YES];
 	}
 }
 
-- (void) addDebt
-{
-	NSString *query = @"INSERT INTO event E, debt D, person P (E.name,D.amount,P.name) VALUES (";
-	
-	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts" ofType:@"db"];
-	sqlite3 *database = NULL;
-
-	
-	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
-		if (sqlite3_exec(database, [query UTF8String], nil, nil, NULL) != SQLITE_OK) {
-			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
-			[alert show];
-			[alert release];
-		}
-	} else {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
-		[alert show];
-		[alert release];
-	}
-	
-	sqlite3_close(database);
-}	
 
 @end

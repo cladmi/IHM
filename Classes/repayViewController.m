@@ -18,7 +18,7 @@
 @synthesize reinit;
 @synthesize validate;
 @synthesize value;
-@synthesize deptList;
+@synthesize debtList;
 @synthesize queryResults;
 
 
@@ -139,7 +139,7 @@
 	[self loadDebts];
 
 	format = [[NSDateFormatter alloc] init];
-	[format setDateFormat:@"dd-MM-yyyy"];
+	[format setDateFormat:@"dd MMM yyyy"];
 		[super viewDidLoad];
 
 }
@@ -182,11 +182,59 @@
 		}
 		[row setValue:[NSNumber numberWithBool:FALSE] forKey:@"selected"];
 	}	
-	[deptList reloadData];
+	[debtList reloadData];
+}
+
+
+
+- (void) reimburseDebt {
+	NSString *query;
+	sqlite3 *database;
+	
+	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
+	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
+		
+		for (NSDictionary *row in queryResults) {
+			if ([[row objectForKey:@"selected"] boolValue]) {
+				
+				query = [NSString stringWithFormat:@"DELETE FROM debt WHERE id=%d", [[row objectForKey:@"id"] intValue]];
+				
+				if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) != SQLITE_OK) {
+					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while deleting entry" delegate:self cancelButtonTitle:@"Annuler"  otherButtonTitles: nil];
+					[alert show];
+					[alert release];
+				}
+			}
+			
+		}
+	} else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+	}
+	
+	sqlite3_close(database);
 }
 
 - (IBAction) validate:(id)sender {
-	
+	UIAlertView *alert = [[UIAlertView alloc]
+						  initWithTitle:@"Rembourser dettes" 
+						  message:@"Vous allez rembourser toutes les dettes sélectionnées. Continuer ?"
+						  delegate:self 
+						  cancelButtonTitle:@"Annuler" 
+						  otherButtonTitles:@"Oui",nil];
+	[alert show];
+	[alert release];
+
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+	NSLog(@"Button %d pushed",buttonIndex);
+	if(buttonIndex == 1) {
+		[self reimburseDebt];
+		[self.navigationController popViewControllerAnimated:YES];
+	}
 }
 
 - (IBAction) TextFieldDownEditing:(id)sender {
@@ -228,7 +276,6 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 	[key release];
 	
 	if (result == NSOrderedSame) {
-		NSLog(@"orderer same");
 		return NSOrderedSame;
 	} else if (sort & 8) {
 		return result;
@@ -264,7 +311,7 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 	}
 	//	NSLog(@" type de trie %d", (sort_type & 7));
 	[queryResults sortUsingFunction:&sortFunction context:(void *)sort_type];
-	[deptList reloadData];
+	[debtList reloadData];
 	
 }
 

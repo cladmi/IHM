@@ -18,7 +18,7 @@
 	IBOutlet UIButton *reinit;
 	IBOutlet UIButton *validate;
 	IBOutlet UILabel *value;
-	IBOutlet UITableView *deptList;
+	IBOutlet UITableView *debtList;
 
 	NSMutableArray *queryResults;
 	
@@ -31,7 +31,7 @@
 @property(nonatomic, retain) UIButton *reinit;
 @property(nonatomic, retain) UIButton *validate;
 @property(nonatomic, retain) UILabel *value;
-@property(nonatomic, retain) UITableView *deptList;
+@property(nonatomic, retain) UITableView *debtList;
 @property(nonatomic, retain) NSMutableArray *queryResults;
 
 - (IBAction) reset:(id)sender;
