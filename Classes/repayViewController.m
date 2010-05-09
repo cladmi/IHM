@@ -278,6 +278,7 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 		NSLog(@" type de trie %d", (sort_type & 7));
 	[queryResults sortUsingFunction:&sortFunction context:(void *)sort_type];
 	[deptList reloadData];
+	
 }
 
 
