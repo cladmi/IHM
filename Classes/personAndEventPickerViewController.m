@@ -147,8 +147,13 @@
 		query = [NSString stringWithFormat:@"DELETE FROM person WHERE id=%d", [[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
 	} else {
 		sqlite3_open([file UTF8String], &database);
-		query = [NSString stringWithFormat:@"SELECT id FROM debt WHERE id_person=%d LIMIT 1", 
+		if (isTypePerson) {
+			query = [NSString stringWithFormat:@"SELECT id FROM debt WHERE id_person=%d LIMIT 1", 
 				 [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
+		} else {
+			query = [NSString stringWithFormat:@"SELECT id FROM debt WHERE id_event=%d LIMIT 1", 
+					 [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];			
+		}
 		sqlite3_stmt *cs; // compiledStatement
 		sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL);
 		if (sqlite3_step(cs) == SQLITE_ROW) {
