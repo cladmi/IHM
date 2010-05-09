@@ -99,7 +99,9 @@
 	[personnes resignFirstResponder];
 	
 	personAndEventPickerViewController *pViewController = [[personAndEventPickerViewController alloc] initWithNibName:@"personAndEventPickerViewController" bundle:nil];
+
 	navController = [[UINavigationController alloc] init];
+	pViewController.fatherController = self;
 	
 	if (sender == personnes) {
 		pViewController.isTypePerson = TRUE;
@@ -131,6 +133,25 @@
 	[alert show];
 	[alert release];
 }
+
+
+/* delegate methode for the pickerviewController */
+
+- (void) dimsissWithType:(BOOL)isTypePerson Name:(NSString *)text Id:(int)identifier {
+	[text retain];
+	if (isTypePerson) {
+		personnes.text = text;
+		personID = identifier;
+	} else {
+		cause.text = text;
+		eventID = identifier;
+	}
+	[self dismissModalViewControllerAnimated:YES];
+}
+		
+		
+
+
 
 
 
