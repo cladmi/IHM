@@ -100,10 +100,8 @@
 		sqlite3 *database = NULL;
 		
 		if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
-			sqlite3_exec(database, "BEGIN", 0, 0, 0);
 			if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) == SQLITE_OK) {
-				NSLog(@" 3");
-				sqlite3_exec(database, "COMMIT", 0, 0, 0);
+
 				
 				if (isTypePerson) {
 					query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
@@ -392,9 +390,13 @@
 		}
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-	//		[tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade] ; 
-		[tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+		// Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+		if (indexPath.row == 0) {
+			[tableView reloadSections:[NSIndexSet indexSetWithIndex:0] withRowAnimation:UITableViewRowAnimationFade];
+		} else {
+			[tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade] ; 
+		}
+		
     }   
 }
 
