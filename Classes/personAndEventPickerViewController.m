@@ -301,21 +301,23 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
     }
 	
 	NSString *cellText;
 	if (indexPath.section == 0) {
 		cellText = [NSString stringWithFormat:@"%@ ", [[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"name"]]; 
 		if (!isTypePerson) {
-			cellText = [cellText stringByAppendingString:[format stringFromDate:[NSDate dateWithTimeIntervalSince1970:	
-																	  [[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
+			cell.detailTextLabel.text = [format stringFromDate:[NSDate dateWithTimeIntervalSince1970:[[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]];
+			//cellText = [cellText stringByAppendingString:[format stringFromDate:[NSDate dateWithTimeIntervalSince1970:	
+			//														  [[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
 		}
 	} else {
 		cellText = [NSString stringWithFormat:@"%@ ", [[selectionList objectAtIndex:indexPath.row] objectForKey:@"name"]]; 
 		if (!isTypePerson) {
-			cellText = [cellText stringByAppendingString:[format stringFromDate:[NSDate dateWithTimeIntervalSince1970:	
-																	  [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
+			cell.detailTextLabel.text = [format stringFromDate:[NSDate dateWithTimeIntervalSince1970:[[[selectionList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]];
+			//cellText = [cellText stringByAppendingString:[format stringFromDate:[NSDate dateWithTimeIntervalSince1970:	
+			//														  [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
 		}
 	}
 	cell.textLabel.text = [cellText capitalizedString];
