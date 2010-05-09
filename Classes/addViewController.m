@@ -98,7 +98,7 @@
 	//NSLog(@"coucou");
 	personnes.text = @"hello"; // sets the text
 	[personnes resignFirstResponder];
-	personAndEventPickerViewController *pViewController = [[personAndEventPickerViewController alloc] init];
+	personAndEventPickerViewController *pViewController = [[personAndEventPickerViewController alloc] initWithNibName:@"personAndEventPickerViewController" bundle:nil];
 	[self presentModalViewController:pViewController animated:YES];
 }
 
