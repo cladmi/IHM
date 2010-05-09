@@ -212,6 +212,7 @@
 	sqlite3_close(database);
 	
 	[tab reloadData];
+	TextFieldDownEditing(addText.id);
 }
 
 - (IBAction) dismiss:(id)sender {
