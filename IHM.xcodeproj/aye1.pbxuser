@@ -190,6 +190,8 @@
 			9EA3202B119718BD00C9EEF2 /* PBXTextBookmark */ = 9EA3202B119718BD00C9EEF2 /* PBXTextBookmark */;
 			9EA3202C119718BD00C9EEF2 /* PBXTextBookmark */ = 9EA3202C119718BD00C9EEF2 /* PBXTextBookmark */;
 			9EA3202F1197190C00C9EEF2 /* PBXTextBookmark */ = 9EA3202F1197190C00C9EEF2 /* PBXTextBookmark */;
+			9EA32030119719E700C9EEF2 /* PBXTextBookmark */ = 9EA32030119719E700C9EEF2 /* PBXTextBookmark */;
+			9EA3203511971D0C00C9EEF2 /* PBXTextBookmark */ = 9EA3203511971D0C00C9EEF2 /* PBXTextBookmark */;
 			9ED082B51173AFB600107C13 = 9ED082B51173AFB600107C13 /* PBXTextBookmark */;
 			9ED082B61173AFB600107C13 = 9ED082B61173AFB600107C13 /* PBXTextBookmark */;
 			9ED082B91173AFB600107C13 = 9ED082B91173AFB600107C13 /* PlistBookmark */;
@@ -1525,6 +1527,26 @@
 		vrLen = 2543;
 		vrLoc = 451;
 	};
+	9EA32030119719E700C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
+		name = "personAndEventPickerViewController.m: 400";
+		rLen = 0;
+		rLoc = 11996;
+		rType = 0;
+		vrLen = 3113;
+		vrLoc = 857;
+	};
+	9EA3203511971D0C00C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */;
+		name = "personAndEventPickerViewController.m: 396";
+		rLen = 0;
+		rLoc = 11995;
+		rType = 0;
+		vrLen = 3481;
+		vrLoc = 8358;
+	};
 	9EA582C51160FAE500567A75 /* IHM */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -1678,9 +1700,9 @@
 	};
 	C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1539, 5239}}";
-			sepNavSelRange = "{1746, 6}";
-			sepNavVisRange = "{451, 2543}";
+			sepNavIntBoundsRect = "{{0, 0}, {1539, 5187}}";
+			sepNavSelRange = "{11995, 0}";
+			sepNavVisRange = "{8358, 3481}";
 			sepNavWindowFrame = "{{94, 0}, {997, 1152}}";
 		};
 	};
