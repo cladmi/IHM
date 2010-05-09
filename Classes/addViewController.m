@@ -115,6 +115,7 @@
 	[pViewController release];
 	//[self presentModalViewController:pViewController animated:YES];
 	[self presentModalViewController:navController animated:YES];
+	[navController release];
 }
 
 
