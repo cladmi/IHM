@@ -30,7 +30,7 @@
 @property(nonatomic) bool isTypePerson;
 
 
-- (IBAction) addPerson:(id)sender;
+- (IBAction) addItem:(id)sender;
 - (IBAction) dismiss:(id)sender;
 - (IBAction) TextFieldDownEditing:(id)sender;
 @end

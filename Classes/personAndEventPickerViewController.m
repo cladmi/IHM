@@ -139,28 +139,36 @@
 	
 }
 
-- (IBAction) addPerson:(id)sender {
+- (IBAction) addItem:(id)sender {
+	
+	NSLog(@" on va ajouter qqch");
 	NSString *query;
 	if (isTypePerson) {
 		query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
 	} else {
-		query = [NSString stringWithFormat:@"INSERT INTO person (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
+		query = [NSString stringWithFormat:@"INSERT INTO event (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
 	}
+	
+	NSLog(@" query == %@", query);
 	
 	
 	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
 	sqlite3 *database = NULL;
 	
 	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
+			NSLog(@" 1");
 		sqlite3_exec(database, "BEGIN", 0, 0, 0);
-		if(sqlite3_exec(database, [query UTF8String], NULL, NULL, NULL) == SQLITE_OK) {
+		NSLog(@" 2");
+		if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) == SQLITE_OK) {
+			NSLog(@" 3");
 			sqlite3_exec(database, "COMMIT", 0, 0, 0);
 			
 			if (isTypePerson) {
-				query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
+				query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
 			} else {
-				query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
+				query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
 			}
+			NSLog(@" query == %@", query);
 			
 			sqlite3_stmt *cs; // compiledStatement
 			if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
@@ -178,7 +186,7 @@
 					
 					[row release];
 				} else {
-					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while searching for data" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
 					[alert show];
 					[alert release];
 				}
