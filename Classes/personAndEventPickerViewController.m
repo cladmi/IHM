@@ -337,11 +337,6 @@
 	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
 	// [self.navigationController pushViewController:anotherViewController];
 	// [anotherViewController release];
-	if(indexPath.section == 0) {
-		[fatherController dismissWithType:isTypePerson Name:[NSString stringWithFormat:@"%@ ", [[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"name"]] Id:indexPath.row]; 
-	} else {
-		[fatherController dismissWithType:isTypePerson Name:[NSString stringWithFormat:@"%@ ", [[selectionList objectAtIndex:indexPath.row] objectForKey:@"name"]] Id:indexPath.row];
-	}
 }
 
 
