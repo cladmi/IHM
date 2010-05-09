@@ -27,40 +27,29 @@
 
 
 - (void) loadDatabase {
-	
-	
 	NSString *query;
 	if (isTypePerson) {
 		query = @"SELECT id, name FROM person ORDER BY name ASC";
 	} else {
 		query = @"SELECT id, name, date FROM event ORDER BY name ASC";
-	}
-	
-	
-	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
+	}	
+
 	sqlite3 *database = NULL;
-	
+	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
 	
 	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
 		sqlite3_stmt *cs; // compiledStatement
 		if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
-			
 			selectionList = [[NSMutableArray alloc] init];
-			
 			while(sqlite3_step(cs) == SQLITE_ROW) {
 				NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
-				
 				[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 0)]				forKey:@"id"]; 						   
 				[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 1)]	forKey:@"name"];
 				if (!isTypePerson) {
 					[row setValue:[NSNumber numberWithLong:(long) sqlite3_column_double(cs, 2)]		forKey:@"date"];
-					
 				}
 				[row setValue:[NSNumber numberWithBool:NO]											forKey:@"selected"];
-				
-				
 				[selectionList addObject:row];
-				
 				[row release];
 			}
 		} else {
@@ -81,13 +70,12 @@
 	}
 	sqlite3_close(database);
 	[tab reloadData];
-	
+
 }
 
 - (IBAction) addItem:(id)sender {
-	
-	
 	if (![addText.text  isEqualToString:@""]) {
+			
 		NSString *query;
 		if (isTypePerson) {
 			query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
@@ -95,9 +83,8 @@
 			query = [NSString stringWithFormat:@"INSERT INTO event (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
 		}
 		
-		
-		NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
 		sqlite3 *database = NULL;
+		NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
 		
 		if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
 			if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) == SQLITE_OK) {
@@ -148,12 +135,38 @@
 		self.addText.text = @"";
 		[self tableView:tab commitEditingStyle:UITableViewCellEditingStyleInsert 
 							forRowAtIndexPath:[NSIndexPath indexPathForRow:([newlyAddedList count] - 1) inSection:0]];
-		 
-		
-
-	//	[tab reloadData];
 	}
 }
+
+- (bool) deleteEntryAtIndexPath:(NSIndexPath *)indexPath {
+	NSString *query;
+	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
+	if (indexPath.section == 0) {
+		query = [NSString stringWithFormat:@"DELETE FROM person WHERE id=%d", [[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
+	} else {
+		query = [NSString stringWithFormat:@"DELETE FROM event WHERE id=%d", [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
+	}
+	NSLog(@"query == %@",query);
+	sqlite3 *database = NULL;
+	
+	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
+		if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) != SQLITE_OK) {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while deleting entry" delegate:self cancelButtonTitle:@"Annuler"  otherButtonTitles: nil];
+			[alert show];
+			[alert release];
+			return FALSE;
+		}
+		
+	} else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+		return FALSE;
+	}
+	sqlite3_close(database);
+	return TRUE;
+}
+
 
 
 
@@ -194,6 +207,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	
+
 	
 	[self loadDatabase];
 	if (isTypePerson) {
@@ -246,11 +262,6 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 */
-
-
-
-
-
 
 
 
@@ -381,12 +392,19 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-		
 		if (indexPath.section == 0) {
-			NSLog(@"coucou tu veux ?");
-			[newlyAddedList removeObjectAtIndex:indexPath.row];
-			[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-			
+			if ([self deleteEntryAtIndexPath:indexPath]) {
+				if (indexPath.section == 0) {
+					[newlyAddedList removeObjectAtIndex:indexPath.row];
+				} else {
+					[selectionList removeObjectAtIndex:indexPath.row];
+				}
+				
+				
+				
+				[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
+				
+			}
 		}
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
