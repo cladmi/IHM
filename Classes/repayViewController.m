@@ -203,8 +203,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 }
 
 - (IBAction) TextFieldDownEditing:(id)sender {
-	[sender resignFirstResponder];
-	
+	[sender resignFirstResponder];	
 }
 
 /*
