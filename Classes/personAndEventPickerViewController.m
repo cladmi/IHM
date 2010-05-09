@@ -27,6 +27,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+	
+	[self loadDatabase];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -77,6 +79,7 @@
 
 - (void) loadDatabase {
 	
+	NSLog(@"coucou tu veux voir mon chargement de DB");
 	NSString *query;
 	if (isTypePerson) {
 		query = @"SELECT id, name FROM person ORDER BY name ASC";
@@ -133,9 +136,9 @@
 - (IBAction) addPerson:(id)sender {
 	NSString *query;
 	if (isTypePerson) {
-		query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
+		//query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
 	} else {
-		query = [NSString stringWithFormat:@"INSERT INTO person (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
+	//	query = [NSString stringWithFormat:@"INSERT INTO person (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
 	}
 	
 	
@@ -148,9 +151,9 @@
 			sqlite3_exec(database, "COMMIT", 0, 0, 0);
 			
 			if (isTypePerson) {
-				query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
+		//		query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
 			} else {
-				query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
+		//		query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
 			}
 			
 			sqlite3_stmt *cs; // compiledStatement
