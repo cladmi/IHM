@@ -16,12 +16,18 @@
 	IBOutlet UIButton *valider;
 	bool causeEditActive;
 	NSMutableArray *personsArray;
+	
+	int personID;
+	int eventID;
 }
 
 @property(nonatomic, retain) UITextField *montant;
 @property(nonatomic, retain) UITextField *personnes;
 @property(nonatomic, retain) UITextField *cause;
 @property(nonatomic, retain) UIButton *valider;
+
+@property(nonatomic) int personID;
+@property(nonatomic) int eventID;
 
 - (IBAction) TextFieldDownEditing:(id)sender;
 - (IBAction) ValidateDept:(id)sender;
