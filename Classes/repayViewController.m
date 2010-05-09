@@ -11,20 +11,6 @@
 
 
 
-
-
-static int MyCallback(void *context, int count, char **values, char **colums)
-{
-	
-	// TODO
-	NSMutableArray *result = (NSMutableArray *)context;
-	for (int i = 0; i < count; i++) {
-		const char *nameCString = values[i];
-		[result addObject:[NSString stringWithUTF8String:nameCString]];
-	}
-	return SQLITE_OK;
-}
-
 @implementation repayViewController
 
 

@@ -14,6 +14,7 @@
 @synthesize fatherController;
 @synthesize selectionList;
 @synthesize newlyAddedList;
+@synthesize isTypePerson;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -29,6 +30,9 @@
     [super viewDidLoad];
 	
 	[self loadDatabase];
+
+	format = [[NSDateFormatter alloc] init];
+	[format setDateFormat:@"dd-MM-yyyy"];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -79,7 +83,7 @@
 
 - (void) loadDatabase {
 	
-	NSLog(@"coucou tu veux voir mon chargement de DB");
+
 	NSString *query;
 	if (isTypePerson) {
 		query = @"SELECT id, name FROM person ORDER BY name ASC";
@@ -105,6 +109,7 @@
 				[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 1)]	forKey:@"name"];
 				if (!isTypePerson) {
 					[row setValue:[NSNumber numberWithLong:(long) sqlite3_column_double(cs, 2)]		forKey:@"date"];
+
 				}
 				[row setValue:[NSNumber numberWithBool:NO]											forKey:@"selected"];
 				
@@ -130,15 +135,16 @@
 		
 	}
 	sqlite3_close(database);
+	[tab reloadData];
 	
 }
 
 - (IBAction) addPerson:(id)sender {
 	NSString *query;
 	if (isTypePerson) {
-		//query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
+		query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
 	} else {
-	//	query = [NSString stringWithFormat:@"INSERT INTO person (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
+		query = [NSString stringWithFormat:@"INSERT INTO person (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
 	}
 	
 	
@@ -151,9 +157,9 @@
 			sqlite3_exec(database, "COMMIT", 0, 0, 0);
 			
 			if (isTypePerson) {
-		//		query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
+				query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
 			} else {
-		//		query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
+				query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='@%' ORDER BY id DESC LIMIT 1", addText.text];
 			}
 			
 			sqlite3_stmt *cs; // compiledStatement
@@ -191,8 +197,8 @@
 		[alert release];
 	}
 	sqlite3_close(database);
-
 	
+	[tab reloadData];
 }
 
 
@@ -204,14 +210,6 @@
 	
 	
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -246,7 +244,11 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-		return @"Nouvelle(s) personne(s)";
+		if ([newlyAddedList count] == 0) {
+			return nil;
+		} else {
+			return @"Nouvelle(s) personne(s)";
+		}
 	}
 	return @"Déjà enregistrées";
 }
@@ -259,9 +261,9 @@
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	if (section == 0) {
-		return 1;
+		return [newlyAddedList count];
 	}
-    return 10;
+    return [selectionList count];
 }
 
 
@@ -275,12 +277,21 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	
+	NSString *cellText;
 	if (indexPath.section == 0) {
-		cell.textLabel.text = @"tmp";
+		cellText = [NSString stringWithFormat:@"%@ ", [[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"name"]]; 
+		if (!isTypePerson) {
+			cellText = [cellText stringByAppendingString:[format stringFromDate:[NSDate dateWithTimeIntervalSince1970:	
+																	  [[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
+		}
 	} else {
-		cell.textLabel.text = @"Bla";
+		cellText = [NSString stringWithFormat:@"%@ ", [[selectionList objectAtIndex:indexPath.row] objectForKey:@"name"]]; 
+		if (!isTypePerson) {
+			cellText = [cellText stringByAppendingString:[format stringFromDate:[NSDate dateWithTimeIntervalSince1970:	
+																	  [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
+		}
 	}
-	
+	cell.textLabel.text = cellText;
     return cell;
 }
 
@@ -335,6 +346,7 @@
 
 - (void)dealloc {
     [super dealloc];
+	[format release];
 }
 
 
