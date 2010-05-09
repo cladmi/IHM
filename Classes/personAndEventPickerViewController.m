@@ -140,14 +140,34 @@
 
 - (bool) deleteEntryAtIndexPath:(NSIndexPath *)indexPath {
 	NSString *query;
+	sqlite3 *database;
+	
 	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
 	if (indexPath.section == 0) {
 		query = [NSString stringWithFormat:@"DELETE FROM person WHERE id=%d", [[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
 	} else {
+		sqlite3_open([file UTF8String], &database);
+		query = [NSString stringWithFormat:@"SELECT id FROM debt WHERE id_person=%d LIMIT 1", 
+				 [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
+		sqlite3_stmt *cs; // compiledStatement
+		sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL);
+		if (sqlite3_step(cs) == SQLITE_ROW) {
+			NSLog(@"forbidden to delete ");
+			
+			sqlite3_finalize(cs);
+			sqlite3_close(database);
+			return false;
+		}
+		NSLog(@"authorized to delete");
+		sqlite3_finalize(cs);
+		sqlite3_close(database);
+		
 		query = [NSString stringWithFormat:@"DELETE FROM event WHERE id=%d", [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
 	}
-	NSLog(@"query == %@",query);
-	sqlite3 *database = NULL;
+	
+	
+	database = NULL;
+	file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
 	
 	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
 		if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) != SQLITE_OK) {
@@ -392,20 +412,28 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-		if (indexPath.section == 0) {
-			if ([self deleteEntryAtIndexPath:indexPath]) {
-				if (indexPath.section == 0) {
-					[newlyAddedList removeObjectAtIndex:indexPath.row];
-				} else {
-					[selectionList removeObjectAtIndex:indexPath.row];
-				}
-				
-				
-				
-				[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
-				
+		if ([self deleteEntryAtIndexPath:indexPath]) {
+			if (indexPath.section == 0) {
+				[newlyAddedList removeObjectAtIndex:indexPath.row];
+			} else {
+				[selectionList removeObjectAtIndex:indexPath.row];
 			}
+			[tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:YES];
+		} else {
+			if (isTypePerson) {
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Suppression impossible" message:@"La personne sélectionnée est encore associée à des dettes" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+				[alert show];
+				[alert release];
+			} else {
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Suppression impossible" message:@"L'évènement séléctionné est encore associé à des dettes" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+				[alert show];
+				[alert release];
+			}
+			
+			[[tableView cellForRowAtIndexPath:indexPath] setEditing:NO animated:NO];
+			[[tableView cellForRowAtIndexPath:indexPath] setEditing:YES animated:YES];
 		}
+		
     }   
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
 		// Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
