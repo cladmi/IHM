@@ -28,6 +28,8 @@
 		9EF3E29C117CB5A6007B4002 /* DoneUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E298117CB5A6007B4002 /* DoneUp.png */; };
 		9EF3E29D117CB5A6007B4002 /* DoneUp3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E299117CB5A6007B4002 /* DoneUp3.png */; };
 		C9739C931196947A0056EC16 /* debts_new.db in Resources */ = {isa = PBXBuildFile; fileRef = C9739C921196947A0056EC16 /* debts_new.db */; };
+		C9739EC21196D6720056EC16 /* personAndEventPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */; };
+		C9739EC31196D6720056EC16 /* personAndEventPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9739EC11196D6720056EC16 /* personAndEventPickerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,9 @@
 		9EF3E298117CB5A6007B4002 /* DoneUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DoneUp.png; path = Classes/DoneUp.png; sourceTree = "<group>"; };
 		9EF3E299117CB5A6007B4002 /* DoneUp3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DoneUp3.png; path = Classes/DoneUp3.png; sourceTree = "<group>"; };
 		C9739C921196947A0056EC16 /* debts_new.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = debts_new.db; sourceTree = "<group>"; };
+		C9739EBF1196D6720056EC16 /* personAndEventPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = personAndEventPickerViewController.h; sourceTree = "<group>"; };
+		C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = personAndEventPickerViewController.m; sourceTree = "<group>"; };
+		C9739EC11196D6720056EC16 /* personAndEventPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = personAndEventPickerViewController.xib; path = Classes/personAndEventPickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,8 @@
 				9EA5830B1160FE4400567A75 /* homeViewController.m */,
 				1D3623240D0F684500981E51 /* IHMAppDelegate.h */,
 				1D3623250D0F684500981E51 /* IHMAppDelegate.m */,
+				C9739EBF1196D6720056EC16 /* personAndEventPickerViewController.h */,
+				C9739EC01196D6720056EC16 /* personAndEventPickerViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -126,6 +133,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C9739EC11196D6720056EC16 /* personAndEventPickerViewController.xib */,
 				C9739C921196947A0056EC16 /* debts_new.db */,
 				9EF3E296117CB5A6007B4002 /* DoneDown.png */,
 				9EF3E297117CB5A6007B4002 /* DoneDown3.png */,
@@ -206,6 +214,7 @@
 				9E91123E118DA638009AF4F6 /* PersonViewController.xib in Resources */,
 				9E32FBAB119435A400E522EC /* logo.gif in Resources */,
 				C9739C931196947A0056EC16 /* debts_new.db in Resources */,
+				C9739EC31196D6720056EC16 /* personAndEventPickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 				9EA5832A1161046E00567A75 /* addViewController.m in Sources */,
 				9EA5838511610D2900567A75 /* repayViewController.m in Sources */,
 				9E91123C118DA638009AF4F6 /* PersonViewController.m in Sources */,
+				C9739EC21196D6720056EC16 /* personAndEventPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

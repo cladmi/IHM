@@ -258,7 +258,7 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 
 - (IBAction) sort:(id)sender {
 	
-	NSLog(@" tag = %d, sort_type = %4d", [sender tag], sort_type);
+	//NSLog(@" tag = %d, sort_type = %4d", [sender tag], sort_type);
 	if ([sender tag] == (sort_type & 7)) {
 		if (sort_type & 8) {
 			sort_type = [sender tag];
@@ -266,16 +266,16 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 			sort_type = [sender tag] + 8;
 		}
 	//	sort_type = sort_type ^ (sort_type & 8);
-		NSLog(@" sort_type = %4d", sort_type);
+	//	NSLog(@" sort_type = %4d", sort_type);
 	} else {
 		if ([sender tag] >= 2) {
 			sort_type = [sender tag] + 8;
 		} else {
 			sort_type = [sender tag];
 		}
-		NSLog(@" sort_type else = %4d", sort_type);
+	//	NSLog(@" sort_type else = %4d", sort_type);
 	}
-		NSLog(@" type de trie %d", (sort_type & 7));
+	//	NSLog(@" type de trie %d", (sort_type & 7));
 	[queryResults sortUsingFunction:&sortFunction context:(void *)sort_type];
 	[deptList reloadData];
 	
