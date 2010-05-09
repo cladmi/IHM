@@ -326,6 +326,7 @@
 			//														  [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
 		}
 	}
+	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 	cell.textLabel.text = [cellText capitalizedString];
     return cell;
 }
