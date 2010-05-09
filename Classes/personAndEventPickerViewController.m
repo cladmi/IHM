@@ -198,7 +198,9 @@
 	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Annuler" style:UIBarButtonItemStyleBordered target:self action:@selector(dismiss:)];
 	self.navigationItem.leftBarButtonItem = backButton;
 	[backButton release];
+
 	self.navigationItem.rightBarButtonItem = self.editButtonItem;
+	self.navigationItem.rightBarButtonItem.title = @"Supprimer";
 	
 	format = [[NSDateFormatter alloc] init];
 	[format setDateFormat:@"dd MMM yyyy"];
@@ -344,6 +346,19 @@
 	// [anotherViewController release];
 }
 
+
+- (void) setEditing:(BOOL)editing animated:(BOOL)animated {
+    //Do super before, it will change the name of the editing button
+    [super setEditing:editing animated:animated];
+	
+    if (editing) {
+		self.navigationItem.rightBarButtonItem.title = @"Terminé";
+		self.navigationItem.rightBarButtonItem.style = UIBarButtonItemStyleDone;
+    } else {
+		self.navigationItem.rightBarButtonItem.title = @"Supprimer";
+		self.navigationItem.rightBarButtonItem.style = UIBarButtonItemStyleBordered;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.
