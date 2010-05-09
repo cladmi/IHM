@@ -16,6 +16,7 @@
 	
 	bool isTypePerson; // false => isTypeEvent
 	NSMutableArray *selectionList;
+	NSMutableArray *newlyAddedList;
 	
 	
 	
@@ -23,6 +24,7 @@
 
 @property(nonatomic, retain) addViewController *fatherController;
 @property(nonatomic, retain) NSMutableArray *selectionList;
+@property(nonatomic, retain) NSMutableArray *newlyAddedList;
 
 
 - (IBAction) addPerson:(id)sender;
