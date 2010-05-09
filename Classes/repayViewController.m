@@ -9,10 +9,7 @@
 #import "repayViewController.h"
 #import "sqlite3.h"
 
-#define SORT_AMOUNT 0
-#define SORT_DATE 1
-#define SORT_PERSON 2
-#define SORT_EVENT 3
+
 
 
 
@@ -43,48 +40,30 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 
 - (void) loadDebts
 {
-	NSString *query = @"SELECT D.id, P.name, D.amount, D.currency, E.name, E.date FROM event E, debt D, person P WHERE D.id_event = E.id AND D.id_person = P.id SORT BY E.date DESC";
-	
-	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts" ofType:@"db"];
+	NSString *query = @"SELECT D.id, P.name, D.amount, D.currency, E.name, E.date FROM event E, debt D, person P  WHERE D.id_event = E.id AND D.id_person = P.id ORDER BY E.date DESC";
+
+	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
 	sqlite3 *database = NULL;
-	/*
-	switch (sort) {
-		case SORT_AMOUNT:
-			query = [query stringByAppendingString:@"D.amount DESC;"];
-			break;
-		case SORT_DATE:
-			query = [query stringByAppendingString:@"E.date DESC;"];
-			break;
-		case SORT_PERSON:
-			query = [query stringByAppendingString:@"P.name ASC;"];
-			break;
-		case SORT_EVENT:
-			query = [query stringByAppendingString:@"E.name ASC;"];
-			break;
-		default:
-			query = [query stringByAppendingString:@"P.name ASC;"];
-			break;
-	}*/
-	
 	
 	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
 		sqlite3_stmt *cs; // compiledStatement
 		if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
 			
-			queryResults = [[NSMutableDictionary alloc] init];
+			queryResults = [[NSMutableArray alloc] init];
 			
 			while(sqlite3_step(cs) == SQLITE_ROW) {
 				NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
 				
-				[row setObject:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 1)]				forKey:@"id"]; 						   
-				[row setObject:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 2)]	forKey:@"name"];
-				[row setObject:[NSNumber numberWithDouble:(double) sqlite3_column_double(cs, 3)]	forKey:@"amount"];
-				// les devises sont dans IHM_Prefix.pch sous forme de #define
-				[row setObject:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 4)]				forKey:@"currency"]; 				
-				[row setObject:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 5)]	forKey:@"event"];
-				[row setObject:[NSNumber numberWithDouble:(double) sqlite3_column_double(cs, 6)]	forKey:@"date"];
-				[row setObject:[NSNumber numberWithBool:NO]											forKey:@"selected"];
-				
+				[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 0)]				forKey:@"id"]; 						   
+				[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 1)]	forKey:@"name"];
+				[row setValue:[NSNumber numberWithDouble:(double) sqlite3_column_double(cs, 2)]	forKey:@"amount"];
+				// les devises sont dans IHM_Prefix.pch sous forme de #define	
+				[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 3)]				forKey:@"currency"]; 				
+				[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 4)]	forKey:@"event"];
+				[row setValue:[NSNumber numberWithLong:(long) sqlite3_column_double(cs, 5)]		forKey:@"date"];
+				[row setValue:[NSNumber numberWithBool:NO]											forKey:@"selected"];
+			
+		
 				[queryResults addObject:row];
 				
 				[row release];
@@ -168,59 +147,9 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 											   object:nil];
 	
 	[self loadDebts];
-	
-	nameArray = [[NSMutableArray alloc] init];
-	[nameArray addObject:@"Adrien"];
-	[nameArray addObject:@"Gaëtan"];
-	[nameArray addObject:@"Paul"];
-	[nameArray addObject:@"Pierre"];
-	[nameArray addObject:@"Nicolas"];
-	[nameArray addObject:@"Thibault"];
-	[nameArray addObject:@"Matthieu"];
-	[nameArray addObject:@"Romain"];
-	
-	eventArray = [[NSMutableArray alloc] init];
-	[eventArray addObject:@"Beer"];
-	[eventArray addObject:@"Beer"];
-	[eventArray addObject:@"S*N*"];
-	[eventArray addObject:@"Kfet"];
-	[eventArray addObject:@"Old debt"];
-	[eventArray addObject:@"Something strange"];
-	[eventArray addObject:@"Even stranger"];
-	[eventArray addObject:@"Sandwich"];
-	
-	dateArray = [[NSMutableArray alloc] init];
-	[dateArray addObject:@"12/01/04"];
-	[dateArray addObject:@"22/12/01"];
-	[dateArray addObject:@"15/05/99"];
-	[dateArray addObject:@"01/01/01"];
-	[dateArray addObject:@"14/02/95"];
-	[dateArray addObject:@"04/11/98"];
-	[dateArray addObject:@"22/01/02"];
-	[dateArray addObject:@"27/08/03"];
-	
-	amountArray = [[NSMutableArray alloc] init];
-	[amountArray addObject:@"12.55"];
-	[amountArray addObject:@"-21.50"];
-	[amountArray addObject:@"120.00"];
-	[amountArray addObject:@"0.24"];
-	[amountArray addObject:@"-12.90"];
-	[amountArray addObject:@"25.00"];
-	[amountArray addObject:@"-100.50"];
-	[amountArray addObject:@"4.80"];
-	
-	selectArray = [[NSMutableArray alloc] init];
-	[selectArray addObject:[NSNumber numberWithBool:NO]];
-	[selectArray addObject:[NSNumber numberWithBool:NO]];
-	[selectArray addObject:[NSNumber numberWithBool:NO]];
-	[selectArray addObject:[NSNumber numberWithBool:NO]];
-	[selectArray addObject:[NSNumber numberWithBool:NO]];
-	[selectArray addObject:[NSNumber numberWithBool:NO]];
-	[selectArray addObject:[NSNumber numberWithBool:NO]];
-	[selectArray addObject:[NSNumber numberWithBool:NO]];
-
-	
-	[super viewDidLoad];
+	format = [[NSDateFormatter alloc] init];
+	[format setDateFormat:@"dd-MM-yyyy"];
+		[super viewDidLoad];
 }
 
 
@@ -247,20 +176,18 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 
 - (void)dealloc {
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
-	[nameArray release];
-	[eventArray release];
-	[dateArray release];
-	[selectArray release];
+
+	
+	[format release];
     [super dealloc];
 }
 
 - (IBAction) reset:(id)sender {
-	int i;
-	for (i = 0; i < [selectArray count]; i++) {
-		if ([selectArray objectAtIndex:i] == [NSNumber numberWithBool:YES]) {
-			value.text = [NSString stringWithFormat:@"%8.2f",[value.text floatValue] + [[amountArray objectAtIndex:i] floatValue]];
+	for (NSMutableDictionary *row in queryResults) {
+		if ([[row objectForKey:@"selected"] boolValue]) {
+			value.text = [NSString stringWithFormat:@"%8.2f",[value.text floatValue] + [[row objectForKey:@"amount"] floatValue]];
 		}
-		[selectArray replaceObjectAtIndex:i withObject:[NSNumber numberWithBool:FALSE]];
+		[row setValue:[NSNumber numberWithBool:FALSE] forKey:@"selected"];
 	}	
 	[deptList reloadData];
 }
@@ -274,6 +201,79 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	
 }
 
+/*
+#define SORT_AMOUNT 0	on trie en décroissant
+#define SORT_DATE 1		on trie en décroissant
+#define SORT_PERSON 2	on trie en croissant
+#define SORT_EVENT 3	on trie en croissant
+ 
+ on utilise le 4è bit de sort_type comme indicateur de croissance ou décroissance pour le tri
+ */
+
+
+NSComparisonResult sortFunction (id first, id second, void *context) {
+
+	
+	NSString *key;
+	int sort = (int) context;
+	NSComparisonResult result;
+	switch (sort & 7) {
+		case SORT_AMOUNT :
+			key = @"amount";
+			break;
+		case SORT_DATE :
+			key = @"date";
+			break;
+		case SORT_PERSON :
+			key = @"name";
+			break;
+		case SORT_EVENT :
+			key = @"event";
+			break;
+	}
+	
+	result = [[first objectForKey:key] compare: [second objectForKey:key]];
+	[key release];
+	
+	if (result == NSOrderedSame) {
+		NSLog(@"orderer same");
+		return NSOrderedSame;
+	} else if (sort & 8) {
+		return result;
+	} else {
+		if (result = NSOrderedAscending) {
+			return NSOrderedDescending;
+		} else {
+			return NSOrderedAscending;
+		}
+	}
+	return 42; 
+
+}
+
+- (IBAction) sort:(id)sender {
+	
+	NSLog(@" tag = %d, sort_type = %4d", [sender tag], sort_type);
+	if ([sender tag] == (sort_type & 7)) {
+		if (sort_type & 8) {
+			sort_type = [sender tag];
+		} else {
+			sort_type = [sender tag] + 8;
+		}
+	//	sort_type = sort_type ^ (sort_type & 8);
+		NSLog(@" sort_type = %4d", sort_type);
+	} else {
+		if ([sender tag] >= 2) {
+			sort_type = [sender tag] + 8;
+		} else {
+			sort_type = [sender tag];
+		}
+		NSLog(@" sort_type else = %4d", sort_type);
+	}
+		NSLog(@" type de trie %d", (sort_type & 7));
+	[queryResults sortUsingFunction:&sortFunction context:(void *)sort_type];
+	[deptList reloadData];
+}
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -294,55 +294,55 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 		//cell.accessoryType = nil;
     }
 	
-	// Checked ?
-	if ([[selectArray objectAtIndex:indexPath.row] boolValue]) {
-		cell.accessoryType = UITableViewCellAccessoryCheckmark;
-		
-	} else {
-		cell.accessoryType = UITableViewCellAccessoryNone;
-	}
-		
+
 	
 	// Content of the cell
-	NSString *nameValue = [nameArray objectAtIndex:indexPath.row];
-	NSString *eventValue = [eventArray objectAtIndex:indexPath.row];
-	NSString *dateValue = [dateArray objectAtIndex:indexPath.row];
-	NSString *amountValue = [amountArray objectAtIndex:indexPath.row];
 	
-	NSString *cellValue;
-	NSString *detailValue;
+	double amount = [[[queryResults objectAtIndex:indexPath.row] objectForKey:@"amount"] doubleValue];
+	// assumed that currency == €
 	
-	cellValue = nameValue;
-	// Green/Red colors
-	if ([amountValue floatValue] > 0) {
+	// cellvalue = "name amount currency"
+	// detailvalue = "date event"
+	cell.textLabel.text = [NSString stringWithFormat:@"%@ %.2f €",
+						   //cell.textLabel.text = [NSString stringWithFormat:@"%@ %f €",	
+						   [[queryResults objectAtIndex:indexPath.row] objectForKey:@"name"],
+						   amount];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@",
+								 [format stringFromDate:[NSDate dateWithTimeIntervalSince1970:	
+														 [[[queryResults objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]],
+								 [[queryResults objectAtIndex:indexPath.row] objectForKey:@"event"]];
+	
+	if (amount > 0) {
 		//Red
 		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.005 saturation:0.87 brightness:0.78 alpha:1.0];
-	} else if ([amountValue floatValue] < 0) {
+	} else {
 		//Green
 		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.34 saturation:0.83 brightness:0.44 alpha:1.0];
 	}
-	cellValue = [cellValue stringByAppendingString:@" "];
-	cellValue = [cellValue stringByAppendingString:amountValue];
-	cellValue = [cellValue stringByAppendingString:@" €"];
-	cell.textLabel.text = cellValue;
-	detailValue = dateValue;
-	detailValue = [detailValue stringByAppendingString:@" "];
-	detailValue = [detailValue stringByAppendingString:eventValue];
-	cell.detailTextLabel.text = detailValue;
+	
+	// Checked ?
+	if ([[[queryResults objectAtIndex:indexPath.row] objectForKey:@"selected"] boolValue]) {
+		cell.accessoryType = UITableViewCellAccessoryCheckmark;
+	} else {
+		cell.accessoryType = UITableViewCellAccessoryNone;
+	}
+	
     return cell;
 }
 
 // Select/unselect cells with checkmarks and updates amount
 - (void)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	
-	if ([[selectArray objectAtIndex:indexPath.row] boolValue]) {
-		[selectArray replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:NO]];
+	
+	if ([[[queryResults objectAtIndex:indexPath.row] objectForKey:@"selected"] boolValue]) {
+		[[queryResults objectAtIndex:indexPath.row] setValue:[NSNumber numberWithBool:FALSE] forKey:@"selected"];
 		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-		value.text = [NSString stringWithFormat:@"%8.2f",[value.text floatValue] + [[amountArray objectAtIndex:indexPath.row] floatValue]];
+		value.text = [NSString stringWithFormat:@"%.2f",[value.text floatValue] + [[[queryResults objectAtIndex:indexPath.row] objectForKey:@"amount"] longValue]];
 	} else {
-		[selectArray replaceObjectAtIndex:indexPath.row withObject:[NSNumber numberWithBool:YES]];
+		[[queryResults objectAtIndex:indexPath.row] setValue:[NSNumber numberWithBool:TRUE] forKey:@"selected"];
 		[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
-		value.text = [NSString stringWithFormat:@"%8.2f",[value.text floatValue] - [[amountArray objectAtIndex:indexPath.row] floatValue]];
+		value.text = [NSString stringWithFormat:@"%.2f",[value.text floatValue] - [[[queryResults objectAtIndex:indexPath.row] objectForKey:@"amount"] longValue]];
+		
 	}
 	[tableView cellForRowAtIndexPath:indexPath].selected = NO;
 }
@@ -366,7 +366,8 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [nameArray count];
+	return [queryResults count];
+	//return [nameArray count];
 }
 
 @end

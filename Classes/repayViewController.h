@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#define SORT_AMOUNT 0
+#define SORT_DATE 1
+#define SORT_PERSON 2
+#define SORT_EVENT 3
 
 @interface repayViewController : UIViewController {
 
@@ -15,18 +19,13 @@
 	IBOutlet UIButton *validate;
 	IBOutlet UILabel *value;
 	IBOutlet UITableView *deptList;
-	IBOutlet UITabBar *tab;
-	UITabBarController *tabControl;
-	NSMutableArray *nameArray;
-	NSMutableArray *eventArray;
-	NSMutableArray *dateArray;
-	NSMutableArray *amountArray;
-	NSMutableArray *selectArray;
-	
+
 	NSMutableArray *queryResults;
 	
-
+	NSDateFormatter *format;	
 	
+	int sort_type;
+
 }
 
 @property(nonatomic, retain) UIButton *reinit;
@@ -37,6 +36,9 @@
 
 - (IBAction) reset:(id)sender;
 - (IBAction) validate:(id)sender; 
+- (IBAction) sort:(id)sender;
+
+
 
 
 @end
