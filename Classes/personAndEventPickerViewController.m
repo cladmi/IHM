@@ -324,6 +324,15 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	if (indexPath.section == 0) {
+		[fatherController dimsissWithType:isTypePerson	Name:[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"name"] 
+														Id:[[[newlyAddedList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
+	} else {
+		[fatherController dimsissWithType:isTypePerson	Name:[[selectionList objectAtIndex:indexPath.row] objectForKey:@"name"] 
+									   Id:[[[selectionList objectAtIndex:indexPath.row] objectForKey:@"id"] intValue]];
+	}
+		
     // Navigation logic may go here. Create and push another view controller.
 	// AnotherViewController *anotherViewController = [[AnotherViewController alloc] initWithNibName:@"AnotherView" bundle:nil];
 	// [self.navigationController pushViewController:anotherViewController];
