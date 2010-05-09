@@ -17,6 +17,172 @@
 @synthesize isTypePerson;
 @synthesize addText;
 
+
+
+/* 
+ *
+ *	Our custom methods
+ *
+ */
+
+
+- (void) loadDatabase {
+	
+	
+	NSString *query;
+	if (isTypePerson) {
+		query = @"SELECT id, name FROM person ORDER BY name ASC";
+	} else {
+		query = @"SELECT id, name, date FROM event ORDER BY name ASC";
+	}
+	
+	
+	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
+	sqlite3 *database = NULL;
+	
+	
+	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
+		sqlite3_stmt *cs; // compiledStatement
+		if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
+			
+			selectionList = [[NSMutableArray alloc] init];
+			
+			while(sqlite3_step(cs) == SQLITE_ROW) {
+				NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
+				
+				[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 0)]				forKey:@"id"]; 						   
+				[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 1)]	forKey:@"name"];
+				if (!isTypePerson) {
+					[row setValue:[NSNumber numberWithLong:(long) sqlite3_column_double(cs, 2)]		forKey:@"date"];
+					
+				}
+				[row setValue:[NSNumber numberWithBool:NO]											forKey:@"selected"];
+				
+				
+				[selectionList addObject:row];
+				
+				[row release];
+			}
+		} else {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+			[alert show];
+			[alert release];
+			[selectionList release];
+			selectionList = nil;
+		}
+		sqlite3_finalize(cs);
+	} else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+		[selectionList release];
+		selectionList = nil;
+		
+	}
+	sqlite3_close(database);
+	[tab reloadData];
+	
+}
+
+- (IBAction) addItem:(id)sender {
+	
+	NSLog(@" on va ajouter qqch");
+	NSString *query;
+	if (isTypePerson) {
+		query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
+	} else {
+		query = [NSString stringWithFormat:@"INSERT INTO event (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
+	}
+	
+	NSLog(@" query == %@", query);
+	
+	
+	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
+	sqlite3 *database = NULL;
+	
+	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
+		NSLog(@" 1");
+		sqlite3_exec(database, "BEGIN", 0, 0, 0);
+		NSLog(@" 2");
+		if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) == SQLITE_OK) {
+			NSLog(@" 3");
+			sqlite3_exec(database, "COMMIT", 0, 0, 0);
+			
+			if (isTypePerson) {
+				query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
+			} else {
+				query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
+			}
+			NSLog(@" query == %@", query);
+			
+			sqlite3_stmt *cs; // compiledStatement
+			if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
+				if (sqlite3_step(cs) == SQLITE_ROW) {
+					NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
+					[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 0)]				forKey:@"id"]; 						   
+					[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 1)]	forKey:@"name"];
+					if (!isTypePerson) {
+						[row setValue:[NSNumber numberWithLong:(long) sqlite3_column_double(cs, 2)]		forKey:@"date"];
+					}
+					[row setValue:[NSNumber numberWithBool:NO]											forKey:@"selected"];
+					
+					
+					[newlyAddedList addObject:row];
+					
+					[row release];
+				} else {
+					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while searching for data" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+					[alert show];
+					[alert release];
+				}
+				
+			} else {
+				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+				[alert show];
+				[alert release];
+			}
+			sqlite3_finalize(cs);
+		}
+		
+	} else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+	}
+	sqlite3_close(database);
+	[self.addText resignFirstResponder];
+	self.addText.text = @"";
+	[tab reloadData];
+}
+
+- (IBAction) dismiss:(id)sender {
+	
+	
+}
+
+
+- (IBAction) TextFieldDownEditing:(id)sender {
+	NSLog(@"sender : %@",sender);
+	[sender resignFirstResponder];	
+}
+
+
+
+
+/*
+ *
+ *	End of our custom methodes
+ *
+ */
+
+
+
+
+
+
+
+
+
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
     // Override initWithStyle: if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -80,161 +246,6 @@
 
 
 
-/* 
- *
- *	Our custom methods
- *
- */
-
-
-- (void) loadDatabase {
-	
-
-	NSString *query;
-	if (isTypePerson) {
-		query = @"SELECT id, name FROM person ORDER BY name ASC";
-	} else {
-		query = @"SELECT id, name, date FROM event ORDER BY name ASC";
-	}
-	
-	
-	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
-	sqlite3 *database = NULL;
-	
-	
-	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
-		sqlite3_stmt *cs; // compiledStatement
-		if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
-			
-			selectionList = [[NSMutableArray alloc] init];
-	
-			while(sqlite3_step(cs) == SQLITE_ROW) {
-				NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
-				
-				[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 0)]				forKey:@"id"]; 						   
-				[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 1)]	forKey:@"name"];
-				if (!isTypePerson) {
-					[row setValue:[NSNumber numberWithLong:(long) sqlite3_column_double(cs, 2)]		forKey:@"date"];
-
-				}
-				[row setValue:[NSNumber numberWithBool:NO]											forKey:@"selected"];
-				
-				
-				[selectionList addObject:row];
-				
-				[row release];
-			}
-		} else {
-			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
-			[alert show];
-			[alert release];
-			[selectionList release];
-			selectionList = nil;
-		}
-		sqlite3_finalize(cs);
-	} else {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
-		[alert show];
-		[alert release];
-		[selectionList release];
-		selectionList = nil;
-		
-	}
-	sqlite3_close(database);
-	[tab reloadData];
-	
-}
-
-- (IBAction) addItem:(id)sender {
-	
-	NSLog(@" on va ajouter qqch");
-	NSString *query;
-	if (isTypePerson) {
-		query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
-	} else {
-		query = [NSString stringWithFormat:@"INSERT INTO event (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
-	}
-	
-	NSLog(@" query == %@", query);
-	
-	
-	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
-	sqlite3 *database = NULL;
-	
-	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
-			NSLog(@" 1");
-		sqlite3_exec(database, "BEGIN", 0, 0, 0);
-		NSLog(@" 2");
-		if(sqlite3_exec(database, [query UTF8String], 0, 0, 0) == SQLITE_OK) {
-			NSLog(@" 3");
-			sqlite3_exec(database, "COMMIT", 0, 0, 0);
-			
-			if (isTypePerson) {
-				query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
-			} else {
-				query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
-			}
-			NSLog(@" query == %@", query);
-			
-			sqlite3_stmt *cs; // compiledStatement
-			if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
-				if (sqlite3_step(cs) == SQLITE_ROW) {
-					NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
-					[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 0)]				forKey:@"id"]; 						   
-					[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 1)]	forKey:@"name"];
-					if (!isTypePerson) {
-						[row setValue:[NSNumber numberWithLong:(long) sqlite3_column_double(cs, 2)]		forKey:@"date"];
-					}
-					[row setValue:[NSNumber numberWithBool:NO]											forKey:@"selected"];
-					
-					
-					[newlyAddedList addObject:row];
-					
-					[row release];
-				} else {
-					UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while searching for data" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
-					[alert show];
-					[alert release];
-				}
-				
-			} else {
-				UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
-				[alert show];
-				[alert release];
-			}
-			sqlite3_finalize(cs);
-		}
-
-	} else {
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
-		[alert show];
-		[alert release];
-	}
-	sqlite3_close(database);
-	[self.addText resignFirstResponder];
-	self.addText.text = @"";
-	[tab reloadData];
-}
-
-- (IBAction) dismiss:(id)sender {
-	
-	
-}
-
-
-- (IBAction) TextFieldDownEditing:(id)sender {
-	NSLog(@"sender : %@",sender);
-	[sender resignFirstResponder];	
-}
-
-
-
-
-/*
- *
- *	End of our custom methodes
- *
- */
 
 
 
