@@ -32,4 +32,5 @@
 
 - (IBAction) addPerson:(id)sender;
 - (IBAction) dismiss:(id)sender;
+- (IBAction) TextFieldDownEditing:(id)sender;
 @end

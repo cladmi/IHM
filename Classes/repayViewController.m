@@ -189,8 +189,7 @@
 }
 
 - (IBAction) TextFieldDownEditing:(id)sender {
-	[sender resignFirstResponder];
-	
+	[sender resignFirstResponder];	
 }
 
 /*

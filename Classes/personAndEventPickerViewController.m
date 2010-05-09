@@ -201,14 +201,14 @@
 	[tab reloadData];
 }
 
-
-
-
-
-
 - (IBAction) dismiss:(id)sender {
 	
 	
+}
+
+
+- (IBAction) TextFieldDownEditing:(id)sender {
+	[sender resignFirstResponder];	
 }
 
 
