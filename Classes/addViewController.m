@@ -111,13 +111,8 @@
 		[alert release];
 	}
 	
-	
-
-	
-
 	[navController pushViewController:pViewController animated:NO];
 	[pViewController release];
-
 	//[self presentModalViewController:pViewController animated:YES];
 	[self presentModalViewController:navController animated:YES];
 }
