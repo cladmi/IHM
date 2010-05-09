@@ -15,7 +15,6 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		9E32FBAB119435A400E522EC /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9E32FBAA119435A400E522EC /* logo.gif */; };
 		9E6BD03E1185EAFC0045ECC0 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6BD03D1185EAFC0045ECC0 /* libsqlite3.0.dylib */; };
-		9E91123C118DA638009AF4F6 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E911238118DA638009AF4F6 /* PersonViewController.m */; };
 		9E91123E118DA638009AF4F6 /* PersonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E91123B118DA638009AF4F6 /* PersonViewController.xib */; };
 		9EA5830C1160FE4400567A75 /* homeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5830B1160FE4400567A75 /* homeViewController.m */; };
 		9EA5830F1160FE8100567A75 /* addView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5830E1160FE8100567A75 /* addView.xib */; };
@@ -45,8 +44,6 @@
 		8D1107310486CEB800E47090 /* IHM-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "IHM-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		9E32FBAA119435A400E522EC /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		9E6BD03D1185EAFC0045ECC0 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		9E911237118DA638009AF4F6 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonViewController.h; path = Classes/PersonViewController.h; sourceTree = "<group>"; };
-		9E911238118DA638009AF4F6 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonViewController.m; path = Classes/PersonViewController.m; sourceTree = "<group>"; };
 		9E91123B118DA638009AF4F6 /* PersonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PersonViewController.xib; path = Classes/PersonViewController.xib; sourceTree = "<group>"; };
 		9EA5830A1160FE4400567A75 /* homeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = homeViewController.h; path = ../homeViewController.h; sourceTree = "<group>"; };
 		9EA5830B1160FE4400567A75 /* homeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = homeViewController.m; path = ../homeViewController.m; sourceTree = "<group>"; };
@@ -85,8 +82,6 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9E911237118DA638009AF4F6 /* PersonViewController.h */,
-				9E911238118DA638009AF4F6 /* PersonViewController.m */,
 				9EA5838311610D2900567A75 /* repayViewController.h */,
 				9EA5838411610D2900567A75 /* repayViewController.m */,
 				9EA583281161046E00567A75 /* addViewController.h */,
@@ -230,7 +225,6 @@
 				9EA5830C1160FE4400567A75 /* homeViewController.m in Sources */,
 				9EA5832A1161046E00567A75 /* addViewController.m in Sources */,
 				9EA5838511610D2900567A75 /* repayViewController.m in Sources */,
-				9E91123C118DA638009AF4F6 /* PersonViewController.m in Sources */,
 				C9739EC21196D6720056EC16 /* personAndEventPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
