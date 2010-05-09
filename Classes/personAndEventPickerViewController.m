@@ -168,14 +168,9 @@
 
 /*
  *
- *	End of our custom methodes
+ *	//////// End of our custom methodes
  *
  */
-
-
-
-
-
 
 
 
@@ -203,6 +198,7 @@
 	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Annuler" style:UIBarButtonItemStyleBordered target:self action:@selector(dismiss:)];
 	self.navigationItem.leftBarButtonItem = backButton;
 	[backButton release];
+	self.navigationItem.rightBarButtonItem = self.editButtonItem;
 	
 	format = [[NSDateFormatter alloc] init];
 	[format setDateFormat:@"dd MMM yyyy"];
@@ -326,7 +322,7 @@
 			//														  [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
 		}
 	}
-	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+	
 	cell.textLabel.text = [cellText capitalizedString];
     return cell;
 }
