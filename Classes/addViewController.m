@@ -96,13 +96,33 @@
 	
 - (IBAction) openList:(id)sender {
 	//NSLog(@"coucou");
-	personnes.text = @"hello"; // sets the text
 	[personnes resignFirstResponder];
-	personAndEventPickerViewController *pViewController = [[personAndEventPickerViewController alloc] initWithNibName:@"personAndEventPickerViewController" bundle:nil];
 	
-	pViewController.isTypePerson = false;
-	[self presentModalViewController:pViewController animated:YES];
+	personAndEventPickerViewController *pViewController = [[personAndEventPickerViewController alloc] initWithNibName:@"personAndEventPickerViewController" bundle:nil];
+	navController = [[UINavigationController alloc] init];
+	
+	if (sender == personnes) {
+		pViewController.isTypePerson = TRUE;
+	} else if (sender == cause) {
+		pViewController.isTypePerson = FALSE;
+	} else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"openList Alert" message:@"action performed by someone else than personnes or cause" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+	}
+	
+	
+
+	
+
+	[navController pushViewController:pViewController animated:NO];
+	[pViewController release];
+
+	//[self presentModalViewController:pViewController animated:YES];
+	[self presentModalViewController:navController animated:YES];
 }
+
+
 
 
 - (IBAction) ValidateDept:(id)sender {
@@ -115,6 +135,8 @@
 	[alert show];
 	[alert release];
 }
+
+
 
 - (IBAction) UpView:(id)sender {
 	if (!causeEditActive) {

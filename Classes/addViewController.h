@@ -19,6 +19,9 @@
 	
 	int personID;
 	int eventID;
+	
+	
+		UINavigationController *navController;
 }
 
 @property(nonatomic, retain) UITextField *montant;
