@@ -243,7 +243,7 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) {
-		return @"Nouvelle personne";
+		return @"Nouvelle(s) personne(s)";
 	}
 	return @"Déjà enregistrées";
 }
@@ -273,7 +273,7 @@
     }
 	
 	if (indexPath.section == 0) {
-		cell.textLabel.text = @"Ajouter personne";
+		cell.textLabel.text = @"tmp";
 	} else {
 		cell.textLabel.text = @"Bla";
 	}
