@@ -126,10 +126,15 @@
 - (IBAction) ValidateDept:(id)sender {
 	UIAlertView *alert = [[UIAlertView alloc]
 						  initWithTitle:@"Dette ajoutée" 
-						  message:[NSString stringWithFormat:@"Dette de %@€ ajoutée à %@ avec succès",montant.text,personnes.text] 
+						  message:@""
 						  delegate:self 
 						  cancelButtonTitle:@"Annuler" 
 						  otherButtonTitles:@"OK",nil];
+	if ([self.title isEqualToString:@"On me prête"]) {
+		alert.message = [NSString stringWithFormat:@"%@ m'avance %@€ pour \"%@\"",personnes.text,montant.text,cause.text];
+	} else {
+		alert.message = [NSString stringWithFormat:@"J'avance %@€ à %@ pour \"%@\"",montant.text,personnes.text,cause.text];
+	}
 	[alert show];
 	[alert release];
 }
@@ -147,6 +152,10 @@
 		eventID = identifier;
 	}
 	[self dismissModalViewControllerAnimated:YES];
+	if (![montant.text isEqualToString:@""] && ![personnes.text isEqualToString:@""] && ![cause.text isEqualToString:@""]) {
+		valider.enabled = YES;
+		[valider setTitleColor:[UIColor colorWithRed:0.2f green:0.31f blue:0.52f alpha:1.0f] forState:UIControlStateNormal];
+	}
 }
 		
 		
