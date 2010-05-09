@@ -48,23 +48,23 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts" ofType:@"db"];
 	sqlite3 *database = NULL;
 	/*
-	switch (sort) {
-		case SORT_AMOUNT:
-			query = [query stringByAppendingString:@"D.amount DESC;"];
-			break;
-		case SORT_DATE:
-			query = [query stringByAppendingString:@"E.date DESC;"];
-			break;
-		case SORT_PERSON:
-			query = [query stringByAppendingString:@"P.name ASC;"];
-			break;
-		case SORT_EVENT:
-			query = [query stringByAppendingString:@"E.name ASC;"];
-			break;
-		default:
-			query = [query stringByAppendingString:@"P.name ASC;"];
-			break;
-	}*/
+	 switch (sort) {
+	 case SORT_AMOUNT:
+	 query = [query stringByAppendingString:@"D.amount DESC;"];
+	 break;
+	 case SORT_DATE:
+	 query = [query stringByAppendingString:@"E.date DESC;"];
+	 break;
+	 case SORT_PERSON:
+	 query = [query stringByAppendingString:@"P.name ASC;"];
+	 break;
+	 case SORT_EVENT:
+	 query = [query stringByAppendingString:@"E.name ASC;"];
+	 break;
+	 default:
+	 query = [query stringByAppendingString:@"P.name ASC;"];
+	 break;
+	 }*/
 	
 	
 	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
@@ -112,20 +112,19 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
+ - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+ if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+ // Custom initialization
+ }
+ return self;
+ }
+ */
 
 /*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
+ // Implement loadView to create a view hierarchy programmatically, without using a nib.
+ - (void)loadView {
+ }
+ */
 
 // Adds the Done button
 - (void)keyboardWillShow:(NSNotification *)note {  
@@ -159,8 +158,13 @@ static int MyCallback(void *context, int count, char **values, char **colums)
     [value resignFirstResponder];
 }
 
+- (IBAction) segmentSelected:(id)sender {
+	sort = segm.selectedSegmentIndex;
+}
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	sort = SORT_AMOUNT;
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self 
 											 selector:@selector(keyboardWillShow:) 
@@ -218,19 +222,19 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	[selectArray addObject:[NSNumber numberWithBool:NO]];
 	[selectArray addObject:[NSNumber numberWithBool:NO]];
 	[selectArray addObject:[NSNumber numberWithBool:NO]];
-
+	
 	
 	[super viewDidLoad];
 }
 
 
 /*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+ // Override to allow orientations other than the default portrait orientation.
+ - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+ // Return YES for supported orientations
+ return (interfaceOrientation == UIInterfaceOrientationPortrait);
+ }
+ */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -301,7 +305,7 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	} else {
 		cell.accessoryType = UITableViewCellAccessoryNone;
 	}
-		
+	
 	
 	// Content of the cell
 	NSString *nameValue = [nameArray objectAtIndex:indexPath.row];
@@ -349,9 +353,9 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 
 
 /* 
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {	
-	//[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-}*/
+ - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {	
+ //[tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+ }*/
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 	return 1;

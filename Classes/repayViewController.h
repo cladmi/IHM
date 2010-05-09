@@ -15,8 +15,9 @@
 	IBOutlet UIButton *validate;
 	IBOutlet UILabel *value;
 	IBOutlet UITableView *deptList;
-	IBOutlet UITabBar *tab;
-	UITabBarController *tabControl;
+	IBOutlet UIToolbar *tool;
+	IBOutlet UISegmentedControl *segm;
+	NSInteger sort;
 	NSMutableArray *nameArray;
 	NSMutableArray *eventArray;
 	NSMutableArray *dateArray;
@@ -37,6 +38,7 @@
 
 - (IBAction) reset:(id)sender;
 - (IBAction) validate:(id)sender; 
+- (IBAction) segmentSelected:(id)sender;
 
 
 @end
