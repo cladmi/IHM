@@ -36,7 +36,9 @@
 
 - (IBAction) reset:(id)sender;
 - (IBAction) validate:(id)sender; 
+
 - (IBAction) sort:(id)sender;
+
 
 
 
