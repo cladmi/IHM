@@ -13,7 +13,9 @@
 @interface personAndEventPickerViewController : UITableViewController {
 
 	addViewController *fatherController;
-	
+	(IBOutlet)UITextField *addText;
+	(IBOutlet)UIButton *addButton
+	(IBOutlet)UIView *addView;
 	bool isTypePerson; // false => isTypeEvent
 	NSMutableArray *selectionList;
 	
