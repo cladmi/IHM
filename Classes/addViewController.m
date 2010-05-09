@@ -7,7 +7,7 @@
 //
 
 #import "addViewController.h"
-#import "PersonViewController.h"
+#import "personAndEventPickerViewController.h"
 #import "sqlite3.h"
 
 
@@ -96,6 +96,8 @@
 	//NSLog(@"coucou");
 	personnes.text = @"hello"; // sets the text
 	[personnes resignFirstResponder];
+	personAndEventPickerViewController *pViewController = [[personAndEventPickerViewController alloc] init];
+	[self presentModalViewController:pViewController animated:YES];
 }
 
 
