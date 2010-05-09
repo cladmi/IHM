@@ -15,6 +15,7 @@
 @synthesize selectionList;
 @synthesize newlyAddedList;
 @synthesize isTypePerson;
+@synthesize addText;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -210,9 +211,8 @@
 		[alert release];
 	}
 	sqlite3_close(database);
-	
+	[self.addText resignFirstResponder];
 	[tab reloadData];
-	TextFieldDownEditing(addText.id);
 }
 
 - (IBAction) dismiss:(id)sender {
@@ -222,6 +222,7 @@
 
 
 - (IBAction) TextFieldDownEditing:(id)sender {
+	NSLog(@"sender : %@",sender);
 	[sender resignFirstResponder];	
 }
 

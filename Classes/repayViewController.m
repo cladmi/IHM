@@ -93,6 +93,7 @@
  */
 
 // Adds the Done button
+/*
 - (void)keyboardWillShow:(NSNotification *)note {  
     // create custom button
     UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -122,7 +123,7 @@
 - (void)doneButton:(id)sender {
     //NSLog(@"Input: %@", value.text);
     [value resignFirstResponder];
-}
+}*/
 
 
 

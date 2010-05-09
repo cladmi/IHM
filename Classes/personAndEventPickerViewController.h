@@ -28,6 +28,7 @@
 @property(nonatomic, retain) NSMutableArray *selectionList;
 @property(nonatomic, retain) NSMutableArray *newlyAddedList;
 @property(nonatomic) bool isTypePerson;
+@property(nonatomic, retain) UITextField *addText;
 
 
 - (IBAction) addItem:(id)sender;
