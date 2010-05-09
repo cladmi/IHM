@@ -212,6 +212,7 @@
 	}
 	sqlite3_close(database);
 	[self.addText resignFirstResponder];
+	self.addText.text = @"";
 	[tab reloadData];
 }
 
