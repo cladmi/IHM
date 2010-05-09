@@ -5,4 +5,12 @@
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
+
+
+#define EURO 1
+#define CAFE 2
+#define BIERE 3
+
+
+
 #endif

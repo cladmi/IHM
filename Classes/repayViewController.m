@@ -36,17 +36,18 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 @synthesize validate;
 @synthesize value;
 @synthesize deptList;
+@synthesize queryResults;
 
 
 
 
-- (void) loadDebts:(int)sort
+- (void) loadDebts
 {
-	NSString *query = @"SELECT P.name, D.amount, D.currency, E.name, E.date FROM event E, debt D, person P WHERE D.id_event = E.id AND D.id_person = P.id SORT BY ";
+	NSString *query = @"SELECT D.id, P.name, D.amount, D.currency, E.name, E.date FROM event E, debt D, person P WHERE D.id_event = E.id AND D.id_person = P.id SORT BY E.date DESC";
 	
 	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts" ofType:@"db"];
 	sqlite3 *database = NULL;
-	
+	/*
 	switch (sort) {
 		case SORT_AMOUNT:
 			query = [query stringByAppendingString:@"D.amount DESC;"];
@@ -63,24 +64,49 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 		default:
 			query = [query stringByAppendingString:@"P.name ASC;"];
 			break;
-	}
+	}*/
+	
 	
 	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
-		if (sqlite3_exec(database, [query UTF8String], MyCallback, nameArray, NULL) != SQLITE_OK) {
+		sqlite3_stmt *cs; // compiledStatement
+		if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
+			
+			queryResults = [[NSMutableDictionary alloc] init];
+			
+			while(sqlite3_step(cs) == SQLITE_ROW) {
+				NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
+				
+				[row setObject:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 1)]				forKey:@"id"]; 						   
+				[row setObject:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 2)]	forKey:@"name"];
+				[row setObject:[NSNumber numberWithDouble:(double) sqlite3_column_double(cs, 3)]	forKey:@"amount"];
+				// les devises sont dans IHM_Prefix.pch sous forme de #define
+				[row setObject:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 4)]				forKey:@"currency"]; 				
+				[row setObject:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 5)]	forKey:@"event"];
+				[row setObject:[NSNumber numberWithDouble:(double) sqlite3_column_double(cs, 6)]	forKey:@"date"];
+				[row setObject:[NSNumber numberWithBool:NO]											forKey:@"selected"];
+				
+				[queryResults addObject:row];
+				
+				[row release];
+			}
+		} else {
 			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
 			[alert show];
 			[alert release];
+			[queryResults release];
+			queryResults = nil;
 		}
-		
-		
+		sqlite3_finalize(cs);
 	} else {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
 		[alert show];
 		[alert release];
+		[queryResults release];
+		queryResults = nil;
+		
 	}
-	
 	sqlite3_close(database);
-}				
+}
 
 
 
@@ -140,6 +166,8 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 											 selector:@selector(keyboardWillShow:) 
 												 name:UIKeyboardWillShowNotification 
 											   object:nil];
+	
+	[self loadDebts];
 	
 	nameArray = [[NSMutableArray alloc] init];
 	[nameArray addObject:@"Adrien"];

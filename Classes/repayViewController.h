@@ -23,12 +23,17 @@
 	NSMutableArray *amountArray;
 	NSMutableArray *selectArray;
 	
+	NSMutableArray *queryResults;
+	
+
+	
 }
 
 @property(nonatomic, retain) UIButton *reinit;
 @property(nonatomic, retain) UIButton *validate;
 @property(nonatomic, retain) UILabel *value;
 @property(nonatomic, retain) UITableView *deptList;
+@property(nonatomic, retain) NSMutableArray *queryResults;
 
 - (IBAction) reset:(id)sender;
 - (IBAction) validate:(id)sender; 
