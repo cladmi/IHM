@@ -153,7 +153,7 @@
 }
 
 - (IBAction) dismiss:(id)sender {
-	
+	[fatherController dimsissWithType:isTypePerson	Name:@""  Id:-1];
 	
 }
 
@@ -195,13 +195,17 @@
 	
 	[self loadDatabase];
 	if (isTypePerson) {
-		self.title = @"Select the person";
+		self.title = @"Choisir une personne";
 	} else {
-		self.title = @"Select the event";
+		self.title = @"Choisir un évènement";
 	}
-
+	
+	UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleBordered target:self action:@selector(dismiss:)];
+	self.navigationItem.leftBarButtonItem = backButton;
+	[backButton release];
+	
 	format = [[NSDateFormatter alloc] init];
-	[format setDateFormat:@"dd-MM-yyyy"];
+	[format setDateFormat:@"dd MMM yyyy"];
 
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
@@ -271,7 +275,11 @@
 		if ([newlyAddedList count] == 0) {
 			return nil;
 		} else {
-			return @"Nouvelle(s) personne(s)";
+			if (isTypePerson) {
+				return @"Nouvelle(s) personne(s)";
+			} else {
+				return @"Nouveaux évènements";
+			}
 		}
 	}
 	return @"Déjà enregistrées";
