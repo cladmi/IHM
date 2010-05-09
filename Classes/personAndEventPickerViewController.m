@@ -307,7 +307,7 @@
 																	  [[[selectionList objectAtIndex:indexPath.row] objectForKey:@"date"] longValue]]]];
 		}
 	}
-	cell.textLabel.text = cellText;
+	cell.textLabel.text = [cellText capitalizedString];
     return cell;
 }
 
