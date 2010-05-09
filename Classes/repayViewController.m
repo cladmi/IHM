@@ -172,11 +172,12 @@ static int MyCallback(void *context, int count, char **values, char **colums)
 	
 	// Release any cached data, images, etc that aren't in use.
 }
-
+/*
 - (void)viewDidUnload {
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
+ */
 
 
 - (void)dealloc {
@@ -299,19 +300,13 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
 		//cell.accessoryType = nil;
     }
-	
 
-
-	
 	// Content of the cell
-	
 	double amount = [[[queryResults objectAtIndex:indexPath.row] objectForKey:@"amount"] doubleValue];
-	// assumed that currency == €
-	
+	// assumed that currency == €	
 	// cellvalue = "name amount currency"
 	// detailvalue = "date event"
 	cell.textLabel.text = [NSString stringWithFormat:@"%@ %.2f €",
-						   //cell.textLabel.text = [NSString stringWithFormat:@"%@ %f €",	
 						   [[queryResults objectAtIndex:indexPath.row] objectForKey:@"name"],
 						   amount];
 	cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ %@",
@@ -320,11 +315,9 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 								 [[queryResults objectAtIndex:indexPath.row] objectForKey:@"event"]];
 	
 	if (amount > 0) {
-		//Red
-		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.005 saturation:0.87 brightness:0.78 alpha:1.0];
+		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.005 saturation:0.87 brightness:0.78 alpha:1.0];	//Red
 	} else {
-		//Green
-		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.34 saturation:0.83 brightness:0.44 alpha:1.0];
+		cell.textLabel.textColor = [[UIColor alloc] initWithHue:0.34 saturation:0.83 brightness:0.44 alpha:1.0];	//Green
 	}
 	
 	// Checked ?

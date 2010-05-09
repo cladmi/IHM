@@ -12,6 +12,7 @@
 @implementation personAndEventPickerViewController
 
 @synthesize fatherController;
+@synthesize selectionList;
 
 /*
 - (id)initWithStyle:(UITableViewStyle)style {
@@ -72,11 +73,63 @@
  */
 
 
-- (IBAction) addPerson:(id)sender {
+- (void) loadDatabase {
 	
+	/*
+	NSString *query = @"SELECT D.id, P.name, D.amount, D.currency, E.name, E.date FROM event E, debt D, person P  WHERE D.id_event = E.id AND D.id_person = P.id ORDER BY E.date DESC";
+	
+	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
+	sqlite3 *database = NULL;
+	
+	
+	if (sqlite3_open([file UTF8String], &database) == SQLITE_OK) {
+		sqlite3_stmt *cs; // compiledStatement
+		if(sqlite3_prepare_v2(database, [query UTF8String], -1, &cs, NULL) == SQLITE_OK) {
+			
+			selectionList = [[NSMutableArray alloc] init];
+			
+			while(sqlite3_step(cs) == SQLITE_ROW) {
+				NSMutableDictionary *row = [[NSMutableDictionary alloc] init];
+				
+				[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 0)]				forKey:@"id"]; 						   
+				[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 1)]	forKey:@"name"];
+				[row setValue:[NSNumber numberWithDouble:(double) sqlite3_column_double(cs, 2)]	forKey:@"amount"];
+				// les devises sont dans IHM_Prefix.pch sous forme de #define	
+				[row setValue:[NSNumber numberWithInt:(int) sqlite3_column_int(cs, 3)]				forKey:@"currency"]; 				
+				[row setValue:[NSString stringWithUTF8String:(char *)sqlite3_column_text(cs, 4)]	forKey:@"event"];
+				[row setValue:[NSNumber numberWithLong:(long) sqlite3_column_double(cs, 5)]		forKey:@"date"];
+				[row setValue:[NSNumber numberWithBool:NO]											forKey:@"selected"];
+				
+				
+				[queryResults addObject:row];
+				
+				[row release];
+			}
+		} else {
+			UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error while executing query" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles: nil];
+			[alert show];
+			[alert release];
+			[queryResults release];
+			queryResults = nil;
+		}
+		sqlite3_finalize(cs);
+	} else {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SQLITEAlert" message:@"Error opening file" delegate:self cancelButtonTitle:@"OK"  otherButtonTitles: nil];
+		[alert show];
+		[alert release];
+		[queryResults release];
+		queryResults = nil;
+		
+	}
+	sqlite3_close(database);
+	*/
 }
 
-
+- (IBAction) addPerson:(id)sender {
+	
+	
+	
+}
 
 
 

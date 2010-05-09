@@ -14,11 +14,15 @@
 
 	addViewController *fatherController;
 	
+	bool isTypePerson; // false => isTypeEvent
+	NSMutableArray *selectionList;
+	
 	
 	
 }
 
 @property(nonatomic, retain) addViewController *fatherController;
+@property(nonatomic, retain) NSMutableArray *selectionList;
 
 
 - (IBAction) addPerson:(id)sender;
