@@ -156,6 +156,7 @@
 			9EA31F461196FB2400C9EEF2 /* PBXTextBookmark */ = 9EA31F461196FB2400C9EEF2 /* PBXTextBookmark */;
 			9EA31F471196FB2F00C9EEF2 /* PBXTextBookmark */ = 9EA31F471196FB2F00C9EEF2 /* PBXTextBookmark */;
 			9EA31F4A1196FB3F00C9EEF2 /* PBXTextBookmark */ = 9EA31F4A1196FB3F00C9EEF2 /* PBXTextBookmark */;
+			9EA31F4B1196FC9900C9EEF2 /* PBXTextBookmark */ = 9EA31F4B1196FC9900C9EEF2 /* PBXTextBookmark */;
 			9ED082B51173AFB600107C13 = 9ED082B51173AFB600107C13 /* PBXTextBookmark */;
 			9ED082B61173AFB600107C13 = 9ED082B61173AFB600107C13 /* PBXTextBookmark */;
 			9ED082B91173AFB600107C13 = 9ED082B91173AFB600107C13 /* PlistBookmark */;
@@ -1169,6 +1170,16 @@
 		vrLen = 2728;
 		vrLoc = 1922;
 	};
+	9EA31F4B1196FC9900C9EEF2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 9EA583291161046E00567A75 /* addViewController.m */;
+		name = "addViewController.m: 190";
+		rLen = 0;
+		rLoc = 5607;
+		rType = 0;
+		vrLen = 2461;
+		vrLoc = 2233;
+	};
 	9EA582C51160FAE500567A75 /* IHM */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -1238,9 +1249,9 @@
 	};
 	9EA583291161046E00567A75 /* addViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1335, 2067}}";
-			sepNavSelRange = "{2980, 3}";
-			sepNavVisRange = "{1922, 2728}";
+			sepNavIntBoundsRect = "{{0, 0}, {1531, 2509}}";
+			sepNavSelRange = "{5607, 0}";
+			sepNavVisRange = "{2233, 2461}";
 			sepNavWindowFrame = "{{973, 16}, {947, 1152}}";
 		};
 	};

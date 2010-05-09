@@ -30,6 +30,11 @@
     [super viewDidLoad];
 	
 	[self loadDatabase];
+	if (isTypePerson) {
+		self.title = @"Select the person";
+	} else {
+		self.title = @"Select the event";
+	}
 
 	format = [[NSDateFormatter alloc] init];
 	[format setDateFormat:@"dd-MM-yyyy"];
