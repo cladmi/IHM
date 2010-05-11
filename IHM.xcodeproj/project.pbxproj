@@ -22,6 +22,7 @@
 		9EA5832A1161046E00567A75 /* addViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA583291161046E00567A75 /* addViewController.m */; };
 		9EA583681161091C00567A75 /* repayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA583671161091C00567A75 /* repayView.xib */; };
 		9EA5838511610D2900567A75 /* repayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5838411610D2900567A75 /* repayViewController.m */; };
+		9EC4940611993C120066AF27 /* trier.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EC4940511993C120066AF27 /* trier.png */; };
 		9EF3E29A117CB5A6007B4002 /* DoneDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E296117CB5A6007B4002 /* DoneDown.png */; };
 		9EF3E29B117CB5A6007B4002 /* DoneDown3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E297117CB5A6007B4002 /* DoneDown3.png */; };
 		9EF3E29C117CB5A6007B4002 /* DoneUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EF3E298117CB5A6007B4002 /* DoneUp.png */; };
@@ -54,6 +55,7 @@
 		9EA583671161091C00567A75 /* repayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = repayView.xib; sourceTree = "<group>"; };
 		9EA5838311610D2900567A75 /* repayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = repayViewController.h; sourceTree = "<group>"; };
 		9EA5838411610D2900567A75 /* repayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = repayViewController.m; sourceTree = "<group>"; };
+		9EC4940511993C120066AF27 /* trier.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trier.png; sourceTree = "<group>"; };
 		9EF3E296117CB5A6007B4002 /* DoneDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DoneDown.png; path = Classes/DoneDown.png; sourceTree = "<group>"; };
 		9EF3E297117CB5A6007B4002 /* DoneDown3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DoneDown3.png; path = Classes/DoneDown3.png; sourceTree = "<group>"; };
 		9EF3E298117CB5A6007B4002 /* DoneUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DoneUp.png; path = Classes/DoneUp.png; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				9EA5838411610D2900567A75 /* repayViewController.m */,
 				9EA583281161046E00567A75 /* addViewController.h */,
 				9EA583291161046E00567A75 /* addViewController.m */,
+				9EC4940511993C120066AF27 /* trier.png */,
 				9EA5830A1160FE4400567A75 /* homeViewController.h */,
 				9EA5830B1160FE4400567A75 /* homeViewController.m */,
 				1D3623240D0F684500981E51 /* IHMAppDelegate.h */,
@@ -210,6 +213,7 @@
 				9E32FBAB119435A400E522EC /* logo.gif in Resources */,
 				C9739C931196947A0056EC16 /* debts_new.db in Resources */,
 				C9739EC31196D6720056EC16 /* personAndEventPickerViewController.xib in Resources */,
+				9EC4940611993C120066AF27 /* trier.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

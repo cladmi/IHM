@@ -21,7 +21,7 @@
 	int eventID;
 	
 	
-		UINavigationController *navController;
+	UINavigationController *navController;
 }
 
 @property(nonatomic, retain) UITextField *montant;
@@ -37,8 +37,10 @@
 - (IBAction) UpView:(id)sender;
 
 - (IBAction) openList:(id)sender;
+- (IBAction) BackgroundTouched:(id)sender;
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 - (void) addDebt;
+- (void)keyboardWillShow:(NSNotification *)note;
 
 - (void) dimsissWithType:(BOOL)isTypePerson Name:(NSString *)text Id:(int)identifier;
 

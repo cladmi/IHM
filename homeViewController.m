@@ -43,6 +43,7 @@
 	UINavigationController *tabController = [[UINavigationController alloc] init];
 	
 	addViewController *tviewcontroller = [[repayViewController alloc] initWithNibName:@"repayView" bundle:nil];
+	tviewcontroller.title = @"Gestion des dettes";
 	[self.navigationController pushViewController:tviewcontroller animated:YES];
 	[tviewcontroller release];
 	

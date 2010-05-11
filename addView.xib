@@ -60,7 +60,9 @@
 						<bool key="IBUIClearsOnBeginEditing">YES</bool>
 						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
 						<float key="IBUIMinimumFontSize">17</float>
-						<object class="IBUITextInputTraits" key="IBUITextInputTraits"/>
+						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
+							<int key="IBUIKeyboardType">4</int>
+						</object>
 					</object>
 					<object class="IBUILabel" id="336207767">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -329,6 +331,15 @@
 					</object>
 					<int key="connectionID">47</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">BackgroundTouched:</string>
+						<reference key="source" ref="191373211"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">1</int>
+					</object>
+					<int key="connectionID">51</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -346,12 +357,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="390504675"/>
 							<reference ref="972614255"/>
-							<reference ref="876319401"/>
 							<reference ref="336207767"/>
 							<reference ref="100260277"/>
 							<reference ref="639282"/>
 							<reference ref="437106564"/>
 							<reference ref="1054134637"/>
+							<reference ref="876319401"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -414,6 +425,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>-1.CustomClassName</string>
 					<string>-2.CustomClassName</string>
+					<string>1.CustomClassName</string>
 					<string>1.IBEditorWindowLastContentRect</string>
 					<string>1.IBPluginDependency</string>
 					<string>12.IBPluginDependency</string>
@@ -429,7 +441,8 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>addViewController</string>
 					<string>UIResponder</string>
-					<string>{{508, 300}, {320, 480}}</string>
+					<string>UIControl</string>
+					<string>{{715, 323}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -457,7 +470,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">47</int>
+			<int key="maxID">51</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -469,6 +482,7 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>BackgroundTouched:</string>
 							<string>TextFieldDownEditing:</string>
 							<string>UpView:</string>
 							<string>ValidateDept:</string>
@@ -476,6 +490,7 @@
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>

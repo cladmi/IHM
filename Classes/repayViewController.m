@@ -26,7 +26,7 @@
 
 - (void) loadDebts
 {
-	NSString *query = @"SELECT D.id, P.name, D.amount, D.currency, E.name, E.date FROM event E, debt D, person P  WHERE D.id_event = E.id AND D.id_person = P.id ORDER BY E.date DESC";
+	NSString *query = @"SELECT D.id, P.name, D.amount, D.currency, E.name, E.date FROM event E, debt D, person P  WHERE D.id_event = E.id AND D.id_person = P.id ORDER BY P.name ASC";
 
 	NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
 	sqlite3 *database = NULL;
@@ -92,49 +92,13 @@
  }
  */
 
-// Adds the Done button
-/*
-- (void)keyboardWillShow:(NSNotification *)note {  
-    // create custom button
-    UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    doneButton.frame = CGRectMake(0, 163, 106, 53);
-    doneButton.adjustsImageWhenHighlighted = NO;
-    if ([[[UIDevice currentDevice] systemVersion] hasPrefix:@"3"]) {
-        [doneButton setImage:[UIImage imageNamed:@"DoneUp3.png"] forState:UIControlStateNormal];
-        [doneButton setImage:[UIImage imageNamed:@"DoneDown3.png"] forState:UIControlStateHighlighted];
-    } else {        
-        [doneButton setImage:[UIImage imageNamed:@"DoneUp.png"] forState:UIControlStateNormal];
-        [doneButton setImage:[UIImage imageNamed:@"DoneDown.png"] forState:UIControlStateHighlighted];
-    }
-    [doneButton addTarget:self action:@selector(doneButton:) forControlEvents:UIControlEventTouchUpInside];
-	
-    // locate keyboard view
-    UIWindow* tempWindow = [[[UIApplication sharedApplication] windows] objectAtIndex:1];
-    UIView* keyboard;
-    for(int i=0; i<[tempWindow.subviews count]; i++) {
-        keyboard = [tempWindow.subviews objectAtIndex:i];
-        // keyboard view found; add the custom button to it
-        if([[keyboard description] hasPrefix:@"<UIKeyboard"] == YES)
-            [keyboard addSubview:doneButton];
-    }
-}
 
-// Closes the keybord when the Done button is pressed
-- (void)doneButton:(id)sender {
-    //NSLog(@"Input: %@", value.text);
-    [value resignFirstResponder];
-}*/
 
 
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 
-	
-	[[NSNotificationCenter defaultCenter] addObserver:self 
-											 selector:@selector(keyboardWillShow:) 
-												 name:UIKeyboardWillShowNotification 
-											   object:nil];
 	
 	[self loadDebts];
 
@@ -168,7 +132,7 @@
 
 
 - (void)dealloc {
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
+
 
 	
 	[format release];
@@ -219,13 +183,13 @@
 - (IBAction) validate:(id)sender {
 	UIAlertView *alert = [[UIAlertView alloc]
 						  initWithTitle:@"Rembourser dettes" 
-						  message:@"Vous allez rembourser toutes les dettes sélectionnées. Continuer ?"
+						  message:@""
 						  delegate:self 
 						  cancelButtonTitle:@"Annuler" 
 						  otherButtonTitles:@"Oui",nil];
+	alert.message = @"Je veux rembourser les dettes sélectionnées";
 	[alert show];
 	[alert release];
-
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -270,8 +234,13 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 		case SORT_EVENT :
 			key = @"event";
 			break;
+		default:
+			key = @"name";
+			break;
+
 	}
-	
+	NSLog(@" sort by %@", key);
+	NSLog(@" ascending : %d", (sort & 8));
 	result = [[first objectForKey:key] compare: [second objectForKey:key]];
 	[key release];
 	
@@ -280,7 +249,7 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 	} else if (sort & 8) {
 		return result;
 	} else {
-		if (result = NSOrderedAscending) {
+		if (result == NSOrderedAscending) {
 			return NSOrderedDescending;
 		} else {
 			return NSOrderedAscending;
@@ -310,6 +279,8 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 	//	NSLog(@" sort_type else = %4d", sort_type);
 	}
 	//	NSLog(@" type de trie %d", (sort_type & 7));
+	[queryResults sortUsingFunction:&sortFunction context:(void *)sort_type];
+	[queryResults sortUsingFunction:&sortFunction context:(void *)(sort_type ^ 8)];
 	[queryResults sortUsingFunction:&sortFunction context:(void *)sort_type];
 	[debtList reloadData];
 	
@@ -391,7 +362,7 @@ NSComparisonResult sortFunction (id first, id second, void *context) {
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return @"Dettes";
+    return nil;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {

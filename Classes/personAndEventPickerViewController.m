@@ -70,18 +70,19 @@
 	}
 	sqlite3_close(database);
 	[tab reloadData];
-
 }
 
 - (IBAction) addItem:(id)sender {
 	if (![addText.text  isEqualToString:@""]) {
 			
 		NSString *query;
+		NSString *name = [addText.text stringByReplacingOccurrencesOfString:@"'" withString:@"\''"];
 		if (isTypePerson) {
-			query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", addText.text];
+			query = [NSString stringWithFormat:@"INSERT INTO person (name) VALUES ('%@')", name];
 		} else {
-			query = [NSString stringWithFormat:@"INSERT INTO event (name, date) VALUES ('%@', %f)", addText.text, [[NSDate date] timeIntervalSince1970]];
+			query = [NSString stringWithFormat:@"INSERT INTO event (name, date) VALUES ('%@', %f)", name, [[NSDate date] timeIntervalSince1970]];
 		}
+		NSLog(@"%@", query);
 		
 		sqlite3 *database = NULL;
 		NSString *file = [[NSBundle mainBundle] pathForResource:@"debts_new" ofType:@"db"];
@@ -91,9 +92,9 @@
 
 				
 				if (isTypePerson) {
-					query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
+					query = [NSString stringWithFormat:@"SELECT id, name FROM person WHERE name='%@' ORDER BY id DESC LIMIT 1", name];
 				} else {
-					query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='%@' ORDER BY id DESC LIMIT 1", addText.text];
+					query = [NSString stringWithFormat:@"SELECT id, name, date FROM event WHERE name='%@' ORDER BY id DESC LIMIT 1", name];
 				}
 				
 				sqlite3_stmt *cs; // compiledStatement
